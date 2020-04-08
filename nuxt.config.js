@@ -25,7 +25,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ["~assets/scss/common.scss"],
+  css: ["~assets/scss/foundation/reset.scss", "~assets/scss/common.scss"],
   styleResources: {
     scss: "./assets/scss/mixins.scss",
   },

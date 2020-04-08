@@ -1,9 +1,17 @@
 <template>
   <div>
-    <nuxt />
+    <l-header />
+    <main class="l-content">
+      <nuxt />
+    </main>
   </div>
 </template>
 
 <script>
-export default {}
+import LHeader from "@/components/layout/Header"
+export default {
+  components: {
+    LHeader,
+  },
+}
 </script>
