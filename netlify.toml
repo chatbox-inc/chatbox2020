@@ -1,0 +1,24 @@
+# see https://docs.netlify.com/configure-builds/file-based-configuration/#sample-file
+[build]
+  publish = "dist"
+  command = "npm run generate -- --quiet"
+#  functions = "project/functions/"
+[environment]
+  NODE_VERSION = "12.*"
+
+[context.production.environment]
+  NODE_ENV = "production"
+#
+#[context.deploy-preview.environment]
+#  NODE_ENV = "production"
+#
+## Branch Deploy context: all deploys that are not from a pull/merge request or
+## from the Production branch will inherit these settings.
+#[context.branch-deploy]
+#  command = "echo branch"
+#[context.branch-deploy.environment]
+#  NODE_ENV = "development"
+#
+#[context.dev] 
+#  command = "echo 'staging'"
+#  base = "staging"
