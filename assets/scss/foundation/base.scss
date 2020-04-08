@@ -1,7 +1,7 @@
-$clr-primary: #C3504F;
-$clr-secondary: #FAF7F7;
+$clr-primary: #c3504f;
+$clr-secondary: #faf7f7;
 $clr-black: #393739;
-$clr-white: #FFFFFF;
+$clr-white: #fff;
 $clr-gray: #bababa;
 
 $clr-txt-primary: $clr-black;
@@ -12,12 +12,15 @@ $clr-txt-grey: $clr-gray;
 @mixin text-primary {
   color: $clr-txt-primary;
 }
+
 @mixin text-secondary {
   color: $clr-txt-secondary;
 }
+
 @mixin text-white {
   color: $clr-txt-white;
 }
+
 @mixin text-accent {
   color: $clr-txt-accent;
 }
@@ -27,38 +30,37 @@ $clr-txt-grey: $clr-gray;
 }
 
 @mixin text-button {
-    font-size:20px;
-    line-height:1.5;
-    font-weight:bold;
-    color:$clr-white;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: $clr-white;
 }
 
-
 @mixin text-default {
-    font-size: 16px;
-    font-weight:normal;
-    line-height: 1.5;
-    color:$clr-txt-primary;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: $clr-txt-primary;
 }
 
 @mixin text-h1 {
-    font-size:50px;
-    font-weight: bold;
-    line-height: 1.5;
-    color:$clr-primary;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: $clr-primary;
 }
 
 @mixin text-h2 {
-    font-size:50px;
-    font-weight: bold;
-    line-height: 1.5;
-    letter-spacing: 5px;
-    color:$clr-primary;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: $clr-primary;
+  letter-spacing: 5px;
 }
 
 @mixin text-h3 {
-    font-size:40px;
-    font-weight: bold;
-    line-height: 1.5;
-    color:$clr-black;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: $clr-black;
 }

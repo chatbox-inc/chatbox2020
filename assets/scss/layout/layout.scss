@@ -2,10 +2,10 @@
 
 @mixin container() {
   width: 100%;
+  max-width: 980px;
   height: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  max-width: 980px;
 }
 
 .l-content {

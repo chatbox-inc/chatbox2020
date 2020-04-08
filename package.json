@@ -12,6 +12,8 @@
     "lint": "run-p lint:*",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "run-p lintfix:*",
+    "lintfix:scss": "stylelint '**/*.scss' --fix",
+    "lintfix:css": "stylelint '**/*.vue' --fix",
     "lintfix:js": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
@@ -21,9 +23,11 @@
     "fibers": "^4.0.2",
     "nuxt": "^2.0.0",
     "sass": "^1.26.3",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "stylelint-config-recess-order": "^2.0.4"
   },
   "devDependencies": {
+    "@nuxtjs/stylelint-module": "^3.2.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
@@ -33,7 +37,10 @@
     "husky": "^4.2.3",
     "lint-staged": "^10.1.2",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.0.4"
+    "prettier": "^2.0.4",
+    "stylelint": "^13.3.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.16.0"
   },
   "husky": {
     "hooks": {

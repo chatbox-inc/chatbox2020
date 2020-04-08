@@ -40,7 +40,12 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/style-resources", "@nuxtjs/axios", "@nuxtjs/dotenv"],
+  modules: [
+    "@nuxtjs/style-resources",
+    "@nuxtjs/axios",
+    "@nuxtjs/dotenv",
+    "@nuxtjs/stylelint-module",
+  ],
   /*
    ** Build configuration
    */
