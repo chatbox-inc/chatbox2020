@@ -29,6 +29,14 @@ export default {
   styleResources: {
     scss: "./assets/scss/mixins.scss",
   },
+
+  generate: {
+    routes() {
+      const pathList = []
+      pathList.push("/member/1")
+      return pathList
+    },
+  },
   /*
    ** Plugins to load before mounting the App
    */
