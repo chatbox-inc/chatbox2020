@@ -6,6 +6,99 @@
           実績タイムライン
         </h2>
       </div>
+      <div class="c-timeline__box">
+        <div class="c-timeline__item">
+          <time class="c-timeline__date">2020.03</time>
+          <div class="c-timeline__start"></div>
+          <div class="c-timeline__event">
+            <h3 class="c-timeline__subTitle">
+              chatbox入社
+            </h3>
+          </div>
+        </div>
+        <div class="c-timeline__item">
+          <time class="c-timeline__date">2020.04</time>
+          <div class="c-timeline__img">
+            <img
+              src="@/assets/image/timeline/img_timeline01@2x.png"
+              alt="実績画像"
+              class="c-timeline__img"
+            />
+          </div>
+          <div class="c-timeline__event">
+            <h3 class="c-timeline__subTitle">
+              Vueを使用したコーディング案件
+            </h3>
+            <div class="c-timeline__info">
+              <p class="c-timeline__work">
+                <span class="c-timeline__infoTitle">案件内容</span>
+                マッチングアプリサービス
+              </p>
+              <p class="c-timeline__part">
+                <span class="c-timeline__infoTitle">担当範囲</span>
+                TOPページコーディング
+              </p>
+            </div>
+            <p class="c-timeline__text">
+              主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。ああああああああああああ
+            </p>
+          </div>
+        </div>
+        <div class="c-timeline__item">
+          <time class="c-timeline__date">2020.04</time>
+          <div class="c-timeline__img">
+            <img
+              src="@/assets/image/timeline/img_timeline01@2x.png"
+              alt="実績画像"
+            />
+          </div>
+          <div class="c-timeline__event">
+            <h3 class="c-timeline__subTitle">
+              Laravelを使用したサイト構築
+            </h3>
+            <div class="c-timeline__info">
+              <p class="c-timeline__work">
+                <span class="c-timeline__infoTitle">案件内容</span>
+                マッチングアプリサービス
+              </p>
+              <p class="c-timeline__part">
+                <span class="c-timeline__infoTitle">担当範囲</span>
+                TOPページコーディング
+              </p>
+            </div>
+            <p class="c-timeline__text">
+              主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。ああああああああああああ
+            </p>
+          </div>
+        </div>
+        <div class="c-timeline__item">
+          <time class="c-timeline__date">2020.04</time>
+          <div class="c-timeline__img">
+            <img
+              src="@/assets/image/timeline/img_timeline01@2x.png"
+              alt="実績画像"
+            />
+          </div>
+          <div class="c-timeline__event">
+            <h3 class="c-timeline__subTitle">
+              Laravelを使用したサイト構築
+            </h3>
+            <div class="c-timeline__info">
+              <p class="c-timeline__work">
+                <span class="c-timeline__infoTitle">案件内容</span>
+                マッチングアプリサービス
+              </p>
+              <p class="c-timeline__part">
+                <span class="c-timeline__infoTitle">担当範囲</span>
+                TOPページコーディング
+              </p>
+            </div>
+            <p class="c-timeline__text">
+              主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。主にコーディングを担当。この案件でVue.jsを使ったコーディング方法を学びました。ああああああああああああ
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -19,5 +112,85 @@ export default {}
   padding-top: 82px;
   padding-bottom: 95px;
   background-color: #faf7f7;
+
+  &__head {
+    text-align: center;
+  }
+
+  &__date {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  &__title {
+    @include text-h2;
+  }
+
+  &__box {
+    margin-top: 70px;
+  }
+
+  &__img {
+    position: relative;
+    z-index: 2;
+
+    &::before {
+      position: absolute;
+      top: -175px;
+      left: 65px;
+      z-index: -1;
+      display: inline-block;
+      width: 11px;
+      height: 200px;
+      content: "";
+      background-color: #f7dfdf;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 74px;
+  }
+
+  &__start {
+    z-index: 1;
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-color: #f7dfdf;
+    border-radius: 83px;
+  }
+
+  &__event {
+    width: 564px;
+    padding: 15px 40px;
+    background-color: #fff;
+    border: 4px solid #f7dfdf;
+    border-radius: 5px;
+  }
+
+  &__subTitle {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  &__info {
+    margin-top: 11px;
+  }
+
+  &__infoTitle {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+  &__part {
+    margin-top: 5px;
+  }
+
+  &__text {
+    margin-top: 11px;
+  }
 }
 </style>
