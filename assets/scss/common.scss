@@ -8,18 +8,12 @@ body {
 
 h1 {
   @include text-h1;
-
-  font-family: YuMincho, "Yu Mincho", serif;
 }
 
 h2 {
   @include text-h2;
-
-  font-family: YuMincho, "Yu Mincho", serif;
 }
 
 h3 {
   @include text-h3;
-
-  font-family: YuMincho, "Yu Mincho", serif;
 }
