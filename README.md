@@ -7,6 +7,9 @@
 
 https://github.com/chatbox-inc/nuxtjs_guideline
 
+## masterNetlify
+https://chatbox2020-member.netlify.com/
+
 ## 環境情報
 master
 
