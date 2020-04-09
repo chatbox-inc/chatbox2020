@@ -3,11 +3,7 @@
     <div class="c-container">
       <div class="c-profile__box">
         <div class="c-profile__item">
-          <img
-            src="@/assets/image/profile/img_profile_detail01@2x.png"
-            alt="メンバーの写真"
-            class="c-profile__img"
-          />
+          <img :src="profile.img" alt="メンバーの写真" class="c-profile__img" />
         </div>
         <div class="c-profile__item">
           <div class="c-profile__info">
@@ -49,6 +45,7 @@ export default {
 .c-profile {
   width: 100%;
   padding-top: 75px;
+  padding-bottom: 85px;
 
   &__box {
     display: flex;
