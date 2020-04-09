@@ -2,6 +2,8 @@
   <section class="p-member">
     <c-hero />
     <c-profile :profile="profile" />
+    <c-timeline />
+    <c-interview />
     <c-other :member-list="memberList" />
   </section>
 </template>
@@ -9,12 +11,16 @@
 <script>
 import cHero from "@/pages/member/-cHero"
 import cProfile from "@/pages/member/-cProfile"
+import cTimeline from "@/pages/member/-cTimeline"
+import cInterview from "@/pages/member/-cInterview"
 import cOther from "@/pages/member/-cOther"
 export default {
   components: {
     cHero,
     cProfile,
     cOther,
+    cInterview,
+    cTimeline,
   },
   data() {
     return {

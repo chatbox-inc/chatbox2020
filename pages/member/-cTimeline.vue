@@ -16,6 +16,8 @@ export default {}
 
 <style lang="scss" scoped>
 .c-timeline {
-  width: 100%;
+  padding-top: 82px;
+  padding-bottom: 95px;
+  background-color: #faf7f7;
 }
 </style>
