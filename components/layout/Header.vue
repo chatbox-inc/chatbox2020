@@ -40,6 +40,7 @@ export default {}
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 99;
     display: inline-block;
     width: 110px;
     height: 110px;

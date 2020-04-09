@@ -80,7 +80,8 @@ export default {
     }
 
     @include mobile {
-      width: 48%;
+      width: 50%;
+      max-width: 120px;
       margin-right: 20px;
 
       &:nth-child(even) {
