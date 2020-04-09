@@ -68,15 +68,28 @@ export default {}
   padding-top: 90px;
   padding-bottom: 167px;
 
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
   &__head {
     @include text-h2;
 
     text-align: center;
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   &__listItem {
     display: flex;
     margin-top: 68px;
+
+    @include mobile {
+      margin-top: 40px;
+    }
   }
 
   &__numberBox {
@@ -88,15 +101,30 @@ export default {}
     margin-right: 45px;
     text-align: center;
     background-color: $clr-primary;
+
+    @include mobile {
+      min-width: 50px;
+      min-height: 50px;
+      margin-right: 9px;
+    }
   }
 
   &__q {
     font-size: 20px;
     font-weight: bold;
+
+    @include mobile {
+      font-size: 16px;
+    }
   }
 
   &__a {
     margin-top: 16px;
+
+    @include mobile {
+      margin-top: 10px;
+      font-size: 14px;
+    }
   }
 }
 </style>

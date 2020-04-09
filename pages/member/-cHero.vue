@@ -16,6 +16,10 @@ export default {}
     min-height: 325px;
     background-image: url("~assets/image/hero/img_memberTop@2x.png");
     background-position: center;
+
+    @include mobile {
+      background-position: 28%;
+    }
   }
 }
 </style>

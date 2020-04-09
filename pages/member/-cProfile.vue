@@ -47,14 +47,27 @@ export default {
   padding-top: 75px;
   padding-bottom: 85px;
 
+  @include mobile {
+    padding-top: 45px;
+    padding-bottom: 134px;
+  }
+
   &__box {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__item {
     width: 50%;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__name {
@@ -63,6 +76,7 @@ export default {
     position: relative;
     font-size: 30px;
     font-weight: bold;
+    letter-spacing: 2.5px;
 
     &::before {
       position: relative;
@@ -73,18 +87,36 @@ export default {
       content: "";
       background-color: #c3504f;
     }
+
+    @include mobile {
+      font-size: 25px;
+
+      &::before {
+        width: 7px;
+        height: 23px;
+      }
+    }
   }
 
   &__name--small {
     font-size: 16px;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 
   &__job {
     margin-top: 14px;
+    font-weight: bold;
   }
 
   &__text {
     margin-top: 10px;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 }
 </style>

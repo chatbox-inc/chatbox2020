@@ -113,6 +113,11 @@ export default {}
   padding-bottom: 95px;
   background-color: #faf7f7;
 
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 103px;
+  }
+
   &__head {
     text-align: center;
   }
@@ -120,14 +125,27 @@ export default {}
   &__date {
     font-size: 22px;
     font-weight: bold;
+
+    @include mobile {
+      margin: 0 auto 0 0;
+      font-size: 18px;
+    }
   }
 
   &__title {
     @include text-h2;
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   &__box {
     margin-top: 70px;
+
+    @include mobile {
+      margin-top: 40px;
+    }
   }
 
   &__img {
@@ -138,7 +156,7 @@ export default {}
       position: absolute;
       top: -175px;
       left: 65px;
-      z-index: -1;
+      z-index: -3;
       display: inline-block;
       width: 11px;
       height: 200px;
@@ -152,6 +170,15 @@ export default {}
     align-items: center;
     justify-content: space-between;
     margin-top: 74px;
+
+    @include mobile {
+      flex-direction: column;
+      margin-top: 100px;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+    }
   }
 
   &__start {
@@ -161,36 +188,68 @@ export default {}
     height: 38px;
     background-color: #f7dfdf;
     border-radius: 83px;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__event {
+    z-index: 3;
     width: 564px;
     padding: 15px 40px;
     background-color: #fff;
     border: 4px solid #f7dfdf;
     border-radius: 5px;
+
+    @include mobile {
+      width: 100%;
+      padding: 25px 10px;
+    }
   }
 
   &__subTitle {
     font-size: 22px;
     font-weight: bold;
+
+    @include mobile {
+      font-size: 16px;
+      text-align: center;
+    }
   }
 
   &__info {
     margin-top: 11px;
+
+    @include mobile {
+      margin-top: 16px;
+    }
   }
 
   &__infoTitle {
     margin-right: 10px;
     font-weight: bold;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 
   &__part {
     margin-top: 5px;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 
   &__text {
     margin-top: 11px;
+
+    @include mobile {
+      margin-top: 25px;
+      font-size: 14px;
+    }
   }
 }
 </style>
