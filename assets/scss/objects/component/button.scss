@@ -6,8 +6,8 @@
 
   display: block;
   width: 100%;
-  height: 60px;
-  padding: 15px 0;
+  height: 120px;
+  padding: 25px 0;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -25,7 +25,8 @@
 
   display: inline-block;
   width: $width;
-  padding: 15px 0;
+  padding: 32px 0;
+  line-height: 2;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -54,14 +55,7 @@
 
 .c-button {
   @include btnStructure-inline(270px);
-  @include btnColor-primary;
-
-  @include mobile {
-    @include btnStructure-inline(260px);
-
-    padding: 12px 0;
-    font-size: 16px;
-  }
+  @include btnColor-white;
 }
 
 .c-headerButton {
@@ -74,5 +68,20 @@
 
   @include mobile {
     display: none;
+  }
+}
+
+.c-footerButton {
+  @include btnStructure-inline(540px);
+  @include btnColor-white;
+
+  font-size: 25px;
+
+  @include mobile {
+    @include btnStructure-inline(290px);
+    @include btnColor-white;
+
+    padding: 5px 0;
+    font-size: 16px;
   }
 }
