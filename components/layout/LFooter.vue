@@ -176,6 +176,10 @@ export default {}
     }
   }
 
+  &__logos {
+    margin-top: 55px;
+  }
+
   &__callText {
     @include text-white;
 
@@ -276,10 +280,6 @@ export default {}
     &:nth-child(1) {
       margin-right: 15px;
     }
-  }
-
-  &__logos {
-    margin-top: 55px;
   }
 
   &__infoLogo {
