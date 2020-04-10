@@ -103,6 +103,10 @@ export default {}
     letter-spacing: 5px;
   }
 
+  &__text {
+    line-height: 30px;
+  }
+
   &__headColor {
     @include text-accent;
   }
@@ -128,6 +132,7 @@ export default {}
     margin-right: 10px;
     text-align: center;
     background-color: #f5f1f1;
+    border-top: 2px solid #c3504f;
 
     &:nth-last-child(1) {
       margin-right: 0;
