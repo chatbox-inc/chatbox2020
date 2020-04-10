@@ -1,47 +1,46 @@
 <template>
   <footer class="l-footer">
-    <div class="l-footer__bg">
-      <div class="l-footer__head">
-        <img
-          class="l-footer__icon"
-          src="@/assets/image/footer/icon_mail.svg"
-          alt="手紙のアイコン"
-        />
-        <h2 class="l-footer__title">
-          お問い合わせはこちら
-        </h2>
-      </div>
-      <div class="c-container">
-        <div class="l-footer__box">
-          <p class="l-footer__text">
-            Webにまつわるお悩み、<br />
-            ご相談はお気軽にchatboxまで。
-          </p>
-          <div class="l-footer__buttons">
-            <nuxt-link to="/" class="c-footerButton">
-              お問い合わせフォームへ
-              <img
-                class="l-footer__buttonIcon"
-                src="@/assets/image/footer/keyboard_arrow_right-24px.svg"
-                alt="右シェブロン"
-              />
-            </nuxt-link>
-            <div class="l-footer__callInfo">
-              <p class="l-footer__callText">
-                電話でのお問い合わせ<br />
-                <span class="l-footer__callNumber">050-3555-1212</span>
-              </p>
-            </div>
-          </div>
-          <hr class="l-footer__divider--white" />
-          <div class="l-footer__logos">
-            <img
-              src="@/assets/image/footer/img_chatbox_logo@2x.png"
-              alt="chatbox.inc webの「これから」を語り合う"
-            />
-            <p class="l-footer__logoText">
-              東京・大阪・名古屋のWeb制作会社・ZIZOは、Webコンテンツの企画、ディレクション、デザイン、開発を中心に活動するクリエイティブ・プロダクションです。
+    <div class="l-contact">
+      <div class="l-contact__bg">
+        <div class="l-contact__head">
+          <img
+            class="l-contact__icon"
+            src="@/assets/image/footer/icon_mail.svg"
+            alt="手紙のアイコン"
+          />
+          <h2 class="l-contact__title">
+            お問い合わせはこちら
+          </h2>
+        </div>
+        <div class="c-container">
+          <div class="l-contact__box">
+            <p class="l-contact__text">
+              Webにまつわるお悩み、<br />
+              ご相談はお気軽にchatboxまで。
             </p>
+            <div class="l-contact__buttons">
+              <nuxt-link to="/" class="c-footerButton">
+                お問い合わせフォームへ
+                <img
+                  class="l-contact__buttonIcon"
+                  src="@/assets/image/footer/keyboard_arrow_right-24px.svg"
+                  alt="右シェブロン"
+                />
+              </nuxt-link>
+              <div class="l-contact__callInfo">
+                <p class="l-contact__callText">
+                  電話でのお問い合わせ<br />
+                  <span class="l-contact__callNumber">050-3555-1212</span>
+                </p>
+              </div>
+            </div>
+            <hr class="l-contact__divider--white" />
+            <div class="l-contact__logos">
+              <img
+                src="@/assets/image/footer/img_chatbox_logo@2x.png"
+                alt="chatbox.inc webの「これから」を語り合う"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -108,11 +107,20 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-.l-footer {
-  background-color: #fffcfc;
-
+.l-contact {
   &__bg {
     background-color: #c3504f;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 66px;
+
+    @include mobile {
+      flex-direction: column;
+      margin-top: 60px;
+    }
   }
 
   &__head {
@@ -158,17 +166,6 @@ export default {}
     }
   }
 
-  &__buttons {
-    display: flex;
-    align-items: center;
-    margin-top: 66px;
-
-    @include mobile {
-      flex-direction: column;
-      margin-top: 60px;
-    }
-  }
-
   &__callInfo {
     margin-left: 90px;
     text-align: left;
@@ -177,6 +174,10 @@ export default {}
       margin-top: 50px;
       margin-left: 0;
     }
+  }
+
+  &__logos {
+    margin-top: 55px;
   }
 
   &__callText {
@@ -189,6 +190,21 @@ export default {}
     @include mobile {
       font-size: 16px;
       text-align: center;
+    }
+  }
+}
+
+.l-footer {
+  background-color: #fffcfc;
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 66px;
+
+    @include mobile {
+      flex-direction: column;
+      margin-top: 60px;
     }
   }
 
@@ -264,10 +280,6 @@ export default {}
     &:nth-child(1) {
       margin-right: 15px;
     }
-  }
-
-  &__logos {
-    margin-top: 55px;
   }
 
   &__infoLogo {
