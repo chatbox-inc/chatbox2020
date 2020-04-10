@@ -14,7 +14,7 @@ export default {}
 
   &__bg {
     min-height: 325px;
-    background-image: url("~assets/image/hero/img_memberTop@2x.png");
+    background-image: url("~assets/image/member/hero/img_memberTop@2x.png");
     background-position: center;
 
     @include mobile {
