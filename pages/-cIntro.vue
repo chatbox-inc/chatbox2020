@@ -91,9 +91,8 @@ export default {}
   }
 
   &__boxDescription {
-    widows: 30%;
     position: relative;
-    left: -10px;
+    left: -32px;
   }
 
   &__box {
@@ -109,6 +108,7 @@ export default {}
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 64px;
   }
 
   &__boxImg2 {
@@ -125,7 +125,7 @@ export default {}
     }
 
     &:nth-child(3) {
-      margin-top: 50px;
+      margin-top: 40px;
     }
   }
 
