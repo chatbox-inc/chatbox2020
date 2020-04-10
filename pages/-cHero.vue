@@ -26,6 +26,17 @@ export default {}
   background-position: center;
   background-size: cover;
 
+  &::after {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    width: 3px;
+    height: 160px;
+    content: "";
+    background-color: #c3504f;
+    transform: translate(-50%);
+  }
+
   &__head {
     position: absolute;
     bottom: 70px;

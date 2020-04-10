@@ -3,6 +3,7 @@
     <c-hero />
     <c-intro />
     <c-vision />
+    <c-skill />
   </section>
 </template>
 
@@ -10,11 +11,13 @@
 import CHero from "@/pages/-cHero.vue"
 import CIntro from "@/pages/-cIntro.vue"
 import CVision from "@/pages/-cVision.vue"
+import CSkill from "@/pages/-cSkill.vue"
 export default {
   components: {
     CHero,
     CIntro,
     CVision,
+    CSkill,
   },
 }
 </script>
