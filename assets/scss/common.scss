@@ -1,0 +1,19 @@
+@import "@/assets/scss/mixins.scss";
+
+body {
+  @include text-default;
+
+  font-family: YuGothic, "Yu Gothic", sans-serif;
+}
+
+h1 {
+  @include text-h1;
+}
+
+h2 {
+  @include text-h2;
+}
+
+h3 {
+  @include text-h3;
+}
