@@ -20,7 +20,7 @@
           <time class="c-timeline__date">2020.04</time>
           <div class="c-timeline__img">
             <img
-              src="@/assets/image/timeline/img_timeline01@2x.png"
+              src="@/assets/image/member/timeline/img_timeline01@2x.png"
               alt="実績画像"
               class="c-timeline__img"
             />
@@ -48,7 +48,7 @@
           <time class="c-timeline__date">2020.04</time>
           <div class="c-timeline__img">
             <img
-              src="@/assets/image/timeline/img_timeline01@2x.png"
+              src="@/assets/image/member/timeline/img_timeline01@2x.png"
               alt="実績画像"
             />
           </div>
@@ -75,7 +75,7 @@
           <time class="c-timeline__date">2020.04</time>
           <div class="c-timeline__img">
             <img
-              src="@/assets/image/timeline/img_timeline01@2x.png"
+              src="@/assets/image/member/timeline/img_timeline01@2x.png"
               alt="実績画像"
             />
           </div>
