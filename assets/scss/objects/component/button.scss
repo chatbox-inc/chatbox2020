@@ -85,3 +85,24 @@
     font-size: 16px;
   }
 }
+
+.c-linkButton {
+  @include btnColor-primary;
+
+  display: inline-block;
+  width: 200px;
+  padding: 20px 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $clr-white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px;
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+    opacity: 0.9;
+  }
+}
