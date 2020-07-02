@@ -7,6 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "export": "nuxt export",
+    "generate": "nuxt generate",
     "serve": "nuxt serve",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "run-p lint:*",

@@ -19,6 +19,6 @@
 #[context.branch-deploy.environment]
 #  NODE_ENV = "development"
 #
-#[context.dev] 
+#[context.dev]
 #  command = "echo 'staging'"
 #  base = "staging"
