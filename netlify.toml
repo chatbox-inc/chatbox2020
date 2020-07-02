@@ -1,7 +1,7 @@
 # see https://docs.netlify.com/configure-builds/file-based-configuration/#sample-file
 [build]
   publish = "dist"
-  command = "npm run generate --quiet"
+  command = "npm run export"
 #  functions = "project/functions/"
 [environment]
   NODE_VERSION = "12.*"
