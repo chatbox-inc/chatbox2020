@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-16 pb-10">
+  <section class="pb-10">
     <div class="container mx-auto">
       <h2 class="section-title">
         <span class="text-primary text-7xl">C</span>reation
@@ -77,6 +77,7 @@ export default {}
   }
 
   &__img {
+    width: auto;
     height: 500px;
   }
 }
