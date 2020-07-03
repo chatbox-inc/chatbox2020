@@ -1,15 +1,44 @@
 <template>
-  <div class="container text-center h-screen flex flex-col mx-auto pt-20">
-    <div class="flex-grow"></div>
-    <h1 class="text-4xl">
-      Chatbox2020 with Tailwind CSS
-    </h1>
-    <div class="flex-grow"></div>
+  <div>
+    <c-hero />
+    <c-intro />
+    <c-creation />
+    <c-talking />
+    <c-enjoy />
+    <c-member />
+    <c-recruit />
+    <c-news />
+    <c-about />
+    <c-contact />
   </div>
 </template>
 
 <script>
-export default {}
+import CHero from '@/pages/-CHero'
+import CIntro from '@/pages/-CIntro'
+import CCreation from '@/pages/-CCreation'
+import CTalking from '@/pages/-CTalking'
+import CEnjoy from '@/pages/-CEnjoy'
+import CMember from '@/pages/-CMember'
+import CRecruit from '@/pages/-CRectruit'
+import CNews from '@/pages/-CNews'
+import CAbout from '@/pages/-CAbout'
+import CContact from '@/pages/-CContact'
+
+export default {
+  components: {
+    CHero,
+    CIntro,
+    CCreation,
+    CTalking,
+    CEnjoy,
+    CMember,
+    CRecruit,
+    CNews,
+    CAbout,
+    CContact,
+  },
+}
 </script>
 
 <style></style>
