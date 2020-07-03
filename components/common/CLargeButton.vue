@@ -30,28 +30,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.c-largeButton {
-  width: 800px;
-  border: 1px solid #c3504f;
-
-  &__img {
-    width: 30%;
-    height: 140px;
-  }
-
-  &__shadow {
-    box-shadow: 7px 7px 0 0 #c3504f;
-    transition: all 0.3s ease-in;
-
-    &:hover {
-      transform: translate(4px, 4px);
-      -webkit-box-shadow: 3px 3px 0 0 #c3504f;
-      box-shadow: 3px 3px 0 0 #c3504f;
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s ease-in-out;
-    }
-  }
-}
-</style>
