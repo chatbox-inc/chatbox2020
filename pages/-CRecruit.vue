@@ -1,7 +1,9 @@
 <template>
-  <section class="pt-16 pb-10">
-    <div class="container mx-auto text-center">
-      <h2 class="section-title mb-8">
+  <section class="pt-32 mt-32 pb-20 bg-ivory">
+    <div class="container mx-auto text-center relative">
+      <h2
+        class="c-recruit__title section-title absolute top-0 left-0 mb-8 text-left"
+      >
         <span class="text-primary text-7xl">R</span>ecruit
       </h2>
       <img
@@ -28,5 +30,10 @@ export default {}
 
 <style lang="scss" scoped>
 .c-recruit {
+  &__title {
+    position: absolute;
+    top: -190px;
+    left: 0;
+  }
 }
 </style>
