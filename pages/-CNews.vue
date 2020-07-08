@@ -1,7 +1,7 @@
 <template>
   <section class="pt-16 pb-10">
     <div class="container mx-auto">
-      <ui-title :title="'News'" />
+      <UiTitle :title="'News'" />
       <dev class="flex flex-row bg-gray-1024">
         <p class="inline-block leading-9 pr-8 text-xl">
           2020/55/55
@@ -70,8 +70,8 @@
           お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ
         </space>
       </div>
-      <div clss="lex flex-row bg-gray-1024">
-        <button
+      <div class="bg-gray-1024 text-center">
+        <!-- <button
           class="bg-primary bg-center font-bold text-white text-center py-6 px-40 rounded mt-12 mx-64"
         >
           <span>お知らせ一覧へ</span>
@@ -83,7 +83,8 @@
               d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
             />
           </svg>
-        </button>
+        </button> -->
+        <UiButton :text="'お知らせ一覧へ'" :url="'#'" />
       </div>
     </div>
   </section>
