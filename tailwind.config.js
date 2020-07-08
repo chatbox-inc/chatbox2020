@@ -3,6 +3,7 @@ module.exports = {
     backgroundColor: (theme) => ({
       ...theme('colors'),
       primary: '#C96362',
+      ivory: '#FAF7F7',
     }),
     colors: {
       black: '#4d4b4d',
