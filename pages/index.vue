@@ -1,15 +1,15 @@
 <template>
   <div class="p-index">
-    <c-hero class="p-index__item" />
-    <c-intro class="p-index__item" />
-    <c-creation class="p-index__item" />
-    <c-talking class="p-index__item" />
-    <c-enjoy class="p-index__item" />
-    <c-member class="p-index__item" />
-    <c-recruit class="p-index__item" />
-    <c-news class="p-index__item" />
-    <c-about class="p-index__item" />
-    <c-contact class="p-index__item" />
+    <CHero class="p-index__item" />
+    <CIntro class="p-index__item" />
+    <CCreation class="p-index__item" />
+    <CTalking class="p-index__item" />
+    <CEnjoy class="p-index__item" />
+    <CMember class="p-index__item" />
+    <CRecruit class="p-index__item" />
+    <CNews class="p-index__item" />
+    <CAbout class="p-index__item" />
+    <CContact class="p-index__item" />
   </div>
 </template>
 

@@ -1,9 +1,16 @@
+.section-title { @apply font-normal text-black text-5xl; font-family: Yu Mincho
+Medium,YuMincho,serif; line-height:110px; }
 <template>
-  <section class="pt-32 mt-32 pb-20 bg-ivory">
+  <section class="pb-20 bg-ivory">
+    <div class="c-recruit__head">
+      <div class="container mx-auto">
+        <ui-title :title="'Recruit'" />
+      </div>
+    </div>
     <div class="container mx-auto text-center relative">
-      <h2 class="c-recruit__title section-title absolute left-0 mb-8 text-left">
+      <!-- <h2 class="c-recruit__title section-title absolute left-0 mb-8 text-left">
         <span class="text-primary text-7xl">R</span>ecruit
-      </h2>
+      </h2> -->
       <img
         class="mb-12"
         src="~assets/image/recruit/recruit_img@2x.png"
@@ -15,33 +22,21 @@
         <br />
         <br />※wantedlyへ飛びます
       </p>
-      <CButton :text="'採用情報へ'" :url="'#'" />
-      <!--      <a-->
-      <!--        class="c-recruit__btn inline-block relative text-base bg-primary p-6 rounded text-white text-center w-4/5 lg:w-2/5 lg:text-lg lg:p-8 transition ease-out duration-700 hover:opacity-75"-->
-      <!--        href="#"-->
-      <!--      >-->
-      <!--        採用情報へ-->
-      <!--        <img-->
-      <!--          class="c-recruit__arrow w-8 inline absolute top-1/2 -translate-y-1/2"-->
-      <!--          src="@/assets/image/contact/keyboard_arrow_right-24px.svg"-->
-      <!--          alt="arrow"-->
-      <!--        />-->
-      <!--      </a>-->
+      <UIButton :text="'採用情報へ'" :url="'#'" />
     </div>
   </section>
 </template>
 
 <script>
-import CButton from '@/components/common/CButton'
-export default {
-  components: {
-    CButton,
-  },
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>
 .c-recruit {
+  &__head {
+    background: linear-gradient(#fff 50%, #faf7f7 0);
+  }
+
   &__title {
     top: -190px;
   }

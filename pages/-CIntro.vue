@@ -1,9 +1,7 @@
 <template>
   <section class="pt-16 pb-10">
     <div class="container mx-auto">
-      <h2 class="section-title">
-        <span class="text-primary text-7xl">W</span>e are thinking about Web
-      </h2>
+      <ui-title :title="'We are thinking about Web'" />
       <div class="c-intro__bg">
         <div class="c-intro__box py-12 pl-10">
           <h3 class="text-primary text-2xl">
@@ -34,6 +32,11 @@ export default {}
     background-image: url(~assets/image/intro/intro__bg.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  &__title {
+    font-family: Yu Mincho Medium, YuMincho, serif;
+    line-height: 110px;
   }
 
   &__box {
@@ -69,3 +72,6 @@ export default {}
   }
 }
 </style>
+
+/* .section-title { @apply font-normal text-black text-5xl; font-family: Yu
+Mincho Medium,YuMincho,serif; line-height:110px; } */

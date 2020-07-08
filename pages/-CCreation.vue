@@ -2,9 +2,7 @@
   <section class="pb-10">
     <div class="c-creation__head">
       <div class="container mx-auto">
-        <h2 class="section-title">
-          <span class="text-primary text-7xl">C</span>reation
-        </h2>
+        <ui-title :title="'Creation'" />
       </div>
     </div>
     <div class="container mx-auto pt-3">
