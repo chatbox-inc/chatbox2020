@@ -1,7 +1,9 @@
 <template>
   <h2 v-if="title" class="c-title text-28px lg:text-5xl text-black font-normal">
-    <span class="text-primary text-42px lg:text-7xl">{{ firstLetter }}</span>
-    {{ restLetter }}
+    <span class="c-title__head text-primary text-42px lg:text-7xl">
+      {{ firstLetter }}
+    </span>
+    <span class="c-title__text relative"> {{ restLetter }}</span>
   </h2>
 </template>
 
@@ -28,5 +30,9 @@ export default {
 .c-title {
   font-family: Yu Mincho Medium, YuMincho, serif;
   line-height: 110px;
+
+  &__text {
+    left: -24px;
+  }
 }
 </style>

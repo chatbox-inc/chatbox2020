@@ -2,7 +2,7 @@
   <section class="pt-16 pb-10">
     <div class="container mx-auto">
       <div class="pr-5 pl-5 lg:p-0">
-        <ui-title :title="'News'" />
+        <UiTitle :title="'News'" />
         <dev class="lg:flex flex-row bg-gray-1024 pt-5 pb-5">
           <dev class="flex flex-row bg-gray-280 pt-3">
             <p
