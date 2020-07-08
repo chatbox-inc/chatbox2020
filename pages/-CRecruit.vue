@@ -6,11 +6,10 @@ Medium,YuMincho,serif; line-height:110px; }
       <div class="container mx-auto">
         <UiTitle :title="'Recruit'" />
       </div>
-    </div>
-    <div class="container mx-auto text-center relative">
-      <!-- <h2 class="c-recruit__title section-title absolute left-0 mb-8 text-left">
+      <div class="container mx-auto text-center relative">
+        <!-- <h2 class="c-recruit__title section-title absolute left-0 mb-8 text-left">
         <span class="text-primary text-7xl">R</span>ecruit
-      </h2> -->
+      </h2>
       <img
         class="mb-12"
         src="~assets/image/recruit/recruit_img@2x.png"
