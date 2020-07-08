@@ -1,7 +1,7 @@
 <template>
   <section class="pt-16 pb-10">
     <div class="container mx-auto">
-      <ui-title :title="'We are thinking about Web'" />
+      <UiTitle :title="'We are thinking about Web'" />
       <div class="c-intro__bg">
         <div class="c-intro__box py-12 pl-10">
           <h3 class="text-primary text-2xl">
