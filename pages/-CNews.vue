@@ -1,76 +1,118 @@
 <template>
   <section class="pt-16 pb-10">
     <div class="container mx-auto">
-      <ui-title :title="'News'" />
-      <dev class="flex flex-row bg-gray-1024">
-        <p class="inline-block leading-9 pr-8 text-xl">
-          2020/55/55
-        </p>
-        <a class="bg-primary mt-1 h-8">
-          <p class="h-8 w-32 text-sm text-white text-center py-2 m-2g">
-            プレリリース
-          </p>
-        </a>
-        <button
-          class="inline-grid grid-cols-1 col-gap-4 pl-8 leading-9 text-xl text-left"
-          href="#"
-        >
-          お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知
-        </button>
-      </dev>
-      <div class="flex flex-row bg-gray-1024 pt-5 pb-5">
-        <p class="inline-block leading-9 pr-8 text-xl">
-          2020/55/54
-        </p>
-        <a class="bg-primary mt-1 h-8">
-          <p class="h-8 w-32 text-sm text-white text-center py-2 m-2g">
-            プレリリース
-          </p>
-        </a>
-        <space class="inline-grid grid-cols-1 col-gap-4 pl-8 leading-9 text-xl">
-          お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知ら
-        </space>
-      </div>
-      <div class="flex flex-row bg-gray-1024 pt-5 pb-5">
-        <p class="inline-block leading-9 pr-8 text-xl">
-          2020/55/53
-        </p>
-        <a class="bg-primary mt-1 h-8">
-          <p class="h-8 w-32 text-sm text-white text-center py-2 m-2g">
-            イベント
-          </p>
-        </a>
-        <space class="inline-grid grid-cols-1 col-gap-4 pl-8 leading-9 text-xl">
-          お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知ら
-        </space>
-      </div>
-      <div class="flex flex-row bg-gray-1024 pt-5 pb-5">
-        <p class="inline-block leading-9 pr-8 text-xl">
-          2020/55/52
-        </p>
-        <a class="bg-primary mt-1 h-8">
-          <p class="h-8 w-32 text-sm text-white text-center py-2 m-2g">
-            イベント
-          </p>
-        </a>
-        <space class="inline-grid grid-cols-1 col-gap-4 pl-8 leading-9 text-xl">
-          お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ
-        </space>
-      </div>
-      <div class="flex flex-row bg-gray-1024 pt-5 pb-5">
-        <p class="inline-block leading-9 pr-8 text-xl">
-          2020/55/51
-        </p>
-        <a class="bg-primary mt-1 h-8">
-          <p class="h-8 w-32 text-sm text-white text-center py-2 m-2g">
-            イベント
-          </p>
-        </a>
-        <space class="inline-grid grid-cols-1 col-gap-4 pl-8 leading-9 text-xl">
-          お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ
-        </space>
-      </div>
-      <div clss="lex flex-row bg-gray-1024">
+      <div class="pr-5 pl-5 lg:p-0">
+        <ui-title :title="'News'" />
+        <dev class="lg:flex flex-row bg-gray-1024 pt-5 pb-5">
+          <dev class="flex flex-row bg-gray-280 pt-3">
+            <p
+              class="inline-block leading-9 pr-5 text-xl text-primary lg:pr-8 lg:text-black"
+            >
+              2020/55/55
+            </p>
+            <a class="bg-primary mt-1 h-6 lg:h-8">
+              <p
+                class="h-6 lg:h-8 w-24 lg:w-32 text-xs text-white text-center py-1 px-2g lg:py-2 lg:m-2g lg:text-sm"
+              >
+                プレリリース
+              </p>
+            </a>
+          </dev>
+          <button
+            class="inline-grid grid-cols-1 col-gap-4 lg:pl-8 leading-9 text-sm lg:text-xl text-left pb-3 lg:pb-0"
+            href="#"
+          >
+            お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知
+          </button>
+        </dev>
+        <dev class="lg:flex flex-row bg-gray-1024 pt-5 pb-5">
+          <dev class="flex flex-row bg-gray-280 pt-3">
+            <p
+              class="inline-block leading-9 pr-5 text-xl text-primary lg:pr-8 lg:text-black"
+            >
+              2020/55/54
+            </p>
+            <a class="bg-primary mt-1 h-6 lg:h-8">
+              <p
+                class="h-6 lg:h-8 w-24 lg:w-32 text-xs text-white text-center py-1 px-2g lg:py-2 lg:m-2g lg:text-sm"
+              >
+                プレリリース
+              </p>
+            </a>
+          </dev>
+          <button
+            class="inline-grid grid-cols-1 col-gap-4 lg:pl-8 leading-9 text-sm lg:text-xl text-left pb-3 lg:pb-0"
+            href="#"
+          >
+            お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知ら
+          </button>
+        </dev>
+        <dev class="lg:flex flex-row bg-gray-1024 pt-5 pb-5">
+          <dev class="flex flex-row bg-gray-280 pt-3">
+            <p
+              class="inline-block leading-9 pr-5 text-xl text-primary lg:pr-8 lg:text-black"
+            >
+              2020/55/53
+            </p>
+            <a class="bg-primary mt-1 h-6 lg:h-8">
+              <p
+                class="h-6 lg:h-8 w-24 lg:w-32 text-xs text-white text-center py-1 px-2g lg:py-2 lg:m-2g lg:text-sm"
+              >
+                イベント
+              </p>
+            </a>
+          </dev>
+          <button
+            class="inline-grid grid-cols-1 col-gap-4 lg:pl-8 leading-9 text-sm lg:text-xl text-left pb-3 lg:pb-0"
+            href="#"
+          >
+            お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知ら
+          </button>
+        </dev>
+        <dev class="lg:flex flex-row bg-gray-1024 pt-5 pb-5">
+          <dev class="flex flex-row bg-gray-280 pt-3">
+            <p
+              class="inline-block leading-9 pr-5 text-xl text-primary lg:pr-8 lg:text-black"
+            >
+              2020/55/52
+            </p>
+            <a class="bg-primary mt-1 h-6 lg:h-8">
+              <p
+                class="h-6 lg:h-8 w-24 lg:w-32 text-xs text-white text-center py-1 px-2g lg:py-2 lg:m-2g lg:text-sm"
+              >
+                イベント
+              </p>
+            </a>
+          </dev>
+          <button
+            class="inline-grid grid-cols-1 col-gap-4 lg:pl-8 leading-9 text-sm lg:text-xl text-left pb-3 lg:pb-0"
+            href="#"
+          >
+            お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知ら
+          </button>
+        </dev>
+        <dev class="lg:flex flex-row bg-gray-1024 pt-5 pb-5">
+          <dev class="flex flex-row bg-gray-280 pt-3">
+            <p
+              class="inline-block leading-9 pr-5 text-xl text-primary lg:pr-8 lg:text-black"
+            >
+              2020/55/51
+            </p>
+            <a class="bg-primary mt-1 h-6 lg:h-8">
+              <p
+                class="h-6 lg:h-8 w-24 lg:w-32 text-xs text-white text-center py-1 px-2g lg:py-2 lg:m-2g lg:text-sm"
+              >
+                イベント
+              </p>
+            </a>
+          </dev>
+          <button
+            class="inline-grid grid-cols-1 col-gap-4 lg:pl-8 leading-9 text-sm lg:text-xl text-left pb-3 lg:pb-0"
+            href="#"
+          >
+            お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知ら
+          </button>
+        </dev>
         <button
           class="bg-primary bg-center font-bold text-white text-center py-6 px-40 rounded mt-12 mx-64"
         >
