@@ -5,7 +5,7 @@
   >
     {{ text }}
     <img
-      class="c-recruit__arrow w-8 inline absolute top-1/2 -translate-y-1/2"
+      class="c-recruit__arrow w-8 inline absolute"
       src="@/assets/image/contact/keyboard_arrow_right-24px.svg"
       alt="arrow"
     />
@@ -38,6 +38,8 @@ export default {
     }
   }
   &__arrow {
+    top: 50%;
+    transform: translateY(-50%);
     right: 3%;
     transition: all 0.5s;
   }
