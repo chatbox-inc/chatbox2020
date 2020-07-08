@@ -10,7 +10,6 @@
         <p class="text-primary mx-auto text-sm font-bold">
           {{ text }}
         </p>
-        <img src="" alt="" />
       </div>
     </a>
     <a

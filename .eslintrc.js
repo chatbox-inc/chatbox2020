@@ -11,6 +11,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:vue/recommended',
     'plugin:prettier/recommended',
+    'plugin:tailwind/recommended',
   ],
   // *.vue ファイルを lint にかけるために必要
   plugins: ['vue'],

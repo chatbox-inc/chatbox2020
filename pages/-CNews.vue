@@ -1,9 +1,7 @@
 <template>
   <section class="pt-16 pb-10">
     <div class="container mx-auto">
-      <h2 class="section-title">
-        <span class="text-primary text-7xl">N</span>ews
-      </h2>
+      <ui-title :title="'News'" />
       <dev class="flex flex-row bg-gray-1024">
         <p class="inline-block leading-9 pr-8 text-xl">
           2020/55/55
