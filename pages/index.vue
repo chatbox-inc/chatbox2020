@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <c-hero />
-    <c-intro />
-    <c-creation />
-    <c-talking />
-    <c-enjoy />
-    <c-member />
-    <c-recruit />
-    <c-news />
-    <c-about />
-    <c-contact />
+  <div class="p-index">
+    <c-hero class="p-index__item" />
+    <c-intro class="p-index__item" />
+    <c-creation class="p-index__item" />
+    <c-talking class="p-index__item" />
+    <c-enjoy class="p-index__item" />
+    <c-member class="p-index__item" />
+    <c-recruit class="p-index__item" />
+    <c-news class="p-index__item" />
+    <c-about class="p-index__item" />
+    <c-contact class="p-index__item" />
   </div>
 </template>
 
@@ -41,4 +41,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.p-index {
+  &__item {
+    &:nth-child(odd) {
+      background-color: #faf7f7;
+    }
+  }
+}
+</style>

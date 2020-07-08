@@ -4,6 +4,8 @@ export default {
    ** See https://nuxtjs.org/api/configuration-mode
    */
   mode: 'universal',
+
+  components: ['~/components'],
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -39,7 +41,6 @@ export default {
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
    */
-  components: true,
   /*
    ** Nuxt.js dev-modules
    */
@@ -47,6 +48,7 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxt/components',
   ],
   /*
    ** Nuxt.js modules
