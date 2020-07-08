@@ -1,8 +1,5 @@
 <template>
-  <h2
-    v-if="title"
-    class="c-title__title text-28px lg:text-5xl text-black font-normal"
-  >
+  <h2 v-if="title" class="c-title text-28px lg:text-5xl text-black font-normal">
     <span class="text-primary text-42px lg:text-7xl">{{ firstLetter }}</span>
     {{ restLetter }}
   </h2>
