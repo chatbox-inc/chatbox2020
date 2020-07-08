@@ -4,7 +4,7 @@ Medium,YuMincho,serif; line-height:110px; }
   <section class="pb-20 bg-ivory">
     <div class="c-recruit__head">
       <div class="container mx-auto">
-        <ui-title :title="'Recruit'" />
+        <UiTitle :title="'Recruit'" />
       </div>
     </div>
     <div class="container mx-auto text-center relative">
@@ -22,7 +22,7 @@ Medium,YuMincho,serif; line-height:110px; }
         <br />
         <br />※wantedlyへ飛びます
       </p>
-      <UIButton :text="'採用情報へ'" :url="'#'" />
+      <UiButton :text="'採用情報へ'" :url="'#'" />
     </div>
   </section>
 </template>
