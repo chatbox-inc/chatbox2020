@@ -113,7 +113,9 @@
             お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知ら
           </button>
         </dev>
-        <UiButton :text="'お知らせ一覧へ'" :url="'#'" />
+        <div class="text-center">
+          <UiButton :text="'お知らせ一覧へ'" :url="'#'" />
+        </div>
       </div>
     </div>
   </section>
