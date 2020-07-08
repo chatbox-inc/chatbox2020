@@ -2,7 +2,7 @@
   <section class="pb-10">
     <div class="c-creation__head">
       <div class="container mx-auto">
-        <ui-title :title="'Creation'" />
+        <UiTitle :title="'Creation'" />
       </div>
     </div>
     <div class="container mx-auto pt-3">
@@ -48,7 +48,8 @@
         </div>
       </div>
       <div class="text-center mt-12 c-creation__bg">
-        <ui-large-button
+        <UiLargeButton
+          :url="''"
           :image="'/image/creation/creation_btn.jpg'"
           :text="'Web制作について'"
         />
