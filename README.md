@@ -26,23 +26,16 @@ https://chatbox2020.netlify.app/
 ```
 eslintのエラーが起きた時 (赤文字で黒画面）
 npm run lintfix:js 
-
 ```
-
-
 
 ## 各種資料
 
 画面一覧表
 
-
 コーディング規約
-
 https://github.com/chatbox-inc/cobako_chatbox/blob/master/documents/%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E8%A6%8F%E7%B4%84.md
 
 ページ一覧
-
-
 
 ## Build Setup
 
