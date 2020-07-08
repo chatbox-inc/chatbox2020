@@ -1,12 +1,35 @@
 # chatbox2020
 
-## tailwind css
-https://tailwindcss.com/docs/installation/
+## tailwindcssコーディング方法共通化 
+
+基本的にはtailwindのクラスのみを使用する。    
+position指定など、tailwindで実現しづらい場合のみコンポーネント内にcssを記述しても良い。
+
+各セクションで使用されるボタンのような要素はコンポーネント化する。  
+コンポーネントには役割に応じて先頭にprefixをつける。
+
+### UI系の場合
+UiButton.vue,
+UiTitle.vue
+
+### Layout系の場合
+
+LHeader.vue,
+LFooter.vue
+
 
 ## masterNetlify
 https://chatbox2020.netlify.app/
 
-## 環境情報
+## エラーが起きた時
+
+```
+eslintのエラーが起きた時 (赤文字で黒画面）
+npm run lintfix:js 
+
+```
+
+
 
 ## 各種資料
 
@@ -36,5 +59,6 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+
                                                                                                                
 
