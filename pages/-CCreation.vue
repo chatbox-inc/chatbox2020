@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="text-center mt-12 c-creation__bg">
-        <c-large-button
+        <ui-large-button
           :image="'/image/creation/creation_btn.jpg'"
           :text="'Web制作について'"
         />
