@@ -14,7 +14,7 @@ module.exports = {
       lg: '980px',
     },
     extend: {
-      textColor: {
+      colors: {
         primary: '#c3504f',
       },
       fontSize: {
