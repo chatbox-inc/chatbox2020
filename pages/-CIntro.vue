@@ -51,4 +51,21 @@ export default {}
     );
   }
 }
+
+.c-recruit {
+  &__btn {
+    position: relative;
+
+    &:hover {
+      .c-recruit__arrow {
+        right: 0;
+      }
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 10%;
+  }
+}
 </style>

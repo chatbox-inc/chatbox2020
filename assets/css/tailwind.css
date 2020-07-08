@@ -8,9 +8,6 @@
   line-height:110px;
 }
 
-
-
-
 /* large button class */
  @responsive {
    .btn-large-pc {
@@ -37,6 +34,7 @@
      width:120px;
      height:80px;
    }
+   
 @variants hover {
   .btn-large-pressed {
     transform: translate(4px, 4px);

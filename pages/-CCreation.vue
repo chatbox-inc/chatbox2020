@@ -60,11 +60,8 @@
 </template>
 
 <script>
-import CLargeButton from '@/components/common/CLargeButton'
 export default {
-  components: {
-    CLargeButton,
-  },
+  components: {},
 }
 </script>
 

@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import CHero from '@/pages/-CHero'
 import CIntro from '@/pages/-CIntro'
 import CCreation from '@/pages/-CCreation'
 import CTalking from '@/pages/-CTalking'
@@ -27,7 +26,6 @@ import CContact from '@/pages/-CContact'
 
 export default {
   components: {
-    CHero,
     CIntro,
     CCreation,
     CTalking,
