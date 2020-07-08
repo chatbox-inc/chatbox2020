@@ -8,25 +8,23 @@ position指定など、tailwindで実現しづらい場合のみコンポーネ�
 各セクションで使用されるボタンのような要素はコンポーネント化する。  
 コンポーネントには役割に応じて先頭にprefixをつける。
 
-### UI系の場合
-UiButton.vue,
-UiTitle.vue
+UI系 UiButton.vue, UiTitle.vue  
+Layout系 LHeader.vue, LFooter.vue
 
-### Layout系の場合
+/components配下にあるコンポーネントはimport文を使用せずに読み込む事が出来ます。
+https://github.com/chatbox-inc/chatbox2020/issues/38
 
-LHeader.vue,
-LFooter.vue
+## エラーが起きた時
+
+eslint errorが起きた場合、以下のコマンドを実行する事で修正できます。
+```
+$npm run lintfix:js
+```
 
 
 ## masterNetlify
 https://chatbox2020.netlify.app/
 
-## エラーが起きた時
-
-```
-eslintのエラーが起きた時 (赤文字で黒画面）
-npm run lintfix:js 
-```
 
 ## 各種資料
 
