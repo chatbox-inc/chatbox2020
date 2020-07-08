@@ -113,19 +113,7 @@
             お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知らせ/お知ら
           </button>
         </dev>
-        <button
-          class="bg-primary bg-center font-bold text-white text-center py-6 px-40 rounded mt-12 mx-64"
-        >
-          <span>お知らせ一覧へ</span>
-          <svg
-            class="h-4 w-4 fill-current text-white"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
-            />
-          </svg>
-        </button>
+        <UiButton :text="'お知らせ一覧へ'" :url="'#'" />
       </div>
     </div>
   </section>

@@ -4,13 +4,12 @@ Medium,YuMincho,serif; line-height:110px; }
   <section class="pb-20 bg-ivory">
     <div class="c-recruit__head">
       <div class="container mx-auto">
-        <ui-title :title="'Recruit'" />
+        <UiTitle :title="'Recruit'" />
       </div>
-    </div>
-    <div class="container mx-auto text-center relative">
-      <!-- <h2 class="c-recruit__title section-title absolute left-0 mb-8 text-left">
+      <div class="container mx-auto text-center relative">
+        <!-- <h2 class="c-recruit__title section-title absolute left-0 mb-8 text-left">
         <span class="text-primary text-7xl">R</span>ecruit
-      </h2> -->
+      </h2>
       <img
         class="mb-12"
         src="~assets/image/recruit/recruit_img@2x.png"
@@ -22,7 +21,7 @@ Medium,YuMincho,serif; line-height:110px; }
         <br />
         <br />※wantedlyへ飛びます
       </p>
-      <UIButton :text="'採用情報へ'" :url="'#'" />
+      <UiButton :text="'採用情報へ'" :url="'#'" />
     </div>
   </section>
 </template>
