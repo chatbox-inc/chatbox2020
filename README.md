@@ -13,15 +13,6 @@ Layout系 LHeader.vue, LFooter.vue
 /components配下にあるコンポーネントはimport文を使用せずに読み込む事が出来ます。  
 https://github.com/chatbox-inc/chatbox2020/issues/38
 
-## エラーが起きた時
-
-eslint errorが起きた場合、以下のコマンドを実行する事で修正できます。  
-(赤文字の黒画面）
-```
-$npm run lintfix:js
-```
-
-
 ## masterNetlify
 https://chatbox2020.netlify.app/
 
@@ -50,6 +41,14 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+```
 
+## エラーが起きた時
+
+eslint errorが起きた場合、以下のコマンドを実行する事で修正できます。  
+(赤文字の黒画面）
+```bash
+$npm run lintfix:js
+```
                                                                                                                
 
