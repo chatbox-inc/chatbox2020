@@ -7,37 +7,3 @@
   font-family: Yu Mincho Medium,YuMincho,serif;
   line-height:110px;
 }
-
-.btn {
-  @apply bg-primary p-8 rounded text-white text-center;
-  position: relative;
-  width: 450px;
-  display: inline-block;
-  font-size: 20px;
-
-  &:hover {
-    opacity: 0.8;
-    transition: all 0.5s;
-  }
-
-  &:before {
-    position: absolute;
-    z-index: 100;
-    content: '';
-    width: 30px;
-    height: 30px;
-    background-image: url(~assets/image/contact/keyboard_arrow_right-24px.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    top: 50%;
-    right: 3%;
-    transform: translateY(-50%);
-    transition: all 0.5s;
-  }
-
-  &:hover:before {
-    position: absolute;
-    right: 1%;
-    transition: all 0.5s;
-  }
-}
