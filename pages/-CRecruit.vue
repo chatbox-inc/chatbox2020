@@ -2,7 +2,7 @@
   <section class="pb-20 pt-10 mt-20 bg-ivory">
     <div class="container mx-auto text-center mt-8 relative px-6 sm:px-0">
       <div class="c-recruit__head absolute">
-        <ui-title :title="'Recruit'" />
+        <UiTitle :title="'Recruit'" />
       </div>
       <img
         class="mb-12"
@@ -28,9 +28,6 @@ export default {}
 .c-recruit {
   &__head {
     top: -130px;
-  }
-
-  &__title {
   }
 }
 </style>

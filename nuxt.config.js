@@ -5,7 +5,7 @@ export default {
    */
   mode: 'universal',
 
-  components: ['~/components', { path: '~components/common/ui', prefix: 'ui' }],
+  components: ['~/components'],
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
