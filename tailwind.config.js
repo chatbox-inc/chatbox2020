@@ -4,6 +4,7 @@ module.exports = {
       ...theme('colors'),
       primary: '#C96362',
       ivory: '#FAF7F7',
+      white: '#ffffff',
     }),
     colors: {
       black: '#4d4b4d',
@@ -21,6 +22,10 @@ module.exports = {
         '7xl': '5rem',
         '42px': '42px',
         '28px': '28px',
+      },
+      height: {
+        '500px': '500px',
+        '200px': '200px',
       },
     },
   },

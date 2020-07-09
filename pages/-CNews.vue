@@ -2,7 +2,7 @@
   <section class="pt-16 pb-10">
     <div class="container mx-auto">
       <div class="pr-5 pl-5 lg:p-0">
-        <ui-title :title="'News'" />
+        <UiTitle :title="'News'" />
         <div
           v-for="(news, index) in newsList"
           :key="index"
