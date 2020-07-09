@@ -38,6 +38,13 @@ export async function fetchNews() {
   return newsList
 }
 
+export async function fetchNewsById(id) {
+  const targetNewsRef = newsRef.doc(id)
+  let doc = await targetNewsRef.get()
+  let newsData = doc.data()
+  return newsData
+}
+
 export async function fetchNewsByYear(year) {
   const startDate = new Date(`January 1, ${year} 12:00 AM`)
   const endDate = new Date(`December 31, ${year} 11:59 PM`)
