@@ -22,6 +22,10 @@ module.exports = {
         '42px': '42px',
         '28px': '28px',
       },
+      height: {
+        '500px': '500px',
+        '200px': '200px',
+      },
     },
   },
   variants: {},
