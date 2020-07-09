@@ -1,14 +1,55 @@
 import firebase from 'firebase'
 
 const fierbaseConfig = {
-  apiKey: 'AIzaSyCIfQPTBbAWN0V64gMP-3fivC5JUPPahWM',
-  authDomain: 'chatbox2020-26423.firebaseapp.com',
-  databaseURL: 'https://chatbox2020-26423.firebaseio.com',
-  projectId: 'chatbox2020-26423',
-  storageBucket: 'chatbox2020-26423.appspot.com',
-  messagingSenderId: '242233420493',
-  appId: '1:242233420493:web:3c9af8562c50efc7211784',
-  measurementId: 'G-HK4N2HNG5Q',
+  apiKey: process.env.FIREBASE_APIKEY,
+  authDomain: process.env.FIREBASE_AUTHDOMAIN,
+  databaseURL: process.env.FIREBASE_DATABSEURL,
+  projectId: process.env.FIREBASE_PROJECTID,
+  storageBucket: process.env.FIREBASE_STORAGEBUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGINGSENDERID,
+  appId: process.env.FIREBASE_APPID,
+  measurementId: process.env.FIREBASE_MEASUREMENTID,
+}
+if (!firebase.apps.length) {
+  firebase.initializeApp(fierbaseConfig)
 }
 
-firebase.initializeApp(fierbaseConfig)
+//database variables
+const db = firebase.firestore()
+const newsRef = db.collection('news')
+const limit = 5
+
+export function addNewsData() {
+  newsRef.add({
+    category: 'テスト昔のデータ',
+    text: 'テストデータです！！',
+    title: 'テストタイトルを入力',
+    thumbnail: 'https://chatbox-inc.com/images/brand_top.jpg',
+    createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+  })
+}
+
+export async function fetchNews() {
+  const newsList = []
+  const snapShot = await newsRef.orderBy('createdAt', 'desc').limit(limit).get()
+  snapShot.forEach((doc) => {
+    newsList.push({ ...doc.data(), id: doc.id })
+  })
+  return newsList
+}
+
+export async function fetchNewsByYear(year) {
+  const startDate = new Date(`January 1, ${year} 12:00 AM`)
+  const endDate = new Date(`December 31, ${year} 11:59 PM`)
+  const newsList = []
+  const snapShot = await newsRef
+    .orderBy('createdAt', 'desc')
+    .where('createdAt', '>=', startDate)
+    .where('createdAt', '<=', endDate)
+    .get()
+  snapShot.forEach((doc) => {
+    newsList.push({ ...doc.data(), id: doc.id })
+  })
+  console.log(startDate, endDate, newsList)
+  return newsList
+}
