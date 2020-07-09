@@ -1,11 +1,11 @@
 <template>
   <a
-    class="c-recruit__btn inline-block relative cursor-pointer text-base bg-primary p-6 rounded text-white text-center w-4/5 lg:w-2/5 lg:text-lg lg:p-8 transition ease-out duration-700 hover:opacity-75"
+    class="btn inline-block relative cursor-pointer text-base bg-primary p-6 rounded text-white text-center w-full lg:w-2/5 lg:text-lg lg:p-8 transition ease-out duration-700 hover:opacity-75"
     :href="url"
   >
     {{ text }}
     <img
-      class="c-recruit__arrow w-8 inline absolute"
+      class="btn__arrow w-8 inline absolute"
       src="@/assets/image/contact/keyboard_arrow_right-24px.svg"
       alt="arrow"
     />
@@ -28,10 +28,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.c-recruit {
+.btn {
   &__btn {
     &:hover {
-      .c-recruit__arrow {
+      .btn__arrow {
         right: 0;
         transition: all 0.5s;
       }
