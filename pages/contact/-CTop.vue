@@ -18,7 +18,8 @@
       <div class="flex">
         <div class="w-7/10">
           <div class="flex">
-            <UiSmallButton />
+            <UiSmallButton :image="'/image/contact/icon_facebook.svg'" />
+            <UiSmallButton :image="'/image/contact/icon_chatwork.svg'" />
           </div>
         </div>
       </div>
