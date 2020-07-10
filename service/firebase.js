@@ -57,6 +57,5 @@ export async function fetchNewsByYear(year) {
   snapShot.forEach((doc) => {
     newsList.push({ ...doc.data(), id: doc.id })
   })
-  console.log(startDate, endDate, newsList)
   return newsList
 }
