@@ -14,56 +14,56 @@
           <div class="flex justify-center space-x-3">
             <label class="w-24 text-right">名前</label>
             <input
-              v-model="form.name"
+              v-model="$v.form.name.$model"
               class="border bg-ivory w-3/5 px-3 border-gray-300"
               type="text"
-              @input="$v.form.name.$touch()"
+              @input="$emit('input', form)"
             />
           </div>
-          <p v-if="$v.form.name.$error" class="block text-primary">
+          <!--   <p v-if="$v.form.name.$error" class="block text-primary">
             名前が入力されていません。
-          </p>
+          </p> -->
         </div>
         <div>
           <div class="flex justify-center space-x-3">
             <label class="w-24 text-right">E-mail</label>
             <input
-              v-model="form.email"
+              v-model="$v.form.email.$model"
               class="border bg-ivory w-3/5 px-3 border-gray-300"
               type="email"
-              @input="$v.form.email.$touch()"
+              @input="$emit('input', form)"
             />
           </div>
-          <p v-if="$v.form.email.$error" class="block text-primary">
+          <!--   <p v-if="$v.form.email.$error" class="block text-primary">
             正しいメールアドレスを入力してください。
-          </p>
+          </p> -->
         </div>
         <div>
           <div class="flex justify-center space-x-3">
             <label class="w-24 text-right">件名</label>
             <input
-              v-model="form.subject"
+              v-model="$v.form.subject.$model"
               class="border bg-ivory w-3/5 px-3 border-gray-300"
               type="text"
-              @input="$v.form.subject.$touch()"
+              @input="$emit('input', form)"
             />
           </div>
-          <p v-if="$v.form.subject.$error" class="block text-primary">
+          <!--        <p v-if="$v.form.subject.$error" class="block text-primary">
             件名が入力されていません。
-          </p>
+          </p> -->
         </div>
         <div>
           <div class="flex justify-center space-x-3">
             <label class="w-24 text-right">内容</label>
             <textarea
-              v-model="form.message"
+              v-model="$v.form.message.$model"
               class="border bg-ivory w-3/5 px-3 border-gray-300"
-              @input="$v.form.message.$touch()"
+              @input="$emit('input', form)"
             />
           </div>
-          <p v-if="$v.form.message.$error" class="block text-primary">
+          <!--       <p v-if="form.message.$error" class="block text-primary">
             内容が入力されていません
-          </p>
+          </p> -->
         </div>
       </div>
       <div class="mt-8">
@@ -76,23 +76,14 @@
         </a>
       </div>
     </form>
+    <slot :$v="$v" name="actions" />
   </section>
 </template>
 
 <script>
 import { required, email } from 'vuelidate/lib/validators'
-import { submitContact } from '@/service/firebase'
+
 export default {
-  data() {
-    return {
-      form: {
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-      },
-    }
-  },
   validations: {
     form: {
       name: {
@@ -110,13 +101,23 @@ export default {
       },
     },
   },
+  props: {
+    form: {
+      type: Object,
+      required: true,
+    },
+  },
+
   methods: {
     submitContact() {
       if (this.$v.form.$invalid) {
-        alert('入力が完了していないフォームガあります')
+        alert('入力が完了していないフォームがあります')
       } else {
-        submitContact(this.form)
+        this.$emit('openModal')
       }
+    },
+    inputCheck() {
+      this.$emit('input', this.$v.form)
     },
   },
 }

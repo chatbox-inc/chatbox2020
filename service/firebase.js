@@ -63,12 +63,11 @@ export async function fetchNewsByYear(year) {
 
 export async function submitContact(form) {
   const { name, email, subject, message } = form
-  console.log(name, email, subject, message)
   contactRef.add({
     name,
     email,
     subject,
     message,
+    createdAt: firebase.firestore.FieldValue.serverTimestamp(),
   })
-  alert('お問い合わせを送信しました。')
 }
