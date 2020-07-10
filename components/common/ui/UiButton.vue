@@ -29,12 +29,10 @@ export default {
 
 <style lang="scss" scoped>
 .btn {
-  &__btn {
-    &:hover {
-      .btn__arrow {
-        right: 0;
-        transition: all 0.5s;
-      }
+  &:hover {
+    .btn__arrow {
+      right: 0;
+      transition: all 0.5s;
     }
   }
   &__arrow {
