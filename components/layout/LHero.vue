@@ -1,5 +1,6 @@
 <template>
   <section v-if="title" class="c-hero">
+    <!-- tailwind で修正お願いします。 -->
     <div class="c-hero__bg">
       <div class="c-head">
         <h2 class="c-head__title">

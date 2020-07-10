@@ -17,6 +17,7 @@ if (!firebase.apps.length) {
 //database variables
 const db = firebase.firestore()
 const newsRef = db.collection('news')
+const contactRef = db.collection('contact')
 const limit = 5
 
 export function addNewsData() {
@@ -58,4 +59,15 @@ export async function fetchNewsByYear(year) {
     newsList.push({ ...doc.data(), id: doc.id })
   })
   return newsList
+}
+
+export async function addContact(form) {
+  const [name, email, subject, message] = form
+  contactRef.add({
+    name,
+    email,
+    subject,
+    message,
+  })
+  alert('お問い合わせを送信しました。')
 }

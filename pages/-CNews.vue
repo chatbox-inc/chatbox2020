@@ -35,9 +35,6 @@
           </nuxt-link>
         </div>
         <UiButton :text="'お知らせ一覧へ'" :url="'#'" />
-        <button @click.prevent="addNews">
-          newsを追加
-        </button>
       </div>
     </div>
   </section>
