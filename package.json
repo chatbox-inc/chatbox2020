@@ -31,7 +31,8 @@
     "eslint-plugin-tailwind": "^0.2.0",
     "firebase": "^7.15.5",
     "npm-run-all": "^4.1.5",
-    "nuxt": "^2.13.0"
+    "nuxt": "^2.13.0",
+    "vuelidate": "^0.7.5"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.0.0",

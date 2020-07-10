@@ -61,8 +61,9 @@ export async function fetchNewsByYear(year) {
   return newsList
 }
 
-export async function addContact(form) {
-  const [name, email, subject, message] = form
+export async function submitContact(form) {
+  const { name, email, subject, message } = form
+  console.log(name, email, subject, message)
   contactRef.add({
     name,
     email,
