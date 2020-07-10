@@ -22,6 +22,7 @@ module.exports = {
         '7xl': '5rem',
         '42px': '42px',
         '28px': '28px',
+        '15px': '15px',
       },
       height: {
         '500px': '500px',
