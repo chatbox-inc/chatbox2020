@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     backgroundColor: (theme) => ({
       ...theme('colors'),
-      primary: '#C96362',
+      primary: '#c3504f',
       ivory: '#FAF7F7',
     }),
     colors: {
@@ -21,10 +21,13 @@ module.exports = {
         '7xl': '5rem',
         '42px': '42px',
         '28px': '28px',
+        '15px': '15px',
       },
       height: {
         '500px': '500px',
         '200px': '200px',
+        '340px': '340px',
+        '800px': '800px',
       },
     },
   },
