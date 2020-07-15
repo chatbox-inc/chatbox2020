@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-    <div class="container mx-auto text-black text-center lg:mt-12">
+    <div class="text-black text-center lg:mt-12">
       <UiLargeButton
         url=""
         image="/image/talking/talking_btn.jpg"

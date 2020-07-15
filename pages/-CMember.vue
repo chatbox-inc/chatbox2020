@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <div class="container mx-auto text-center lg:mt-12">
+    <div class="text-center lg:mt-12">
       <UiLargeButton
         url=""
         image="/image/member/member_btn.jpg"
