@@ -25,7 +25,7 @@
           />
         </a>
         <div class="py-16 lg:py-0 lg:px-16 lg:text-left">
-          <p class="lg:text-xl tracking-widest">
+          <p class="lg:text-lg tracking-widest">
             電話でのお問い合わせ
           </p>
           <p class="text-2xl lg:text-3xl tracking-widest">
