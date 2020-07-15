@@ -12,9 +12,9 @@
         Webにまつわるお悩み、<br />
         ご相談はお気軽にchatboxまで。
       </p>
-      <div class="lg:flex justify-center items-center">
+      <div class="lg:flex justify-center items-center lg:pl-32 lg:pr-24">
         <a
-          class="L-footer__btn inline-block relative cursor-pointer text-base bg-white p-6 rounded text-primary text-center w-64 lg:w-2/6 lg:text-lg lg:p-8 transition ease-out duration-700 hover:opacity-75"
+          class="L-footer__btn inline-block relative cursor-pointer text-base bg-white p-6 rounded text-primary text-center w-64 lg:w-4/12 lg:text-lg lg:p-8 transition ease-out duration-700 hover:opacity-75"
           href=""
         >
           お問い合わせフォームへ
@@ -35,7 +35,9 @@
       </div>
     </div>
     <div class="h-56 w-full lg:m-auto bg-ivory">
-      <div class="w-full mx-auto text-primary text-xs lg:text-15px lg:w-3/5">
+      <div
+        class="w-full mx-auto text-primary text-xs lg:text-15px lg:w-7/12 lg:pl-10 lg:pr-16"
+      >
         <nav class="pt-8 pb-5 border-b">
           <ul class="flex flex-wrap text-center">
             <li class="mb-4 lg:mb-0 w-4/12 lg:w-auto lg:border-r">
