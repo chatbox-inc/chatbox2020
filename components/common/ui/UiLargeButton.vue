@@ -7,7 +7,7 @@
           class="btn-large-spImg object-cover"
           alt="イメージ画像"
         />
-        <p class="text-primary mx-auto text-sm">
+        <p class="text-primary mx-auto text-sm p-2">
           {{ text }}
         </p>
       </div>
