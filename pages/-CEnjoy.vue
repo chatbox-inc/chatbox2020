@@ -17,15 +17,21 @@
             chatboxでは、最新のWeb技術を学び、交流するイベントやセミナーの開催にも力を入れています。
           </p>
           <p class="leading-7 lg:leading-8 tracking-wider text-sm lg:text-base">
-            <a href="https://kfug.connpass.com/" class="text-primary">
+            <a href="https://kfug.connpass.com/" class="text-primary underline">
               関西フロントエンドUG
             </a>
             や
-            <a href="https://laravel.connpass.com/" class="text-primary">
+            <a
+              href="https://laravel.connpass.com/"
+              class="text-primary underline"
+            >
               Laravel.Osaka
             </a>
             などの各種コミュニティ運営や、有料のセミナー・イベント
-            <a href="https://leccafe.connpass.com/" class="text-primary">
+            <a
+              href="https://leccafe.connpass.com/"
+              class="text-primary underline"
+            >
               Lec Cafe
             </a>
             など、関西最大級のIT系セミナー力で、定期的なイベントを開催を続けています。
@@ -64,6 +70,7 @@
         :url="''"
         :image="'/image/enjoy/enjoy_btn.jpg'"
         :text="'イベント・スクールについて'"
+        class="text-left"
       />
     </div>
   </section>
