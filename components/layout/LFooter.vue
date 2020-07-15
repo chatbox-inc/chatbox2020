@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <div class="h-56 w-full lg:m-auto bg-ivory">
+    <div class="h-56 w-full px-6 lg:px-0 lg:m-auto bg-ivory">
       <div
         class="w-full mx-auto text-primary text-xs lg:text-15px lg:w-7/12 lg:pl-10 lg:pr-16"
       >
