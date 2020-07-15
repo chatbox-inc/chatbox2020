@@ -1,7 +1,12 @@
 <template>
-  <div class="mx-auto container">
+  <div class="mx-auto">
     <CTop />
-    <CForm :form="form" @input="inputForm" @openModal="openConfirmModal" />
+    <CForm
+      :form="form"
+      @input="inputForm"
+      @setSubject="setSubject"
+      @openModal="openConfirmModal"
+    />
     <UiConfirmModal
       v-if="showConfirmModal"
       @confirm="submitContact"
@@ -55,6 +60,9 @@ export default {
     },
     inputForm(form) {
       this.form = { ...form }
+    },
+    setSubject(subject) {
+      this.form.subject = `${subject}について`
     },
   },
 }

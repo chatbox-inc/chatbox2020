@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="22px" viewBox="0 0 26 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_check-mute</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="contact_sp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-413.000000, -1659.000000)">
+        <g id="sec_contact" transform="translate(59.000000, 373.000000)" fill="#CCCCCC" fill-rule="nonzero">
+            <g transform="translate(0.000000, 990.000000)" id="select">
+                <g transform="translate(0.000000, 263.000000)">
+                    <g id="btn" transform="translate(326.000000, 0.000000)">
+                        <path d="M51.5625,33 C42.8958333,43.8333333 38.5625,49.25 38.5625,49.25 C38.5625,49.25 35.8541667,46.2708333 30.4375,40.3125 L28,42.75 L36.9375,54.125 L40.1875,54.125 C49.3958333,41.6666667 54,35.4375 54,35.4375 L51.5625,33 Z" id="icon_check-mute"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
