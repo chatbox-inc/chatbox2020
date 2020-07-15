@@ -1,14 +1,14 @@
 <template>
-  <section class="pb-20">
-    <div class="container mx-auto text-black px-6 sm:p-0">
-      <UiTitle :title="'Talking'" />
+  <section class="pb-20 pt-6 lg:mb-24">
+    <div class="container mx-auto text-black px-5 sm:p-0">
+      <UiTitle class="lg:mb-5" title="Talking" />
       <div class="lg:flex lg:space-x-12">
         <div class="w-full lg:w-1/2">
           <h3 class="text-primary text-1xl lg:text-2xl tracking-widest">
             技術豊富なスタッフがお客様の開発現場に直接訪問
           </h3>
           <p
-            class="leading-7 lg:leading-8 mt-8 tracking-wider text-sm lg:text-base"
+            class="leading-7 lg:leading-8 mt-4 lg:mt-8 tracking-wider text-sm lg:text-base"
           >
             chatbox
             の技術顧問サービスは、制作現場の業務効率化を強力に支援します。
@@ -30,13 +30,13 @@
             />
           </figure>
         </div>
-        <div class="flex lg:block lg:w-1/2 mt-6 lg:mt-0">
+        <div class="flex lg:block lg:w-1/2 mt-2 lg:mt-0">
           <img
             class="h-200px w-2/3 lg:h-500px lg:w-full object-cover mb-3"
             src="@/assets/image/talking/talking_photo02.jpg"
             alt=""
           />
-          <ul class="text-primary text-xs ml-2 mt-3 lg:m-0 lg:text-sm">
+          <ul class="text-primary text-xs ml-2 mt-3 lg:ml-3 lg:m-0 lg:text-sm">
             <li class="mb-6">
               社員研修
             </li>
@@ -47,11 +47,11 @@
         </div>
       </div>
     </div>
-    <div class="container mx-auto text-black text-center lg:mt-12">
+    <div class="text-black text-center lg:mt-12">
       <UiLargeButton
-        :url="''"
-        :image="'/image/talking/talking_btn.jpg'"
-        :text="'技術顧問について'"
+        url=""
+        image="/image/talking/talking_btn.jpg"
+        text="技術顧問について"
       />
     </div>
   </section>

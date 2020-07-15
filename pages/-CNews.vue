@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-16 pb-10">
+  <section class="pt-5 lg:pt-10 pb-10">
     <div class="container mx-auto">
       <div class="pr-5 pl-5 lg:p-0">
         <UiTitle :title="'News'" />
@@ -56,14 +56,8 @@ export default {
 
 <style lang="scss" scoped>
 .c-news {
-  &__tag {
-    font-size: 12px;
-    background-color: rgb(195, 80, 79);
-    position: absolute;
-    width: 114px;
-    height: 26px;
-    text-align: center;
-    line-height: 26px;
+  &__title {
+    top: 16px;
   }
 }
 </style>

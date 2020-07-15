@@ -7,7 +7,7 @@
           class="btn-large-spImg object-cover"
           alt="イメージ画像"
         />
-        <p class="text-primary mx-auto text-sm font-bold">
+        <p class="text-primary mx-auto text-sm p-2">
           {{ text }}
         </p>
       </div>
@@ -22,7 +22,7 @@
           class="btn-large-pcImg object-cover"
           alt="イメージ画像"
         />
-        <p class="text-primary mx-auto text-2xl font-bold">
+        <p class="text-primary mx-auto text-2xl">
           {{ text }}
         </p>
       </div>
