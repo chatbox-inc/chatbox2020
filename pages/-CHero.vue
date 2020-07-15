@@ -6,11 +6,11 @@
       <div
         class="c-hero__title pt-8 pr-2 pb-6 pl-6 sm:pl-12 lg:pt-16 lg:pr-8 lg:pb-20 lg:pl-24 text-white font-bold text-15px lg:text-3xl"
       >
-        <p class="mb-3 w-9/12 text-lg sm:w-auto lg:mb-10 lg:text-2xl ml-16">
+        <p class="mb-3 w-9/12 text-lg sm:w-auto lg:mb-10 lg:text-2xl ml-16 lg:ml-10">
           Webのこれからを語り合う
         </p>
         <p
-          class="mb-3 w-32 text-lg sm:w-auto lg:mb-10 lg:w-auto lg:text-2xl ml-16"
+          class="mb-3 w-32 text-lg sm:w-auto lg:mb-10 lg:w-auto lg:text-2xl ml-16 lg:ml-10"
         >
           ｢作る｣｢伝える｣｢語り合う｣
         </p>
