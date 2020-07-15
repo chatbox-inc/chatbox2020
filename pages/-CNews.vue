@@ -1,8 +1,8 @@
 <template>
   <section class="pt-5 lg:pt-10 pb-10">
     <div class="container mx-auto">
-      <div class="pr-5 pl-5 lg:p-0">
-        <UiTitle class="c-news__title relative" :title="'News'" />
+      <div class="px-5 sm:p-0">
+        <UiTitle class="c-news__title relative" title="News" />
         <div class="lg:flex flex-row bg-gray-1024 pb-1 lg:pt-10 lg:pt-5">
           <div class="flex flex-row bg-gray-280 lg:pt-3">
             <p
@@ -114,7 +114,7 @@
           </button>
         </div>
         <div class="text-center">
-          <UiButton class="my-10" :text="'お知らせ一覧へ'" :url="'#'" />
+          <UiButton class="my-10" text="お知らせ一覧へ" :url="'#'" />
         </div>
       </div>
     </div>

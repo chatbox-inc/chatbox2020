@@ -1,7 +1,7 @@
 <template>
   <section class="pb-10">
     <div class="container mx-auto text-black px-5 sm:p-0">
-      <UiTitle class="lg:mb-6" :title="'Member'" />
+      <UiTitle class="lg:mb-6" title="Member" />
       <div class="c-member__bg bg-no-repeat bg-contain pt-24 lg:pt-64">
         <div
           class="c-member__box mx-auto z-10 tracking-wider bg-white w-11/12 p-6 lg:w-full lg:pr-24 lg:p-12"
@@ -21,9 +21,9 @@
     </div>
     <div class="container mx-auto text-center lg:mt-12">
       <UiLargeButton
-        :url="''"
-        :image="'/image/member/member_btn.jpg'"
-        :text="'メンバーについて'"
+        url=""
+        image="/image/member/member_btn.jpg"
+        text="メンバーについて"
       />
     </div>
   </section>

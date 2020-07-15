@@ -2,7 +2,7 @@
   <section class="lg:mb-32">
     <div class="c-enjoy__head">
       <div class="container mx-auto px-5 sm:p-0">
-        <UiTitle :title="'Enjoy'" />
+        <UiTitle title="Enjoy" />
       </div>
     </div>
     <div class="container mx-auto text-black px-4 sm:p-0">
@@ -67,9 +67,9 @@
     </div>
     <div class="c-enjoy__btn text-center lg:mt-12">
       <UiLargeButton
-        :url="''"
-        :image="'/image/enjoy/enjoy_btn.jpg'"
-        :text="'イベント・スクールについて'"
+        url=""
+        image="/image/enjoy/enjoy_btn.jpg"
+        text="イベント・スクールについて"
         class="text-left"
       />
     </div>

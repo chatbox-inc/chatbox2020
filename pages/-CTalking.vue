@@ -1,7 +1,7 @@
 <template>
   <section class="pb-20 pt-6 lg:mb-24">
     <div class="container mx-auto text-black px-5 sm:p-0">
-      <UiTitle class="lg:mb-5" :title="'Talking'" />
+      <UiTitle class="lg:mb-5" title="Talking" />
       <div class="lg:flex lg:space-x-12">
         <div class="w-full lg:w-1/2">
           <h3 class="text-primary text-1xl lg:text-2xl tracking-widest">
@@ -49,9 +49,9 @@
     </div>
     <div class="container mx-auto text-black text-center lg:mt-12">
       <UiLargeButton
-        :url="''"
-        :image="'/image/talking/talking_btn.jpg'"
-        :text="'技術顧問について'"
+        url=""
+        image="/image/talking/talking_btn.jpg"
+        text="技術顧問について"
       />
     </div>
   </section>
