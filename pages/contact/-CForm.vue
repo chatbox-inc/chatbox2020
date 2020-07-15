@@ -49,7 +49,7 @@
             <div class="c-form__input w-full">
               <input
                 v-model="$v.form.name.$model"
-                class="border bg-ivory text-xsm lg:text-base w-3/5 px-3 border-gray h-8 outline-none w-full"
+                class="border bg-ivory text-xsm mt-2 lg:mt-0 lg:text-base w-3/5 px-3 border-gray h-8 outline-none w-full"
                 type="text"
                 @input="$emit('input', form)"
               />
@@ -72,7 +72,7 @@
             <div class="c-form__input w-full">
               <input
                 v-model="$v.form.email.$model"
-                class="border bg-ivory text-xsm lg:text-base w-3/5 px-3 border-gray h-8 outline-none w-full"
+                class="border bg-ivory text-xsm mt-2 lg:mt-0 lg:text-base w-3/5 px-3 border-gray h-8 outline-none w-full"
                 type="email"
                 @input="$emit('input', form)"
               />
@@ -89,7 +89,9 @@
           <div
             class="flex flex-col lg:flex-row justify-center lg:space-x-8 text-left"
           >
-            <label class="lg:w-24 text-left lg:text-right text-sm lg:text-base">
+            <label
+              class="lg:w-24 text-left mt-2 lg:mt-0 lg:text-right text-sm lg:text-base"
+            >
               件名
             </label>
             <div class="c-form__input w-full">
@@ -118,7 +120,7 @@
             <div class="c-form__input w-full">
               <textarea
                 v-model="$v.form.message.$model"
-                class="border bg-ivory text-xsm lg:text-base w-3/5 px-3 py-4 border-gray h-48 resize-none outline-none w-full"
+                class="border bg-ivory text-xsm mt-2 lg:mt-0 lg:text-base w-3/5 px-3 py-4 border-gray h-48 resize-none outline-none w-full"
                 @input="$emit('input', form)"
               />
               <p
