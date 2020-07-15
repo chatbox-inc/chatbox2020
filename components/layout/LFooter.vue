@@ -34,8 +34,8 @@
         </div>
       </div>
     </div>
-    <div class="h-56 w-full bg-ivory">
-      <div class="w-11/12 mx-auto text-primary text-xs lg:text-15px">
+    <div class="h-56 w-full lg:m-auto bg-ivory">
+      <div class="w-full mx-auto text-primary text-xs lg:text-15px lg:w-3/5">
         <nav class="pt-8 pb-5 border-b">
           <ul class="flex flex-wrap text-center">
             <li class="mb-4 lg:mb-0 w-4/12 lg:w-auto lg:border-r">
