@@ -1,7 +1,7 @@
 <template>
   <a
     :href="'#'"
-    class="bg-primary c-button relative inline-block rounded px-4 py-5 hover:opacity-75"
+    class="bg-primary w-3/4 lg:w-1/2 mx-auto c-button text-xsm relative inline-block rounded px-4 py-5 hover:opacity-75 lg:m-0"
   >
     <img
       :src="image"
@@ -34,8 +34,6 @@ export default {
 
 <style lang="scss" scoped>
 .c-button {
-  width: 45%;
-  font-size: 15px;
   transition: 0.5s;
 
   &:hover {

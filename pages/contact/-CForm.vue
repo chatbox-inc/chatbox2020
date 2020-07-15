@@ -1,19 +1,19 @@
 <template>
-  <section class="container mx-auto text-center mt-20 pb-20">
-    <h3 class="text-xl">
+  <section class="container px-5 mx-auto text-center mt-20 pb-20">
+    <h3 class="lg:text-xl">
       フォームでのお問い合わせ
     </h3>
-    <p class="mt-6 leading-8">
+    <p class="mt-6 text-xsm lg:text-lg leading-8">
       Wevからお問い合わせ出来ます。<br />
       以下の中からお問い合わせ内容を選択し、フォームを入力してください。
     </p>
     <form action="#" class="mt-8">
       <div>
-        <div class="flex flex-wrap justify-center w-4/5 mx-auto mb-4">
+        <div class="flex flex-wrap justify-center w-full lg:w-4/5 mx-auto mb-4">
           <div
             v-for="(item, index) in items"
             :key="index"
-            class="w-1/2 c-form__check m-2 relative text-left border border-primary text-primary rounded-md hover:bg-primary hover:text-white cursor-pointer"
+            class="w-1/3 flex-grow lg:w-1/2 c-form__check m-1 relative text-left border border-primary text-primary rounded-md hover:bg-primary hover:text-white cursor-pointer"
             :class="{
               'c-form__checkActive':
                 $v.form.subject.$model === `${item.title}について`,
@@ -34,18 +34,22 @@
             </label>
           </div>
         </div>
-        <p class="text-primary block">
+        <p class="text-primary block text-sm lg:text-base">
           {{ description }}
         </p>
       </div>
-      <div class="mt-8 text-center space-y-8 mr-16">
+      <div class="mt-8 text-center space-y-8 lg:mr-16">
         <div>
-          <div class="flex justify-center space-x-8 text-left">
-            <label class="w-24 text-right">名前</label>
+          <div
+            class="flex flex-col lg:flex-row justify-center lg:space-x-8 text-left"
+          >
+            <label class="lg:w-24 text-left lg:text-right text-sm lg:text-base">
+              名前
+            </label>
             <div class="c-form__input w-full">
               <input
                 v-model="$v.form.name.$model"
-                class="border bg-ivory w-3/5 px-3 border-gray h-8 outline-none w-full"
+                class="border bg-ivory text-xsm lg:text-base w-3/5 px-3 border-gray h-8 outline-none w-full"
                 type="text"
                 @input="$emit('input', form)"
               />
@@ -59,12 +63,16 @@
           </div>
         </div>
         <div>
-          <div class="flex justify-center space-x-8 text-left">
-            <label class="w-24 text-right">E-mail</label>
+          <div
+            class="flex flex-col lg:flex-row justify-center lg:space-x-8 text-left"
+          >
+            <label class="lg:w-24 text-left lg:text-right text-sm lg:text-base">
+              E-mail
+            </label>
             <div class="c-form__input w-full">
               <input
                 v-model="$v.form.email.$model"
-                class="border bg-ivory w-3/5 px-3 border-gray h-8 outline-none w-full"
+                class="border bg-ivory text-xsm lg:text-base w-3/5 px-3 border-gray h-8 outline-none w-full"
                 type="email"
                 @input="$emit('input', form)"
               />
@@ -78,12 +86,16 @@
           </div>
         </div>
         <div>
-          <div class="flex justify-center space-x-8 text-left">
-            <label class="w-24 text-right">件名</label>
+          <div
+            class="flex flex-col lg:flex-row justify-center lg:space-x-8 text-left"
+          >
+            <label class="lg:w-24 text-left lg:text-right text-sm lg:text-base">
+              件名
+            </label>
             <div class="c-form__input w-full">
               <input
                 v-model="$v.form.subject.$model"
-                class="border bg-ivory w-3/5 px-3 border-gray h-8 outline-none w-full"
+                class="border bg-ivory text-xsm lg:text-base w-3/5 px-3 border-gray h-8 outline-none w-full"
                 type="text"
                 @input="$emit('input', form)"
               />
@@ -97,12 +109,16 @@
           </div>
         </div>
         <div>
-          <div class="flex justify-center space-x-8 text-left">
-            <label class="w-24 text-right">内容</label>
+          <div
+            class="flex flex-col lg:flex-row justify-center lg:space-x-8 text-left"
+          >
+            <label class="lg:w-24 text-left lg:text-right text-sm lg:text-base">
+              内容
+            </label>
             <div class="c-form__input w-full">
               <textarea
                 v-model="$v.form.message.$model"
-                class="border bg-ivory w-3/5 px-3 py-4 border-gray h-48 resize-none outline-none w-full"
+                class="border bg-ivory text-xsm lg:text-base w-3/5 px-3 py-4 border-gray h-48 resize-none outline-none w-full"
                 @input="$emit('input', form)"
               />
               <p

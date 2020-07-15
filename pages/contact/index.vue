@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto">
+  <div class="mx-auto overflow-hidden">
     <CTop />
     <CForm
       :form="form"
