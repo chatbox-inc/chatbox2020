@@ -1,5 +1,5 @@
 <template>
-  <section class="mb-32">
+  <section class="lg:mb-32">
     <div class="c-creation__head">
       <div class="container mx-auto px-5 sm:p-0">
         <UiTitle class="lg:mb-5" :title="'Creation'" />
