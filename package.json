@@ -17,6 +17,7 @@
     "doc:recruit": "json-refs resolve -w documents/data/recruit.yml > static/api/recruit.json",
     "doc:about": "json-refs resolve -w documents/data/about.yml > static/api/about.json",
     "doc:contact": "json-refs resolve -w documents/data/contact.yml > static/api/contact.json",
+    "doc:top": "json-refs resolve -w documents/data/top.yml > static/api/top.json",
     "serve": "nuxt serve",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "run-p lint:*",
