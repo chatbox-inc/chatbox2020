@@ -4,7 +4,7 @@
       class="bg-primary c-hero__catch rounded absolute w-7/12 h-40 mt-3 sm:w-1/2 sm:mt-0 lg:w-2/5 lg:h-auto lg:mt-0"
     >
       <div
-        class="c-hero__title pt-8 pr-2 pb-6 pl-6 lg:pt-20 lg:pb-20 lg:pl-24 text-white lg:font-bold text-15px lg:text-3xl"
+        class="c-hero__title pt-8 pr-2 pb-6 pl-6 lg:pt-20 lg:pb-20 lg:pl-32 text-white lg:font-bold text-15px lg:text-3xl"
       >
         <p
           class="mb-3 w-9/12 text-base sm:w-auto lg:mb-10 lg:text-3xl ml-4 lg:ml-10"
