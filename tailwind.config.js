@@ -8,6 +8,7 @@ module.exports = {
     colors: {
       black: '#4d4b4d',
       white: '#ffffff',
+      gray: '#cccccc',
     },
     screens: {
       sm: '640px',
@@ -16,8 +17,11 @@ module.exports = {
     extend: {
       colors: {
         primary: '#c3504f',
+        secondly: '#4d4b4d',
       },
       fontSize: {
+        xsm: '0.95rem',
+        '3.5xl': '2.2rem',
         '7xl': '5rem',
         '42px': '42px',
         '28px': '28px',
