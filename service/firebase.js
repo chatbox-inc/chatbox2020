@@ -1,14 +1,23 @@
 import firebase from 'firebase'
 
+/* FIREBASE_APIKEY="AIzaSyCIfQPTBbAWN0V64gMP-3fivC5JUPPahWM"
+  FIREBASE_AUTHDOMAIN="chatbox2020-26423.firebaseapp.com"
+  FIREBASE_DATABASEURL="https://chatbox2020-26423.firebaseio.com"
+  FIREBASE_PROJECTID="chatbox2020-26423"
+  FIREBASE_STORAGEBUCKET="chatbox2020-26423.appspot.com"
+  FIREBASE_MESSAGESENDERID="242233420493"
+  FIREBASE_APPID="1:242233420493:web:3c9af8562c50efc7211784"
+  FIREBASE_MEASUREMENTID="G-HK4N2HNG5Q" */
+
 const fierbaseConfig = {
-  apiKey: process.env.FIREBASE_APIKEY,
-  authDomain: process.env.FIREBASE_AUTHDOMAIN,
-  databaseURL: process.env.FIREBASE_DATABSEURL,
-  projectId: process.env.FIREBASE_PROJECTID,
-  storageBucket: process.env.FIREBASE_STORAGEBUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGINGSENDERID,
-  appId: process.env.FIREBASE_APPID,
-  measurementId: process.env.FIREBASE_MEASUREMENTID,
+  apiKey: 'AIzaSyCIfQPTBbAWN0V64gMP-3fivC5JUPPahWM',
+  authDomain: 'chatbox2020-26423.firebaseapp.com',
+  databaseURL: 'https://chatbox2020-26423.firebaseio.com',
+  projectId: 'chatbox2020-26423',
+  storageBucket: 'chatbox2020-26423.appspot.com',
+  messagingSenderId: '242233420493',
+  appId: '1:242233420493:web:3c9af8562c50efc7211784',
+  measurementId: 'G-HK4N2HNG5Q',
 }
 if (!firebase.apps.length) {
   firebase.initializeApp(fierbaseConfig)
