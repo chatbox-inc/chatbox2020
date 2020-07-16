@@ -5,9 +5,6 @@
 #  functions = "project/functions/"
 [environment]
   NODE_VERSION = "12.*"
-
-[context.production.environment]
-  NODE_ENV = "production"
   FIREBASE_APIKEY=AIzaSyCIfQPTBbAWN0V64gMP-3fivC5JUPPahWM
   FIREBASE_AUTHDOMAIN=chatbox2020-26423.firebaseapp.com
   FIREBASE_DATABASEURL=https://chatbox2020-26423.firebaseio.com
