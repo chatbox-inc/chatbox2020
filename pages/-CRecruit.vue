@@ -1,8 +1,8 @@
 <template>
   <section class="pb-20 pt-10 mt-20 bg-ivory">
-    <div class="container mx-auto text-center mt-8 relative px-6 sm:px-0">
+    <div class="container mx-auto text-center mt-8 relative px-5 sm:px-0">
       <div class="c-recruit__head absolute">
-        <UiTitle :title="'Recruit'" />
+        <UiTitle title="Recruit" />
       </div>
       <img
         class="mb-12"
@@ -15,7 +15,7 @@
         <br />
         <br />※wantedlyへ飛びます
       </p>
-      <UiButton :text="'採用情報へ'" :url="'#'" />
+      <UiButton text="採用情報へ" :url="''" />
     </div>
   </section>
 </template>

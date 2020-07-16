@@ -44,7 +44,7 @@ export default {
 <style lang="scss" scoped>
 .p-index {
   &__item {
-    &:nth-child(odd) {
+    &:nth-child(2n + 3) {
       background-color: #faf7f7;
     }
   }

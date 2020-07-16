@@ -1,13 +1,18 @@
 <template>
   <section class="pt-16 pb-10">
-    <div class="container mx-auto">
-      <UiTitle :title="'We are thinking about Web'" />
-      <div class="c-intro__bg">
-        <div class="c-intro__box py-12 pl-10">
-          <h3 class="text-primary text-2xl">
+    <div class="container mx-auto text-black px-5 sm:p-0">
+      <UiTitle
+        class="c-intro__title lg:mb-6"
+        title="We are thinking about Web"
+      />
+      <div class="c-intro__bg bg-no-repeat bg-contain pt-24 lg:pt-64">
+        <div
+          class="c-intro__box mx-auto z-10 tracking-wider bg-white w-11/12 p-6 lg:w-full lg:pr-24 lg:p-12"
+        >
+          <h3 class="text-primary tracking-widest mb-4 text-1xl lg:text-2xl">
             作るだけなく、伝え語り合う会社でありたい
           </h3>
-          <p class="leading-9 mt-4">
+          <p class="leading-7 lg:leading-8 text-sm lg:text-base">
             株式会社 chatbox は大阪の小さなWeb制作会社です。
             様々なWeb制作の現場で、「Webのこれからを語り合う」をテーマにWebの可能性を追求し続けています。
             Web制作という「作る」業務だけでなく、Webの技術を「伝える」「語り合う」会社として、
@@ -28,19 +33,9 @@ export default {}
 <style lang="scss" scoped>
 .c-intro {
   &__bg {
-    padding-top: 250px;
     background-image: url(~assets/image/intro/intro__bg.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
   }
-
-  &__title {
-    font-family: Yu Mincho Medium, YuMincho, serif;
-    line-height: 110px;
-  }
-
   &__box {
-    padding-right: 10%;
     background: -webkit-gradient(
       linear,
       right top,
@@ -54,21 +49,14 @@ export default {}
     );
   }
 }
-
-.c-recruit {
-  &__btn {
-    position: relative;
-
-    &:hover {
-      .c-recruit__arrow {
-        right: 0;
-      }
+@media (max-width: 980px) {
+  .c-intro {
+    &__box {
+      background: white;
     }
-  }
-
-  &__arrow {
-    position: absolute;
-    right: 10%;
+    &__title {
+      font-size: 20px;
+    }
   }
 }
 </style>
