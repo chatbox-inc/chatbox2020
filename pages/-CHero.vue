@@ -4,15 +4,15 @@
       class="bg-primary c-hero__catch rounded absolute w-7/12 h-40 mt-3 sm:w-1/2 sm:mt-0 lg:w-2/5 lg:h-auto lg:mt-0"
     >
       <div
-        class="c-hero__title pt-8 pr-2 pb-6 pl-6 lg:pt-16 lg:pr-8 lg:pb-20 lg:pl-24 text-white lg:font-bold text-15px lg:text-3xl"
+        class="c-hero__title pt-8 pr-2 pb-6 pl-6 lg:pt-20 lg:pb-20 lg:pl-24 text-white lg:font-bold text-15px lg:text-3xl"
       >
         <p
-          class="mb-3 w-9/12 text-base sm:w-auto lg:mb-10 lg:text-2xl ml-4 lg:ml-10"
+          class="mb-3 w-9/12 text-base sm:w-auto lg:mb-10 lg:text-3xl ml-4 lg:ml-10"
         >
           Webのこれからを語り合う
         </p>
         <p
-          class="mb-3 w-32 text-base sm:w-auto lg:mb-10 lg:w-auto lg:text-2xl ml-4 lg:ml-10"
+          class="mb-3 w-32 text-base sm:w-auto lg:mb-10 lg:w-auto lg:text-3xl ml-4 lg:ml-10"
         >
           ｢作る｣｢伝える｣｢語り合う｣
         </p>
@@ -43,8 +43,15 @@ export default {}
 
   &__catch {
     background-color: rgba(195, 80, 79, 0.9);
-    top: 49%;
+    top: 39%;
     left: -5px;
+  }
+  @media (max-width: 980px) {
+    .c-hero {
+      &__catch {
+        top: 49%;
+      }
+    }
   }
 
   &__bg {
