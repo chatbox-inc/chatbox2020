@@ -53,11 +53,16 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/dotenv'],
+  modules: ['@nuxtjs/dotenv', '@nuxtjs/dayjs'],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
+  dayjs: {
+    locals: ['ja'],
+    defaulocale: 'ja',
+  },
+
   build: {},
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.scss',
