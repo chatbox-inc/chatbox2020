@@ -1,19 +1,19 @@
 <template>
   <div>
-    <CTitle />
+    <CHero />
     <CAbout />
     <CAccess />
   </div>
 </template>
 
 <script>
-import CTitle from '@/pages/company/-CTitle.vue'
+import CHero from '~/pages/company/-C Hero.vue'
 import CAbout from '@/pages/company/-CAbout.vue'
 import CAccess from '@/pages/company/-CAccess.vue'
 
 export default {
   components: {
-    CTitle,
+    CHero,
     CAbout,
     CAccess,
   },

@@ -31,6 +31,9 @@ module.exports = {
         '325px': '325px',
         '800px': '800px',
       },
+      width: {
+        '700px': '700px',
+      },
     },
   },
   variants: {},
