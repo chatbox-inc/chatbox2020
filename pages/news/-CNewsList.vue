@@ -1,18 +1,21 @@
 <template>
-  <div v-if="newsList" class="container mx-auto">
-    <ul class="flex">
-      <a
+  <div v-if="newsList" class="container mx-auto mt-20">
+    <ol class="flex space-x-10 relative">
+      <li
         v-for="year in years"
         :key="year"
         href="#"
-        @click.prevent="updateNewsList(year)"
+        @click.prevent="$emit('updateNewsList', year)"
       >
-        <li>{{ year }}</li>
-      </a>
-    </ul>
+        <a class="text-xl font-medium block cursor-pointer hover:opacity-75">
+          {{ year }}
+        </a>
+      </li>
+      <span class="c-bar absolute bottom-0" :class="actionClass"></span>
+    </ol>
     <div
-      v-for="(news, index) in newsList"
-      :key="index"
+      v-for="(news, index2) in newsList"
+      :key="index2"
       class="lg:flex flex-row bg-gray-1024 pt-5 pb-5"
     >
       <nuxt-link
@@ -45,27 +48,58 @@
 </template>
 
 <script>
-import { fetchNewsByYear } from '@/service/firebase'
 export default {
+  props: {
+    newsList: {
+      type: Array,
+      required: true,
+    },
+    years: {
+      type: Array,
+      required: true,
+    },
+    targetYear: {
+      type: String,
+      required: true,
+    },
+  },
   data() {
     return {
-      newsList: [],
-      targetYear: null,
-      years: ['2020', '2021', '2022'],
+      index: 0,
     }
   },
-  mounted() {
-    const date = new Date()
-    this.targetYear = date.getFullYear()
-    this.updateNewsList(this.targetYear)
-  },
-
-  methods: {
-    async updateNewsList(targetYear) {
-      this.newsList = await fetchNewsByYear(targetYear)
+  computed: {
+    actionClass() {
+      return {
+        'c-active__first': this.targetYear === this.years[0],
+        'c-active__second': this.targetYear === this.years[1],
+        'c-active__third': this.targetYear === this.years[2],
+      }
     },
   },
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.c-bar {
+  width: 64px;
+  height: 3px;
+  bottom: -5px;
+  left: -50px;
+  background-color: #c3504f;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.56);
+}
+
+.c-active {
+  &__first {
+    left: -50px;
+  }
+  &__second {
+    left: 35px;
+  }
+
+  &__third {
+    left: 120px;
+  }
+}
+</style>

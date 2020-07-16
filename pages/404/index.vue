@@ -8,8 +8,12 @@
       </p>
     </div>
     <div class="text-center font-medium">
-      <p class="mb-4">お探しのページは見つかりませんでした</p>
-      <p class="mb-32 lg:mb-64">URLが間違っているか、ページが存在しません</p>
+      <p class="mb-4">
+        お探しのページは見つかりませんでした
+      </p>
+      <p class="mb-32 lg:mb-64">
+        URLが間違っているか、ページが存在しません
+      </p>
     </div>
     <div class="flex justify-center">
       <nuxt-link

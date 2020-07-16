@@ -1,14 +1,15 @@
 <template>
-  <section v-if="title" class="c-hero">
-    <!-- tailwind で修正お願いします。 -->
-    <div class="c-hero__bg">
-      <div class="c-head">
-        <h2 class="c-head__title">
-          {{ title }}
-        </h2>
-        <p class="c-head__text">
-          {{ text }}
-        </p>
+  <section v-if="title">
+    <div class="c-hero__bg bg-cover bg-center">
+      <div class="container mx-auto">
+        <div class="pt-12 text-white">
+          <h2 class="text-3.5xl font-bold">
+            {{ title }}
+          </h2>
+          <p class="mt-12">
+            {{ text }}
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -31,32 +32,9 @@ export default {
 
 <style lang="scss" scoped>
 .c-hero {
-  width: 100%;
   &__bg {
-    min-height: 32.5rem;
-    padding: 0 1.5rem;
-    background-position: center;
-  }
-}
-.c-head {
-  width: 100%;
-  max-width: 94rem;
-  padding: 7rem 0 6rem;
-  margin: 0 auto;
-
-  &__title {
-    left: 0;
-    font-size: 3.5rem;
-    font-weight: bold;
-    line-height: 4.8rem;
-    color: white;
-    letter-spacing: 0.105rem;
-  }
-  &__text {
-    padding-top: 5rem;
-    font-size: 1.8rem;
-    line-height: 3.6rem;
-    color: white;
+    background-image: url(~assets/image/news/img@2x.png);
+    min-height: 325px;
   }
 }
 </style>
