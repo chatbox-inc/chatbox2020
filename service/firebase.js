@@ -1,14 +1,5 @@
 import firebase from 'firebase'
 
-/* FIREBASE_APIKEY="AIzaSyCIfQPTBbAWN0V64gMP-3fivC5JUPPahWM"
-  FIREBASE_AUTHDOMAIN="chatbox2020-26423.firebaseapp.com"
-  FIREBASE_DATABASEURL="https://chatbox2020-26423.firebaseio.com"
-  FIREBASE_PROJECTID="chatbox2020-26423"
-  FIREBASE_STORAGEBUCKET="chatbox2020-26423.appspot.com"
-  FIREBASE_MESSAGESENDERID="242233420493"
-  FIREBASE_APPID="1:242233420493:web:3c9af8562c50efc7211784"
-  FIREBASE_MEASUREMENTID="G-HK4N2HNG5Q" */
-
 const fierbaseConfig = {
   apiKey: 'AIzaSyCIfQPTBbAWN0V64gMP-3fivC5JUPPahWM',
   authDomain: 'chatbox2020-26423.firebaseapp.com',
