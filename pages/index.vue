@@ -10,6 +10,7 @@
     <CNews class="p-index__item" />
     <CAbout class="p-index__item" />
     <CContact class="p-index__item" />
+    <UiBanner v-if="newsData" :news="newsData" />
   </div>
 </template>
 
@@ -24,7 +25,7 @@ import CRecruit from '@/pages/-CRecruit'
 import CNews from '@/pages/-CNews'
 import CAbout from '@/pages/-CAbout'
 import CContact from '@/pages/-CContact'
-
+import { fetchNews } from '@/service/firebase'
 export default {
   components: {
     CHero,
@@ -38,15 +39,14 @@ export default {
     CAbout,
     CContact,
   },
+  data() {
+    return {
+      newsData: null,
+    }
+  },
+  async mounted() {
+    const newsList = await fetchNews()
+    this.newsData = newsList[0]
+  },
 }
 </script>
-
-<style lang="scss" scoped>
-.p-index {
-  &__item {
-    &:nth-child(2n + 3) {
-      background-color: #faf7f7;
-    }
-  }
-}
-</style>
