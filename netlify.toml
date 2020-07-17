@@ -1,7 +1,7 @@
 # see https://docs.netlify.com/configure-builds/file-based-configuration/#sample-file
 [build]
   publish = "dist"
-  command = "nuxt build && nuxt export"
+  command = "npm run doc && nuxt build && nuxt export"
 #  functions = "project/functions/"
 [environment]
   NODE_VERSION = "12.*"
