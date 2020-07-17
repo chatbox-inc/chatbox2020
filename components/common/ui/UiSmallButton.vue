@@ -1,14 +1,14 @@
 <template>
   <a
     :href="'#'"
-    class="bg-primary w-3/4 lg:w-1/2 mx-auto c-button text-xsm relative inline-block rounded px-4 py-5 hover:opacity-75 lg:m-0"
+    class="bg-primary w-full lg:w-1/2 mx-auto c-button text-xsm relative inline-block rounded px-2 py-5 hover:opacity-75 lg:m-0"
   >
     <img
       :src="image"
       alt="遷移先アイコン"
       class="absolute c-button__icon h-6"
     />
-    <p class="text-white text-center">FaceBookから<br />メッセージを送る</p>
+    <p class="text-white text-center">{{ title }}<br />メッセージを送る</p>
     <img
       src="@/static/image/contact/icon_arrow-white.svg"
       alt="ここをクリック"
@@ -25,6 +25,10 @@ export default {
       required: true,
     },
     link: {
+      type: String,
+      required: true,
+    },
+    title: {
       type: String,
       required: true,
     },
