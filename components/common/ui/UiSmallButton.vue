@@ -1,7 +1,7 @@
 <template>
   <a
     :href="'#'"
-    class="bg-primary w-full lg:w-1/2 mx-auto c-button text-xsm relative inline-block rounded px-2 py-5 hover:opacity-75 lg:m-0"
+    class="bg-primary w-full lg:w-1/2 mx-auto c-button text-xsm relative inline-block rounded px-3 py-5 hover:opacity-75 lg:m-0"
   >
     <img
       :src="image"
