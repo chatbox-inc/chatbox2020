@@ -7,7 +7,7 @@
       </p>
     </div>
     <div class="bg-primary h-500px text-center text-white">
-      <div class="container mx-auto">
+      <div class="container px-5 lg:px-0 mx-auto">
         <div class="L-footer__triangle w-10 mx-auto"></div>
         <p class="pt-24 pb-16 lg:text-3xl tracking-widest">
           Webにまつわるお悩み、<br />
@@ -15,7 +15,7 @@
         </p>
         <div class="lg:flex justify-center items-center">
           <a
-            class="L-footer__btn inline-block relative cursor-pointer text-base bg-white p-6 rounded text-primary text-center w-64 lg:w-2/6 lg:text-lg lg:p-8 transition ease-out duration-700 hover:opacity-75"
+            class="L-footer__btn inline-block relative cursor-pointer text-base bg-white p-6 rounded text-primary text-center w-64 lg:w-1/2 lg:text-lg lg:p-8 transition ease-out duration-700 hover:opacity-75"
             href=""
           >
             お問い合わせフォームへ
@@ -25,7 +25,7 @@
               alt="arrow"
             />
           </a>
-          <div class="py-16 lg:py-0 lg:px-16 lg:text-left">
+          <div class="w-full lg:w-1/2 py-16 lg:py-0 lg:px-16 lg:text-left">
             <p class="lg:text-xl tracking-widest">
               電話でのお問い合わせ
             </p>
@@ -37,7 +37,9 @@
       </div>
     </div>
     <div class="h-56 w-full bg-ivory">
-      <div class="w-11/12 mx-auto text-primary text-xs lg:text-15px">
+      <div
+        class="container px-5 lg:px-0 mx-auto text-primary text-xs lg:text-15px"
+      >
         <nav class="pt-8 pb-5 border-b">
           <ul class="flex flex-wrap text-center">
             <li class="mb-4 lg:mb-0 w-4/12 lg:w-auto lg:border-r">
