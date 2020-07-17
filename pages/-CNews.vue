@@ -3,38 +3,37 @@
     <div class="container mx-auto">
       <div class="pr-5 pl-5 lg:p-0">
         <UiTitle :title="'News'" />
-        <div
-          v-for="(news, index) in newsList"
-          :key="index"
-          class="lg:flex flex-row bg-gray-1024 pt-5 pb-5"
-        >
-          <nuxt-link
-            class="lg:flex flex-row bg-gray-1024 pt-5 pb-5 hover:opacity-75"
-            :to="`/news/${news.id}`"
-          >
-            <div class="flex flex-row bg-gray-280 pt-3">
-              <p
-                class="inline-block leading-9 pr-5 text-xl text-primary lg:pr-8 lg:text-black"
+        <ol class="lg:flex flex-col space-y-8 lg:space-y-10 mt-8 lg:mt-16">
+          <li v-for="(news, index) in newsList" :key="index" class="bg-white">
+            <nuxt-link
+              class="lg:flex flex-row items-center hover:opacity-75"
+              :to="`/news/${news.id}`"
+            >
+              <div
+                class="flex flex-row space-x-3 lg:space-x-10 items-center lg:justify-around"
               >
-                {{ news.createdAt.toDate() }}
-              </p>
-              <a class="bg-primary mt-1 h-6 lg:h-8">
                 <p
-                  class="h-6 lg:h-8 w-24 lg:w-32 text-xs text-white text-center py-1 px-2g lg:py-2 lg:m-2g lg:text-sm"
+                  class="inline-block font-medium text-xs lg:text-xl lg:text-black"
+                >
+                  {{ createdDate(news.createdAt) }}
+                </p>
+                <p
+                  class="bg-primary text-center py-1 text-xs lg:text-sm w-24 block text-white"
                 >
                   {{ news.category }}
                 </p>
-              </a>
-            </div>
-            <button
-              class="inline-grid grid-cols-1 col-gap-4 lg:pl-8 leading-9 text-sm lg:text-xl text-left pb-3 lg:pb-0"
-              href="#"
-            >
-              {{ news.title }}
-            </button>
-          </nuxt-link>
+              </div>
+              <div class="mt-4 lg:mt-0 lg:ml-8">
+                <p class="text-left text-sm lg:text-xl font-medium" href="#">
+                  {{ news.title }}
+                </p>
+              </div>
+            </nuxt-link>
+          </li>
+        </ol>
+        <div class="mt-10 lg:mt-20 text-center">
+          <UiButton :text="'お知らせ一覧へ'" :url="'#'" />
         </div>
-        <UiButton :text="'お知らせ一覧へ'" :url="'#'" />
       </div>
     </div>
   </section>
@@ -50,6 +49,11 @@ export default {
   },
   async mounted() {
     this.newsList = await fetchNews()
+  },
+  methods: {
+    createdDate(createdAt) {
+      return this.$dayjs(createdAt.toDate()).format('MM/DD')
+    },
   },
 }
 </script>

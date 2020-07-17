@@ -4,7 +4,7 @@
       <h2 class="text-xl font-bold leading-loose">
         送信確認
       </h2>
-      <p class="mt-6">
+      <p class="mt-6 text-sm lg:text-base">
         フォームの内容を送信します。<br />
         よろしければ、送信ボタンを押してください。
       </p>

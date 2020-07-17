@@ -19,8 +19,10 @@ export default {
   computed: {
     actionClass() {
       return {
-        'bg-primary text-white py-4 rounded w-1/4': this.type === 'confirm',
-        'border text-primary py-4 rounded w-1/4': this.type === 'cancel',
+        'bg-primary text-white py-4 rounded w-1/2 lg:w-1/4 hover:opacity-75':
+          this.type === 'confirm',
+        'border text-primary py-4 rounded w-1/2 lg:w-1/4 hover:opacity-75':
+          this.type === 'cancel',
       }
     },
   },
