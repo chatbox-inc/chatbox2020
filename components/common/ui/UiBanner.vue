@@ -9,7 +9,7 @@
       <p>お知らせ</p>
       <img
         src="@/assets/image/news/campaign-24px.svg"
-        class="w-5"
+        class="w-5 lg:w-6"
         alt="お知らせ"
       />
       <date>{{ createdDate(news.createdAt) }}</date>
