@@ -19,6 +19,7 @@ export default {
 
 <style>
 body {
-  font-family: YuGothic, serif;
+  font-family: Yu Gothic Medium, YuGothic Medium, YuGothic, Yu Gothic,
+    sans-serif;
 }
 </style>

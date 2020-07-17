@@ -10,6 +10,17 @@ module.exports = {
       white: '#ffffff',
       gray: '#cccccc',
     },
+    letterSpacing: {
+      tightest: '-.075em',
+      tighter: '-.05em',
+      tight: '-.025em',
+      normal: '0',
+      wide: '.025em',
+      wider: '.05em',
+      widest: '.1em',
+      '3px': '3px',
+      '4px': '4px',
+    },
     screens: {
       sm: '640px',
       lg: '980px',
@@ -20,7 +31,7 @@ module.exports = {
         secondly: '#4d4b4d',
       },
       fontSize: {
-        xsm: '0.95rem',
+        xsm: '0.94rem',
         '3.5xl': '2.2rem',
         '7xl': '5rem',
         '42px': '42px',
