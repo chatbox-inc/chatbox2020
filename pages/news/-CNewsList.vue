@@ -1,71 +1,144 @@
 <template>
-  <div v-if="newsList" class="container mx-auto">
-    <ul class="flex">
-      <a
+  <div v-if="newsList" class="container px-4 mx-auto mt-10 lg:mt-20">
+    <ol class="flex space-x-5 lg:space-x-10 relative">
+      <li
         v-for="year in years"
         :key="year"
         href="#"
-        @click.prevent="updateNewsList(year)"
+        @click.prevent="$emit('updateNewsList', year)"
       >
-        <li>{{ year }}</li>
-      </a>
-    </ul>
-    <div
-      v-for="(news, index) in newsList"
-      :key="index"
-      class="lg:flex flex-row bg-gray-1024 pt-5 pb-5"
-    >
-      <nuxt-link
-        class="lg:flex flex-row bg-gray-1024 pt-5 pb-5 hover:opacity-75"
-        :to="`/news/${news.id}`"
-      >
-        <div class="flex flex-row bg-gray-280 pt-3">
-          <p
-            class="inline-block leading-9 pr-5 text-xl text-primary lg:pr-8 lg:text-black"
+        <a
+          class="text-sm lg:text-xl font-medium block cursor-pointer hover:opacity-75"
+        >
+          {{ year }}年
+        </a>
+      </li>
+      <span
+        class="c-bar hidden lg:block absolute bottom-0"
+        :class="actionClass"
+      ></span>
+      <span
+        class="c-barSp lg:hidden block absolute bottom-0"
+        :class="actionClassSp"
+      ></span>
+    </ol>
+    <ol class="lg:flex flex-col space-y-8 lg:space-y-10 mt-8 lg:mt-16">
+      <li v-for="(news, index2) in newsList" :key="index2" class="bg-white">
+        <nuxt-link
+          class="lg:flex flex-row items-center hover:opacity-75"
+          :to="`/news/${news.id}`"
+        >
+          <div
+            class="flex flex-row space-x-3 lg:space-x-10 items-center lg:justify-around"
           >
-            {{ news.createdAt.toDate() }}
-          </p>
-          <a class="bg-primary mt-1 h-6 lg:h-8">
             <p
-              class="h-6 lg:h-8 w-24 lg:w-32 text-xs text-white text-center py-1 px-2g lg:py-2 lg:m-2g lg:text-sm"
+              class="inline-block font-medium text-xs lg:text-xl lg:text-black"
+            >
+              {{ createdDate(news.createdAt) }}
+            </p>
+            <p
+              class="bg-primary text-center py-1 text-xs lg:text-sm w-24 block text-white"
             >
               {{ news.category }}
             </p>
-          </a>
-        </div>
-        <button
-          class="inline-grid grid-cols-1 col-gap-4 lg:pl-8 leading-9 text-sm lg:text-xl text-left pb-3 lg:pb-0"
-          href="#"
-        >
-          {{ news.title }}
-        </button>
-      </nuxt-link>
-    </div>
+          </div>
+          <div class="mt-4 lg:mt-0 lg:ml-8">
+            <p class="text-left text-sm lg:text-xl font-medium" href="#">
+              {{ news.title }}
+            </p>
+          </div>
+        </nuxt-link>
+      </li>
+    </ol>
   </div>
 </template>
 
 <script>
-import { fetchNewsByYear } from '@/service/firebase'
 export default {
+  props: {
+    newsList: {
+      type: Array,
+      required: true,
+    },
+    years: {
+      type: Array,
+      required: true,
+    },
+    targetYear: {
+      type: String,
+      required: true,
+    },
+  },
   data() {
     return {
-      newsList: [],
-      targetYear: null,
-      years: ['2020', '2021', '2022'],
+      index: 0,
     }
   },
-  mounted() {
-    const date = new Date()
-    this.targetYear = date.getFullYear()
-    this.updateNewsList(this.targetYear)
-  },
+  computed: {
+    actionClass() {
+      return {
+        'c-active__first': this.targetYear === this.years[0],
+        'c-active__second': this.targetYear === this.years[1],
+        'c-active__third': this.targetYear === this.years[2],
+      }
+    },
 
+    actionClassSp() {
+      return {
+        'c-active__firstSp': this.targetYear === this.years[0],
+        'c-active__secondSp': this.targetYear === this.years[1],
+        'c-active__thirdSp': this.targetYear === this.years[2],
+      }
+    },
+  },
   methods: {
-    async updateNewsList(targetYear) {
-      this.newsList = await fetchNewsByYear(targetYear)
+    createdDate(createdAt) {
+      return this.$dayjs(createdAt.toDate()).format('MM/DD')
     },
   },
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.c-bar {
+  width: 64px;
+  height: 3px;
+  bottom: -5px;
+  left: -40px;
+  background-color: #c3504f;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.56);
+}
+
+.c-barSp {
+  width: 45px;
+  height: 2px;
+  bottom: -5px;
+  left: -8%;
+  background-color: #c3504f;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.56);
+}
+
+.c-active {
+  &__first {
+    left: -40px;
+  }
+  &__second {
+    left: 65px;
+  }
+
+  &__third {
+    left: 168px;
+  }
+
+  &__firstSp {
+    left: -20px;
+  }
+  &__secondSp {
+    left: 45px;
+  }
+
+  &__thirdSp {
+    left: 110px;
+  }
+}
+</style>

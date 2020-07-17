@@ -1,15 +1,19 @@
 <template>
-  <section class="text-center container mx-auto">
+  <section class="text-center container mx-auto pr-2 pl-2">
     <div>
       <p
-        class="text-primary font-sans mt-24 text-center mb-12 text-5xl lg:block lg:text-5xl"
+        class="errorMessage text-primary font-sans mt-24 text-center mb-12 text-4xl lg:text-6xl lg:block"
       >
         404 Not Found
       </p>
     </div>
     <div class="text-center font-medium">
-      <p class="mb-4">お探しのページは見つかりませんでした</p>
-      <p class="mb-32 lg:mb-64">URLが間違っているか、ページが存在しません</p>
+      <p class="mb-4 text-sm lg:text-lg">
+        お探しのページは見つかりませんでした
+      </p>
+      <p class="mb-24 text-sm lg:text-lg">
+        URLが間違っているか、ページが存在しません
+      </p>
     </div>
     <div class="flex justify-center">
       <nuxt-link
@@ -21,3 +25,11 @@
     </div>
   </section>
 </template>
+
+<style lang="scss" scoped>
+@media (980px) {
+  .errorMessage {
+    font-size: 44px;
+  }
+}
+</style>

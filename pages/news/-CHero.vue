@@ -1,5 +1,5 @@
 <template>
-  <section class="c-hero relative">
+  <section class="c-hero">
     <div class="bg-primary c-hero__catch">
       <h2 class="c-hero__title text-white font-bold text-3xl">
         <p>
@@ -20,6 +20,7 @@ export default {}
 
 <style lang="scss" scoped>
 .c-hero {
+  background-image: url('~assets/image/news/img@2x.png');
   height: 800px;
 
   &:after {

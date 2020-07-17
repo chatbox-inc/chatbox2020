@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="w-full">
     <div class="flex mt-32 py-6 justify-center items-center">
       <img class="mx-2" src="@/assets/image/footer/icon_mail.svg" />
       <p class="text-primary">
@@ -7,35 +7,39 @@
       </p>
     </div>
     <div class="bg-primary h-500px text-center text-white">
-      <div class="L-footer__triangle w-10 mx-auto"></div>
-      <p class="pt-24 pb-16 lg:text-3xl tracking-widest">
-        Webにまつわるお悩み、<br />
-        ご相談はお気軽にchatboxまで。
-      </p>
-      <div class="lg:flex justify-center items-center">
-        <a
-          class="L-footer__btn inline-block relative cursor-pointer text-base bg-white p-6 rounded text-primary text-center w-64 lg:w-2/6 lg:text-lg lg:p-8 transition ease-out duration-700 hover:opacity-75"
-          href=""
-        >
-          お問い合わせフォームへ
-          <img
-            class="L-footer__arrow w-8 inline absolute"
-            src="@/assets/image/footer/keyboard_arrow_right-24px.svg"
-            alt="arrow"
-          />
-        </a>
-        <div class="py-16 lg:py-0 lg:px-16 lg:text-left">
-          <p class="lg:text-xl tracking-widest">
-            電話でのお問い合わせ
-          </p>
-          <p class="text-2xl lg:text-3xl tracking-widest">
-            050-3555-1212
-          </p>
+      <div class="container px-5 lg:px-0 mx-auto">
+        <div class="L-footer__triangle w-10 mx-auto"></div>
+        <p class="pt-24 pb-16 lg:text-3xl tracking-widest">
+          Webにまつわるお悩み、<br />
+          ご相談はお気軽にchatboxまで。
+        </p>
+        <div class="lg:flex justify-center items-center">
+          <a
+            class="L-footer__btn inline-block relative cursor-pointer text-base bg-white p-6 rounded text-primary text-center w-64 lg:w-1/2 lg:text-lg lg:p-8 transition ease-out duration-700 hover:opacity-75"
+            href=""
+          >
+            お問い合わせフォームへ
+            <img
+              class="L-footer__arrow w-8 inline absolute"
+              src="@/assets/image/footer/keyboard_arrow_right-24px.svg"
+              alt="arrow"
+            />
+          </a>
+          <div class="w-full lg:w-1/2 py-16 lg:py-0 lg:px-16 lg:text-left">
+            <p class="lg:text-xl tracking-widest">
+              電話でのお問い合わせ
+            </p>
+            <p class="text-2xl lg:text-3xl tracking-widest">
+              050-3555-1212
+            </p>
+          </div>
         </div>
       </div>
     </div>
     <div class="h-56 w-full bg-ivory">
-      <div class="w-11/12 mx-auto text-primary text-xs lg:text-15px">
+      <div
+        class="container px-5 lg:px-0 mx-auto text-primary text-xs lg:text-15px"
+      >
         <nav class="pt-8 pb-5 border-b">
           <ul class="flex flex-wrap text-center">
             <li class="mb-4 lg:mb-0 w-4/12 lg:w-auto lg:border-r">

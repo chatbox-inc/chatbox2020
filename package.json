@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@nuxt/components": "^1.0.7",
+    "@nuxtjs/dayjs": "^1.1.9",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/tailwindcss": "^2.0.0",
     "eslint-plugin-tailwind": "^0.2.0",
