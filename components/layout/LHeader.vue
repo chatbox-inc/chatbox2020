@@ -1,12 +1,12 @@
 <template>
-  <header class="l-header relative lg:py-10">
+  <header class="l-header relative py-5 lg:py-10">
     <div class="flex justify-center">
       <h1>
         <nuxt-link to="/">
           <img
             src="@/assets/image/header/header__logo.svg"
             alt="株式会社 chatbox"
-            class="h-12 lg:h-16"
+            class="h-10 lg:h-16 mb-2"
           />
         </nuxt-link>
       </h1>
@@ -24,8 +24,6 @@ export default {}
 
 <style lang="scss" scoped>
 .l-header {
-  padding: 40px 0 40px 0;
-
   &:after {
     content: '';
     display: block;
@@ -53,8 +51,6 @@ export default {}
 }
 @media (max-width: 980px) {
   .l-header {
-    padding: 6px 0 6px 0;
-
     &__triangle {
       border: 30px solid transparent;
       border-left: 30px solid #c2504f;
@@ -62,10 +58,10 @@ export default {}
 
       &:after {
         background-size: contain;
-        width: 15px;
-        height: 15px;
-        top: -20px;
-        left: -20px;
+        width: 20px;
+        height: 20px;
+        top: -23px;
+        left: -23px;
       }
     }
   }
