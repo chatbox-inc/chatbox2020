@@ -1,8 +1,8 @@
 <template>
-  <section class="lg:mb-32">
+  <section class="lg:mb-32" v-if="creation">
     <div class="c-creation__head">
       <div class="container mx-auto px-5 sm:p-0">
-        <UiTitle class="lg:mb-5" title="Creation" />
+        <UiTitle class="lg:mb-5" :title="creation.title" />
       </div>
     </div>
     <div class="container mx-auto text-black px-5 sm:p-0">
@@ -40,11 +40,12 @@
             alt=""
           />
           <ul class="text-primary text-xs ml-2 mt-3 lg:ml-3 lg:m-0 lg:text-sm">
-            <li class="mb-6">
-              Webシステム制作
-            </li>
-            <li>
-              Webページ制作
+            <li
+              class="mb-6"
+              v-for="(item, index) in creation.keywords"
+              :key="index"
+            >
+              {{ item.extra }}
             </li>
           </ul>
         </div>
@@ -63,6 +64,12 @@
 <script>
 export default {
   components: {},
+  props: {
+    creation: {
+      type: Object,
+      required: true,
+    },
+  },
 }
 </script>
 

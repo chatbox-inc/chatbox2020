@@ -1,24 +1,16 @@
 <template>
-  <section class="pt-16 pb-10">
+  <section class="pt-16 pb-10" v-if="intro">
     <div class="container mx-auto text-black px-5 sm:p-0">
-      <UiTitle
-        class="c-intro__title lg:mb-6"
-        title="We are thinking about Web"
-      />
+      <UiTitle class="c-intro__title lg:mb-6" :title="intro.title" />
       <div class="c-intro__bg bg-no-repeat bg-contain pt-24 lg:pt-64">
         <div
           class="c-intro__box mx-auto z-10 tracking-wider bg-white w-11/12 p-6 lg:w-full lg:pr-24 lg:p-12"
         >
           <h3 class="text-primary tracking-widest mb-4 text-1xl lg:text-2xl">
-            作るだけなく、伝え語り合う会社でありたい
+            {{ intro.subtitle }}
           </h3>
           <p class="leading-7 lg:leading-8 text-sm lg:text-base">
-            株式会社 chatbox は大阪の小さなWeb制作会社です。
-            様々なWeb制作の現場で、「Webのこれからを語り合う」をテーマにWebの可能性を追求し続けています。
-            Web制作という「作る」業務だけでなく、Webの技術を「伝える」「語り合う」会社として、
-            制作現場での技術指導や、イベント・セミナーなどの交流活動にも積極的に取り組んでいます。
-            身の回りにありふれたWebだからこそ、そこにしか無い、そこだけのWebの形を。
-            現場と、お客様と、ユーザーと、一緒に考えていくのがchatboxのWeb制作のあり方です。
+            {{ intro.text }}
           </p>
         </div>
       </div>
@@ -27,7 +19,14 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    intro: {
+      type: Object,
+      required: true,
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
