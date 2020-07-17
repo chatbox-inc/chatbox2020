@@ -23,7 +23,7 @@ module.exports = {
     },
     screens: {
       sm: '640px',
-      lg: '980px',
+      lg: '786px',
     },
     extend: {
       colors: {
@@ -51,8 +51,25 @@ module.exports = {
       },
     },
   },
+  corePlugins: {
+    container: false,
+  },
   variants: {},
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        '.container': {
+          maxWidth: '100%',
+          '@screen sm': {
+            maxWidth: '100%',
+          },
+          '@screen lg': {
+            maxWidth: '980px',
+          },
+        },
+      })
+    },
+  ],
 
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css

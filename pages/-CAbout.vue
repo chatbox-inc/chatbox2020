@@ -1,6 +1,6 @@
 <template>
   <section class="lg:py-20 pt-14 pb-20">
-    <div class="container mx-auto text-center px-5 sm:px-0">
+    <div class="container mx-auto text-center px-5 lg:px-0">
       <UiTitle title="About" us />
       <p
         class="mx-auto text-black mb-10 leading-loose text-left w-full lg:w-3/5"

@@ -1,6 +1,6 @@
 <template>
   <section class="pb-20 pt-6 lg:mb-24">
-    <div class="container mx-auto text-black px-5 sm:p-0">
+    <div class="container mx-auto text-black px-5">
       <UiTitle class="lg:mb-5" title="Talking" />
       <div class="lg:flex lg:space-x-12">
         <div class="w-full lg:w-1/2">

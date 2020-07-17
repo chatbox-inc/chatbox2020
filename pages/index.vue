@@ -1,15 +1,15 @@
 <template>
-  <div class="p-index">
-    <CHero class="p-index__item" />
-    <CIntro class="p-index__item" />
-    <CCreation class="p-index__item" />
-    <CTalking class="p-index__item" />
-    <CEnjoy class="p-index__item" />
-    <CMember class="p-index__item" />
-    <CRecruit class="p-index__item" />
-    <CNews class="p-index__item" />
-    <CAbout class="p-index__item" />
-    <CContact class="p-index__item" />
+  <div>
+    <CHero />
+    <CIntro />
+    <CCreation />
+    <CTalking />
+    <CEnjoy />
+    <CMember />
+    <CRecruit />
+    <CNews />
+    <CAbout />
+    <CContact />
     <UiBanner v-if="newsData" :news="newsData" />
   </div>
 </template>
