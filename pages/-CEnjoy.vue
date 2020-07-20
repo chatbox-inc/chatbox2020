@@ -5,7 +5,7 @@
         <UiTitle :title="enjoy.title" />
       </div>
     </div>
-    <div class="container mx-auto text-black px-4 sm:p-0">
+    <div class="container mx-auto text-black px-5">
       <div class="lg:flex lg:space-x-12">
         <div class="w-full lg:w-1/2">
           <h3 class="text-primary text-1xl lg:text-2xl tracking-widest">

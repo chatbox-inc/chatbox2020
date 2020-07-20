@@ -15,11 +15,17 @@
         tabindex="0"
       ></iframe>
       <div class="text-center">
-        <UiButton
-          class="mt-10"
-          text="Google Mapで開く"
-          url="https://www.google.com/maps/place/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEchatbox/@34.6944737,135.5152549,17z/data=!3m1!4b1!4m5!3m4!1s0x6000e723237eaaab:0x7d8bc4d8a57d77bc!8m2!3d34.6786564!4d135.5094156"
-        />
+        <a
+          class="btn inline-block mt-8 relative cursor-pointer text-sm bg-primary px-6 py-4 rounded text-white text-center w-64 lg:text-lg transition ease-out duration-700 hover:opacity-75"
+          href="https://www.google.com/maps/place/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEchatbox/@34.6944737,135.5152549,17z/data=!3m1!4b1!4m5!3m4!1s0x6000e723237eaaab:0x7d8bc4d8a57d77bc!8m2!3d34.6786564!4d135.5094156"
+        >
+          Google Mapで開く
+          <img
+            class="btn__arrow w-8 inline absolute"
+            src="@/assets/image/contact/keyboard_arrow_right-24px.svg"
+            alt="arrow"
+          />
+        </a>
       </div>
       <table
         class="table-fixed my-10 lg:my-20 w-full text-left mx-auto text-sm lg:text-base"
@@ -64,6 +70,21 @@ export default {}
     &:nth-child(odd) {
       background-color: #faf7f7;
     }
+  }
+}
+.btn {
+  &:hover {
+    .btn__arrow {
+      right: 0;
+      transition: all 0.5s;
+    }
+  }
+
+  &__arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3%;
+    transition: all 0.5s;
   }
 }
 </style>

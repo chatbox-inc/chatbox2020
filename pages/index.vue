@@ -1,15 +1,15 @@
 <template>
-  <div class="p-index">
-    <CHero class="p-index__item" />
-    <CIntro v-if="intro" class="p-index__item" :intro="intro" />
-    <CCreation v-if="creation" class="p-index__item" :creation="creation" />
-    <CTalking v-if="talking" class="p-index__item" :talking="talking" />
-    <CEnjoy v-if="enjoy" class="p-index__item" :enjoy="enjoy" />
-    <CMember v-if="member" class="p-index__item" :member="member" />
-    <CRecruit v-if="recruit" class="p-index__item" :recruit="recruit" />
-    <CNews class="p-index__item" />
-    <CAbout v-if="about" class="p-index__item" :about="about" />
-    <CContact v-if="contact" class="p-index__item" :contact="contact" />
+  <div>
+    <CHero />
+    <CIntro />
+    <CCreation />
+    <CTalking />
+    <CEnjoy />
+    <CMember />
+    <CRecruit />
+    <CNews />
+    <CAbout />
+    <CContact />
     <UiBanner v-if="newsData" :news="newsData" />
   </div>
 </template>

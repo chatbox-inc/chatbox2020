@@ -1,9 +1,11 @@
 <template>
-  <section class="container px-5 mx-auto text-center mt-20 pb-20">
-    <h3 class="lg:text-xl">
+  <section
+    class="container px-5 mx-auto text-center mt-10 lg:mt-20 pb-20 text-black"
+  >
+    <h3 class="lg:text-xl tracking-3px">
       フォームでのお問い合わせ
     </h3>
-    <p class="mt-6 text-xsm lg:text-lg leading-8">
+    <p class="mt-6 text-sm lg:text-base leading-8">
       Wevからお問い合わせ出来ます。<br />
       以下の中からお問い合わせ内容を選択し、フォームを入力してください。
     </p>
@@ -38,7 +40,7 @@
           {{ description }}
         </p>
       </div>
-      <div class="mt-8 text-center space-y-8 lg:mr-16">
+      <div class="mt-8 text-center space-y-2 lg:space-y-8 lg:mr-16">
         <div>
           <div
             class="flex flex-col lg:flex-row justify-center lg:space-x-8 text-left"

@@ -4,6 +4,8 @@
       <div class="c-recruit__head absolute">
         <UiTitle :title="recruit.title" />
       </div>
+    </div>
+    <div class="container mx-auto text-center mt-8 relative px-5 sm:px-0">
       <img
         class="mb-12"
         src="~assets/image/recruit/recruit_img@2x.png"
@@ -13,7 +15,9 @@
         {{ recruit.text }}
         <br />※wantedlyへ飛びます
       </p>
-      <UiButton text="採用情報へ" :url="''" />
+      <div class="c-recruit__btn">
+        <UiButton text="採用情報へ" :url="''" />
+      </div>
     </div>
   </section>
 </template>
@@ -32,7 +36,7 @@ export default {
 <style lang="scss" scoped>
 .c-recruit {
   &__head {
-    top: -130px;
+    background: linear-gradient(#fff 50%, #faf7f7 0);
   }
 }
 </style>
