@@ -1,6 +1,6 @@
 <template>
   <section class="pt-16 pb-10">
-    <div class="container mx-auto text-black px-5 sm:p-0">
+    <div class="container mx-auto text-black px-5 lg:px-0">
       <UiTitle
         class="c-intro__title lg:mb-6"
         title="We are thinking about Web"

@@ -12,7 +12,7 @@
         class="w-5 lg:w-6"
         alt="お知らせ"
       />
-      <date>{{ createdDate(news.createdAt) }}</date>
+      <time>{{ createdDate(news.createdAt) }}</time>
       <p>
         {{ news.category }}:
         {{ news.title }}

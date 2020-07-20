@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-5 lg:pt-10 pb-10">
+  <section class="pt-5 lg:pt-10 pb-10 px-5">
     <div class="container mx-auto">
       <div class="pr-5 pl-5 lg:p-0">
         <UiTitle :title="'News'" />
