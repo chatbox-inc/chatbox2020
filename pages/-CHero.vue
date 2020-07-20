@@ -42,7 +42,7 @@ export default {}
     height: 140px;
     background-color: #c3504f;
     animation: line 0.5s ease forwards;
-    animation-delay: 7.2s;
+    animation-delay: 6.7s;
     transform: rotateX(90deg);
     transform-origin: top;
   }
@@ -54,16 +54,15 @@ export default {}
 
   &__catch {
     top: 39%;
-    left: -5px;
+    left: -1000px;
     background-color: rgba(195, 80, 79, 0.9);
-    animation-name: animation;
-    animation-duration: 3.5s;
+    animation: animation 3s ease-out forwards;
     animation-iteration-count: inherit;
   }
   @keyframes animation {
     70% {
       top: 39%;
-      left: -1000px;
+      left: -1050px;
     }
     100% {
       top: 39%;
@@ -84,16 +83,16 @@ export default {}
       }
     }
     .text1 {
-      animation-delay: 4s;
+      animation-delay: 3.5s;
     }
     .text2 {
-      animation-delay: 4.8s;
+      animation-delay: 4.3s;
     }
     .text3 {
-      animation-delay: 5.6s;
+      animation-delay: 5.1s;
     }
     .text4 {
-      animation-delay: 6.4s;
+      animation-delay: 5.9s;
     }
   }
   @media (max-width: 980px) {
