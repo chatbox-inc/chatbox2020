@@ -1,6 +1,6 @@
 <template>
-  <footer class="w-full">
-    <div class="flex mt-32 py-6 justify-center items-center">
+  <footer class="w-full pb-8">
+    <div class="flex mt-32 pb-6 justify-center items-center">
       <img class="mx-2" src="@/assets/image/footer/icon_mail.svg" />
       <p class="text-primary">
         お問い合わせはこちら
