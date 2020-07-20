@@ -1,15 +1,15 @@
 <template>
   <div>
-    <CHero />
-    <CIntro />
-    <CCreation />
-    <CTalking />
-    <CEnjoy />
-    <CMember />
-    <CRecruit />
-    <CNews />
-    <CAbout />
-    <CContact />
+    <CHero class="p-index" />
+    <CIntro class="p-index__item" />
+    <CCreation v-if="creation" class="p-index__item" :creation="creation" />
+    <CTalking v-if="talking" class="p-index__item" :talking="talking" />
+    <CEnjoy v-if="enjoy" class="p-index__item" :enjoy="enjoy" />
+    <CMember v-if="member" class="p-index__item" :member="member" />
+    <CRecruit v-if="recruit" class="p-index__item" :recruit="recruit" />
+    <CNews class="p-index__item" />
+    <CAbout v-if="about" class="p-index__item" :about="about" />
+    <CContact v-if="contact" class="p-index__item" :contact="contact" />
     <UiBanner v-if="newsData" :news="newsData" />
   </div>
 </template>
@@ -82,8 +82,7 @@ export default {
   &__item {
     &:nth-child(2n + 3) {
       background-color: #faf7f7;
-      }
     }
   }
-  </style>
-  
+}
+</style>
