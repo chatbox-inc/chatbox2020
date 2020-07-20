@@ -1,9 +1,11 @@
 <template>
-  <section class="pb-20 pt-10 px-5 lg:0 mt-20 bg-ivory">
-    <div class="container mx-auto text-center mt-8 relative px-5 sm:px-0">
-      <div class="c-recruit__head absolute">
+  <section class="pb-20 mt-10 lg:0 mt-20 bg-ivory">
+    <div class="c-recruit__head">
+      <div class="container mx-auto mt-8 relative px-5 sm:px-0">
         <UiTitle title="Recruit" />
       </div>
+    </div>
+    <div class="container mx-auto text-center mt-8 relative px-5 sm:px-0">
       <img
         class="mb-12"
         src="~assets/image/recruit/recruit_img@2x.png"
@@ -15,7 +17,9 @@
         <br />
         <br />※wantedlyへ飛びます
       </p>
-      <UiButton text="採用情報へ" :url="''" />
+      <div class="c-recruit__btn">
+        <UiButton text="採用情報へ" :url="''" />
+      </div>
     </div>
   </section>
 </template>
@@ -27,7 +31,7 @@ export default {}
 <style lang="scss" scoped>
 .c-recruit {
   &__head {
-    top: -130px;
+    background: linear-gradient(#fff 50%, #faf7f7 0);
   }
 }
 </style>

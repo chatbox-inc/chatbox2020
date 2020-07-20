@@ -1,5 +1,5 @@
 <template>
-  <section class="lg:py-20 pt-14 pb-20">
+  <section class="lg:py-20 pt-14 pb-20 bg-ivory">
     <div class="container mx-auto text-center px-5 lg:px-0">
       <UiTitle title="About" us />
       <p
