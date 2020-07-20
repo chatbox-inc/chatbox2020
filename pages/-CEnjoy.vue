@@ -54,14 +54,16 @@
             alt=""
             class="h-200px w-3/5 lg:h-500px lg:w-full object-cover mb-3"
           />
-          <ul class="text-primary text-xs ml-2 mt-3 lg:ml-3 lg:m-0 lg:text-sm">
-            <li class="mb-6">
-              スクール
-            </li>
-            <li>
-              イベント
-            </li>
-          </ul>
+          <div class="p-tagItem flex text-primary text-xs">
+            <ul class="justify-center lg:text-lg">
+              <li class="pr-24 lg:pr-16">
+                イベント
+              </li>
+              <li class="pr-5 lg:pl-8">
+                スクール
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -90,5 +92,11 @@ export default {
   &__btn {
     background: linear-gradient(#faf7f7 50%, #fff 0);
   }
+}
+.p-tagItem {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
 }
 </style>

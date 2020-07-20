@@ -39,14 +39,16 @@
             src="@/assets/image/creation/creation__photo02.jpg"
             alt=""
           />
-          <ul class="text-primary text-xs ml-2 mt-3 lg:ml-3 lg:m-0 lg:text-sm">
-            <li class="mb-6">
-              Webシステム制作
-            </li>
-            <li>
-              Webページ制作
-            </li>
-          </ul>
+          <div class="p-tagItem flex text-primary text-xs">
+            <ul class="justify-center lg:text-lg">
+              <li class="lg:pr-16">
+                Webシステム制作
+              </li>
+              <li class="pr-8 lg:pl-8">
+                Webページ制作
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -74,5 +76,10 @@ export default {
   &__btn {
     background: linear-gradient(#faf7f7 50%, #fff 0);
   }
+}
+.p-tagItem {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  box-sizing: border-box;
 }
 </style>

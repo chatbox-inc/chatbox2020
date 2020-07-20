@@ -1,5 +1,5 @@
 <template>
-  <section class="pb-20 pt-6 lg:mb-24">
+  <section class="lg:pb-20 pt-6 lg:mb-24">
     <div class="container mx-auto text-black px-5">
       <UiTitle class="lg:mb-5" title="Talking" />
       <div class="lg:flex lg:space-x-12">
@@ -32,18 +32,20 @@
         </div>
         <div class="flex lg:block lg:w-1/2 mt-2 lg:mt-0">
           <img
-            class="h-200px w-2/3 lg:h-500px lg:w-full object-cover mb-3"
+            class="h-200px w-3/5 lg:h-500px lg:w-full object-cover mb-3"
             src="@/assets/image/talking/talking_photo02.jpg"
             alt=""
           />
-          <ul class="text-primary text-xs ml-2 mt-3 lg:ml-3 lg:m-0 lg:text-sm">
-            <li class="mb-6">
-              社員研修
-            </li>
-            <li>
-              技術顧問
-            </li>
-          </ul>
+          <div class="p-tagItem flex text-primary text-xs">
+            <ul class="justify-center lg:text-lg">
+              <li class="pr-24 lg:pr-16">
+                社員研修
+              </li>
+              <li class="pr-5 lg:pl-8">
+                技術顧問
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -68,5 +70,11 @@ export default {
   &__img {
     height: 500px;
   }
+}
+.p-tagItem {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
 }
 </style>
