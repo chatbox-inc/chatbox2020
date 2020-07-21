@@ -12,7 +12,11 @@
       </h1>
       <nuxt-link
         to="/"
-        class="l-header__triangle inline-blok fixed hover:opacity-75"
+        class="l-header__triangle hidden lg:inline-block fixed hover:opacity-75"
+      ></nuxt-link>
+      <nuxt-link
+        to="/"
+        class="l-header__triangleSp lg:hidden inline-blok fixed"
       ></nuxt-link>
     </div>
   </header>
@@ -48,21 +52,25 @@ export default {}
       left: -38px;
     }
   }
-}
-@media (max-width: 980px) {
-  .l-header {
-    &__triangle {
-      border: 30px solid transparent;
-      border-left: 30px solid #c2504f;
-      border-top: 30px solid #c2504f;
 
-      &:after {
-        background-size: contain;
-        width: 20px;
-        height: 20px;
-        top: -23px;
-        left: -23px;
-      }
+  &__triangleSp {
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    border: 30px solid transparent;
+    border-left: 30px solid #c2504f;
+    border-top: 30px solid #c2504f;
+
+    &:after {
+      position: absolute;
+      content: '';
+      background-image: url(~assets/image/header/header__icon-white.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 20px;
+      height: 20px;
+      top: -23px;
+      left: -23px;
     }
   }
 }

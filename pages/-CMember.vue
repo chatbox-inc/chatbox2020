@@ -57,9 +57,4 @@ export default {
     );
   }
 }
-@media (max-width: 980px) {
-  .c-member__box {
-    background: white;
-  }
-}
 </style>
