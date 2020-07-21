@@ -30,7 +30,7 @@ export default {
   line-height: 110px;
 
   &__text {
-    left: -12px;
+    left: -5px;
   }
 }
 </style>

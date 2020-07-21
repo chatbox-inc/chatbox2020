@@ -1,7 +1,7 @@
 <template>
-  <section v-if="recruit" class="pb-20 mt-20 bg-ivory">
-    <div class="container mx-auto text-left mt-8 relative px-5 sm:px-0">
-      <div class="c-recruit__head">
+  <section v-if="recruit" class="pb-20 bg-ivory">
+    <div class="c-recruit__head">
+      <div class="container mx-auto text-left mt-8 relative px-5 sm:px-0">
         <UiTitle :title="recruit.title" class="lg:mb-5" />
       </div>
     </div>
