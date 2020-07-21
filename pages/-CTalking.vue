@@ -1,8 +1,8 @@
 <template>
-  <section class="pb-20 pt-6 lg:mb-24" v-if="talking">
-    <div class="container mx-auto text-black px-5 sm:p-0">
+  <section v-if="talking" class="pb-20 pt-6 lg:mb-20">
+    <div class="container mx-auto text-black px-5">
       <UiTitle class="lg:mb-5" :title="talking.title" />
-      <div class="lg:flex lg:space-x-12">
+      <div class="lg:flex lg:space-x-12 lg:px-5">
         <div class="w-full lg:w-1/2">
           <h3 class="text-primary text-1xl lg:text-2xl tracking-widest">
             {{ talking.subtitle }}
@@ -28,9 +28,9 @@
           />
           <ul class="text-primary text-xs ml-2 mt-3 lg:ml-3 lg:m-0 lg:text-sm">
             <li
-              class="mb-6"
               v-for="(item, index) in talking.keywords"
               :key="index"
+              class="mb-6"
             >
               {{ item.extra }}
             </li>

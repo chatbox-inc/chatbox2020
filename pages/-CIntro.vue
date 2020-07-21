@@ -1,7 +1,9 @@
 <template>
-  <section class="pt-16 pb-10" v-if="intro">
-    <div class="container mx-auto text-black px-5 sm:p-0">
-      <UiTitle class="c-intro__title lg:mb-6" :title="intro.title" />
+  <section v-if="intro" class="pt-16 pb-10">
+    <div class="container mx-auto text-black px-5 lg:px-0">
+      <div class="lg:px-5">
+        <UiTitle class="c-intro__title lg:mb-6" :title="intro.title" />
+      </div>
       <div class="c-intro__bg bg-no-repeat bg-contain pt-24 lg:pt-64">
         <div
           class="c-intro__box mx-auto z-10 tracking-wider bg-white w-11/12 p-6 lg:w-full lg:pr-24 lg:p-12"
@@ -48,17 +50,4 @@ export default {
     );
   }
 }
-@media (max-width: 980px) {
-  .c-intro {
-    &__box {
-      background: white;
-    }
-    &__title {
-      font-size: 20px;
-    }
-  }
-}
 </style>
-
-/* .section-title { @apply font-normal text-black text-5xl; font-family: Yu
-Mincho Medium,YuMincho,serif; line-height:110px; } */
