@@ -1,7 +1,25 @@
 <template>
-  <h2 v-if="title" class="c-title text-28px lg:text-5xl text-black font-normal">
-    <span class="text-primary text-42px lg:text-7xl">{{ firstLetter }}</span>
-    <span class="c-title__text relative">{{ restLetter }}</span>
+  <h2
+    v-if="title"
+    class="text-28px c-title__font lg:text-5xl text-black font-normal"
+  >
+    <span
+      class="text-primary lg:hidden -mr-2 c-title__titleSp text-42px lg:text-7xl"
+    >
+      {{ firstLetter }}
+    </span>
+
+    <span
+      class="text-primary hidden lg:inline c-title__title text-42px lg:text-7xl"
+    >
+      {{ firstLetter }}
+    </span>
+    <span class="lg:hidden relative c-title__textSp c-title__titleSp">{{
+      restLetter
+    }}</span>
+    <span class="c-title__text hidden lg:inline c-title__title relative">{{
+      restLetter
+    }}</span>
   </h2>
 </template>
 
@@ -26,8 +44,17 @@ export default {
 
 <style lang="scss" scoped>
 .c-title {
-  font-family: Yu Mincho Medium, YuMincho, serif;
-  line-height: 110px;
+  &__title {
+    line-height: 110px;
+  }
+
+  &__titleSp {
+    line-height: 56px;
+  }
+
+  &__font {
+    font-family: Yu Mincho Medium, YuMincho, serif;
+  }
 
   &__text {
     left: -12px;

@@ -1,7 +1,7 @@
 <template>
   <section v-if="creation" class="lg:mb-32 bg-ivory">
     <div class="c-creation__head">
-      <div class="container mx-auto px-5 sm:p-0">
+      <div class="container mx-auto px-5">
         <UiTitle class="lg:mb-5" :title="creation.title" />
       </div>
     </div>

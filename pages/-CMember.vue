@@ -1,7 +1,9 @@
 <template>
   <section v-if="member" class="pb-10">
-    <div class="container mx-auto text-black px-5 sm:p-0">
-      <UiTitle class="lg:mb-6" :title="member.title" />
+    <div class="container mx-auto px-5 lg:px-0 text-black">
+      <div class="lg:px-5">
+        <UiTitle class="lg:mb-6" :title="member.title" />
+      </div>
       <div class="c-member__bg bg-no-repeat bg-contain pt-24 lg:pt-64">
         <div
           class="c-member__box mx-auto z-10 tracking-wider bg-white w-11/12 p-6 lg:w-full lg:pr-24 lg:p-12"

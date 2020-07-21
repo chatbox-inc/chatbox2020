@@ -1,12 +1,12 @@
 <template>
-  <section v-if="recruit" class="pb-20 mt-20 bg-ivory">
-    <div class="container mx-auto text-left mt-8 relative px-5 sm:px-0">
-      <div class="c-recruit__head">
+  <section v-if="recruit" class="pb-20 bg-ivory">
+    <div class="c-recruit__head">
+      <div class="container mx-auto text-left mt-8 relative px-5">
         <UiTitle :title="recruit.title" class="lg:mb-5" />
       </div>
     </div>
 
-    <div class="container mx-auto text-center mt-8 relative px-5 sm:px-0">
+    <div class="container mx-auto text-center mt-8 relative px-5 lg:px-0">
       <img
         class="mb-12"
         src="~assets/image/recruit/recruit_img@2x.png"
@@ -30,9 +30,6 @@ export default {
       type: Object,
       required: true,
     },
-  },
-  mounted() {
-    console.log(this.recruit)
   },
 }
 </script>
