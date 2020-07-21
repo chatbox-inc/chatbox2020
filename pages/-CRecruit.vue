@@ -1,10 +1,11 @@
 <template>
-  <section class="pb-20 pt-10 mt-20 bg-ivory" v-if="recruit">
-    <div class="container mx-auto text-center mt-8 relative px-5 sm:px-0">
-      <div class="c-recruit__head absolute">
-        <UiTitle :title="recruit.title" />
+  <section v-if="recruit" class="pb-20 mt-20 bg-ivory">
+    <div class="container mx-auto text-left mt-8 relative px-5 sm:px-0">
+      <div class="c-recruit__head">
+        <UiTitle :title="recruit.title" class="lg:mb-5" />
       </div>
     </div>
+
     <div class="container mx-auto text-center mt-8 relative px-5 sm:px-0">
       <img
         class="mb-12"
@@ -29,6 +30,9 @@ export default {
       type: Object,
       required: true,
     },
+  },
+  mounted() {
+    console.log(this.recruit)
   },
 }
 </script>

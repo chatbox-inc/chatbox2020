@@ -1,5 +1,5 @@
 <template>
-  <section class="lg:mb-32" v-if="creation">
+  <section v-if="creation" class="lg:mb-32 bg-ivory">
     <div class="c-creation__head">
       <div class="container mx-auto px-5 sm:p-0">
         <UiTitle class="lg:mb-5" :title="creation.title" />
@@ -41,9 +41,9 @@
           />
           <ul class="text-primary text-xs ml-2 mt-3 lg:ml-3 lg:m-0 lg:text-sm">
             <li
-              class="mb-6"
               v-for="(item, index) in creation.keywords"
               :key="index"
+              class="mb-6"
             >
               {{ item.extra }}
             </li>
