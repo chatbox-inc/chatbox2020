@@ -44,9 +44,12 @@
         <nav class="pt-8 pb-5 border-b">
           <ul class="flex flex-wrap text-center">
             <li class="mb-4 lg:mb-0 w-4/12 lg:w-auto lg:border-r">
-              <nuxt-link to="/" class="w-full lg:pr-4 hover:opacity-75">
+              <a
+                href="https://works.chatbox-inc.com/"
+                class="w-full lg:pr-4 hover:opacity-75"
+              >
                 事業紹介
-              </nuxt-link>
+              </a>
             </li>
             <li
               class="mb-4 lg:mb-0 w-4/12 lg:w-auto border-l border-r lg:border-l-0"
@@ -56,18 +59,30 @@
               </nuxt-link>
             </li>
             <li class="mb-4 lg:mb-0 w-4/12 lg:w-auto lg:border-r">
-              <a class="lg:px-4 hover:opacity-75" href="">会社情報</a>
+              <nuxt-link class="lg:px-4 hover:opacity-75" to="/company">
+                会社情報
+              </nuxt-link>
             </li>
             <li class="w-4/12 lg:w-auto lg:border-r">
-              <a class="lg:pr-4 lg:px-4 hover:opacity-75" href="">
+              <a
+                class="lg:pr-4 lg:px-4 hover:opacity-75"
+                href="https://members.chatbox-inc.com/"
+              >
                 メンバー紹介
               </a>
             </li>
             <li class="w-4/12 lg:w-auto border-l border-r lg:border-l-0">
-              <a class="lg:px-4 hover:opacity-75" href="">採用情報</a>
+              <a
+                class="lg:px-4 hover:opacity-75"
+                href="https://www.wantedly.com/companies/chatbox-inc/"
+              >
+                採用情報
+              </a>
             </li>
             <li class="w-4/12 lg:w-auto">
-              <a class="lg:pl-4 hover:opacity-75" href="">お問い合わせ</a>
+              <a class="lg:pl-4 hover:opacity-75" href="/contact">
+                お問い合わせ
+              </a>
             </li>
           </ul>
         </nav>
@@ -79,13 +94,16 @@
             </div>
           </div>
           <div class="flex justify-end w-1/3">
-            <a class="mr-2 hover:opacity-75" href="">
+            <a
+              class="mr-2 hover:opacity-75"
+              href="https://www.facebook.com/chatbox.inc/"
+            >
               <img
                 class="hover:opacity-75"
                 src="@/assets/image/footer/facebook-square-brands.svg"
               />
             </a>
-            <a class="hover:opacity-75" href="">
+            <a class="hover:opacity-75" href="https://twitter.com/chatbox_inc/">
               <img src="@/assets/image/footer/twitter-square-brands.svg" />
             </a>
           </div>

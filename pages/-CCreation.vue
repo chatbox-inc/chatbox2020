@@ -53,7 +53,7 @@
     </div>
     <div class="text-center lg:mt-12 c-creation__btn">
       <UiLargeButton
-        url=""
+        url="https://works.chatbox-inc.com/"
         image="/image/creation/creation_btn.jpg"
         text="Web制作について"
       />

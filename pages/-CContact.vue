@@ -7,7 +7,7 @@
       >
         {{ contact.text }}
       </p>
-      <UiButton text="お問い合わせフォームへ" url="#" />
+      <UiButton text="お問い合わせフォームへ" url="/contact" />
     </div>
   </section>
 </template>
