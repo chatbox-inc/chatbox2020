@@ -6,7 +6,7 @@
         お問い合わせはこちら
       </p>
     </div>
-    <div class="bg-primary h-500px text-center text-white">
+    <div v-if="!isContact" class="bg-primary h-500px text-center text-white">
       <div class="container px-5 lg:px-0 mx-auto">
         <div class="L-footer__triangle w-10 mx-auto"></div>
         <p class="pt-24 pb-16 lg:text-3xl tracking-widest">
@@ -95,7 +95,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  computed: {
+    isContact() {
+      return this.$route.path === '/contact'
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
