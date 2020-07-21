@@ -1,6 +1,6 @@
 <template>
-  <footer class="w-full pb-8 bg-ivory">
-    <div class="flex mt-32 pb-6 justify-center items-center">
+  <footer class="w-full pb-8 bg-ivory" :class="borderClass">
+    <div v-if="!isContact" class="flex mt-32 pb-6 justify-center items-center">
       <img class="mx-2" src="@/assets/image/footer/icon_mail.svg" />
       <p class="text-primary">
         お問い合わせはこちら
@@ -97,6 +97,11 @@ export default {
   computed: {
     isContact() {
       return this.$route.path === '/contact'
+    },
+    borderClass() {
+      return {
+        'border-t-2 border-primary': this.isContact,
+      }
     },
   },
 }
