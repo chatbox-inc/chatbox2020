@@ -32,7 +32,7 @@
             class="flex flex-row space-x-3 lg:space-x-10 items-center lg:justify-around"
           >
             <p
-              class="inline-block font-medium text-xs lg:text-xl lg:text-black"
+              class="inline-block text-xl font-medium text-primary lg:text-black lg:text-black"
             >
               {{ createdDate(news.createdAt) }}
             </p>
@@ -93,7 +93,7 @@ export default {
   },
   methods: {
     createdDate(createdAt) {
-      return this.$dayjs(createdAt.toDate()).format('MM/DD')
+      return this.$dayjs(createdAt.toDate()).format('YYYY/MM/DD')
     },
   },
 }
