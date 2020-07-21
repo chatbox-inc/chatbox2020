@@ -1,20 +1,16 @@
 <template>
-  <section class="pb-10">
-    <div class="container mx-auto text-black px-5">
-      <UiTitle class="lg:mb-6" title="Member" />
+  <section class="pb-10" v-if="member">
+    <div class="container mx-auto text-black px-5 sm:p-0">
+      <UiTitle class="lg:mb-6" :title="member.title" />
       <div class="c-member__bg bg-no-repeat bg-contain pt-24 lg:pt-64">
         <div
           class="c-member__box mx-auto z-10 tracking-wider bg-white w-11/12 p-6 lg:w-full lg:pr-24 lg:p-12"
         >
           <h3 class="text-primary tracking-widest mb-4 text-1xl lg:text-2xl">
-            chatboxで働く個性的なメンバー
+            {{ member.subtitle }}
           </h3>
           <p class="leading-7 lg:leading-8 text-sm lg:text-base">
-            chatbox は職場環境を「スキルアップのプラットフォーム」と捉え、
-            「働きながら学ぶ」の考え方を大切にしています。
-            個人が組織に合わせた成長を続けるのではなく、
-            スタッフそれぞれのキャリア設計に応じた成長プランで意欲ある成長を継続して実現できる環境づくりを行っています。
-            スタッフそれぞれの成長が、日々新しいchatboxを更新し続けています。
+            {{ member.text }}
           </p>
         </div>
       </div>
@@ -30,7 +26,14 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    member: {
+      type: Object,
+      required: true,
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>

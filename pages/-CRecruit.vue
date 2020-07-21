@@ -1,8 +1,8 @@
 <template>
-  <section class="pb-20 mt-10 lg:0 mt-20 bg-ivory">
-    <div class="c-recruit__head">
-      <div class="container mx-auto mt-8 relative px-5 sm:px-0">
-        <UiTitle title="Recruit" />
+  <section class="pb-20 pt-10 mt-20 bg-ivory" v-if="recruit">
+    <div class="container mx-auto text-center mt-8 relative px-5 sm:px-0">
+      <div class="c-recruit__head absolute">
+        <UiTitle :title="recruit.title" />
       </div>
     </div>
     <div class="container mx-auto text-center mt-8 relative px-5 sm:px-0">
@@ -12,12 +12,7 @@
         alt="chatbox"
       />
       <p class="mx-auto text-black mb-10 text-left w-full lg:w-3/5">
-        1.chatboxでは一緒に働く仲間を募集しています。「組織」ではなく「個人」を尊重し、
-        技術だけではない「現場で生き抜くコミュニケーション力」がきっと身につきます。
-        是非、共に成長して行きましょう。<br />
-        2.chatboxでは一緒に働く仲間を募集しています。未経験からのJOINを歓迎しているからこそ、教育制度には非常に重きをおいています。
-        毎月定期的に開催されるスクールイベントだけでなく現場業務の体験サポートやコミュニティ参加支援など、技術だけではない「現場で生き抜くコミュニケーション力」がきっと身につきます。是非、一緒に成長していきましょう。
-        <br />
+        {{ recruit.text }}
         <br />※wantedlyへ飛びます
       </p>
       <div class="c-recruit__btn">
@@ -28,7 +23,14 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    recruit: {
+      type: Object,
+      required: true,
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
