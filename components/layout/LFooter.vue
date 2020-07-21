@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full pb-8">
+  <footer class="w-full pb-8 bg-ivory">
     <div class="flex mt-32 pb-6 justify-center items-center">
       <img class="mx-2" src="@/assets/image/footer/icon_mail.svg" />
       <p class="text-primary">
@@ -13,7 +13,7 @@
           Webにまつわるお悩み、<br />
           ご相談はお気軽にchatboxまで。
         </p>
-        <div class="lg:flex justify-center items-center">
+        <div class="lg:flex justify-center items-center px-5">
           <a
             class="L-footer__btn inline-block relative cursor-pointer text-base bg-white p-6 rounded text-primary text-center w-64 lg:w-1/2 lg:text-lg lg:p-8 transition ease-out duration-700 hover:opacity-75"
             href=""
@@ -37,9 +37,7 @@
       </div>
     </div>
     <div class="h-56 w-full bg-ivory">
-      <div
-        class="container px-5 lg:px-0 mx-auto text-primary text-xs lg:text-15px"
-      >
+      <div class="container px-5 mx-auto text-primary text-xs lg:text-15px">
         <nav class="pt-8 pb-5 border-b">
           <ul class="flex flex-wrap text-center">
             <li class="mb-4 lg:mb-0 w-4/12 lg:w-auto lg:border-r">
