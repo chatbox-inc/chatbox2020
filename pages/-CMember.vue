@@ -1,5 +1,5 @@
 <template>
-  <section class="pb-10" v-if="member">
+  <section v-if="member" class="pb-10">
     <div class="container mx-auto text-black px-5 sm:p-0">
       <UiTitle class="lg:mb-6" :title="member.title" />
       <div class="c-member__bg bg-no-repeat bg-contain pt-24 lg:pt-64">

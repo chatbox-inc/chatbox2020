@@ -1,7 +1,7 @@
 <template>
   <div>
     <CHero />
-    <CIntro :intro="intro" />
+    <CIntro v-if="intro" :intro="intro" />
     <CCreation v-if="creation" :creation="creation" />
     <CTalking v-if="talking" :talking="talking" />
     <CEnjoy v-if="enjoy" :enjoy="enjoy" />
@@ -76,13 +76,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.p-index {
-  &__item {
-    &:nth-child(2n + 3) {
-      background-color: #faf7f7;
-    }
-  }
-}
-</style>

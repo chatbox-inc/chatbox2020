@@ -1,12 +1,12 @@
 <template>
-  <footer class="w-full pb-8 bg-ivory">
-    <div class="flex mt-32 pb-6 justify-center items-center">
+  <footer class="w-full pb-8 bg-ivory" :class="borderClass">
+    <div v-if="!isContact" class="flex mt-32 pb-6 justify-center items-center">
       <img class="mx-2" src="@/assets/image/footer/icon_mail.svg" />
       <p class="text-primary">
         お問い合わせはこちら
       </p>
     </div>
-    <div class="bg-primary h-500px text-center text-white">
+    <div v-if="!isContact" class="bg-primary h-500px text-center text-white">
       <div class="container px-5 lg:px-0 mx-auto">
         <div class="L-footer__triangle w-10 mx-auto"></div>
         <p class="pt-24 pb-16 lg:text-3xl tracking-widest">
@@ -93,7 +93,18 @@
 </template>
 
 <script>
-export default {}
+export default {
+  computed: {
+    isContact() {
+      return this.$route.path === '/contact'
+    },
+    borderClass() {
+      return {
+        'border-t-2 border-primary': this.isContact,
+      }
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
