@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import CHero from '~/pages/company/-C Hero.vue'
-import CAbout from '@/pages/company/-CAbout.vue'
-import CAccess from '@/pages/company/-CAccess.vue'
+import CHero from './-C Hero.vue'
+import CAbout from './-CAbout.vue'
+import CAccess from './-CAccess.vue'
 
 export default {
   components: {

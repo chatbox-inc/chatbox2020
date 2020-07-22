@@ -7,7 +7,7 @@
       >
         {{ about.text }}
       </p>
-      <UiButton text="会社概要へ" url="#" />
+      <UiButton text="会社概要へ" url="/about" />
     </div>
   </section>
 </template>
