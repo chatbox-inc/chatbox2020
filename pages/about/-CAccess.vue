@@ -1,6 +1,8 @@
 <template>
   <section class="pt-8 pb-0 lg:pb-20">
-    <div class="company-access px-5 lg:p-0 lg:w-700px mx-auto text-black">
+    <div
+      class="company-access px-5 sm:px-5 lg:p-0 lg:w-700px mx-auto text-black"
+    >
       <h3 class="pb-10 text-xl lg:text-2xl font-bold text-center">
         アクセス
       </h3>
@@ -18,6 +20,7 @@
         <a
           class="btn inline-block mt-8 relative cursor-pointer text-sm bg-primary px-6 py-4 rounded text-white text-center w-64 lg:text-lg transition ease-out duration-700 hover:opacity-75"
           href="https://www.google.com/maps/place/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEchatbox/@34.6944737,135.5152549,17z/data=!3m1!4b1!4m5!3m4!1s0x6000e723237eaaab:0x7d8bc4d8a57d77bc!8m2!3d34.6786564!4d135.5094156"
+          target="_blank"
         >
           Google Mapで開く
           <img
@@ -39,7 +42,7 @@
           <td class="block w-full lg:py-2 pb-2 pl-2 lg:table-cell lg:w-auto">
             <p>〒530-0043</p>
             <p>大阪府大阪市北区天満２丁目８−１７</p>
-            <p>天満橋パークビル</p>
+            <p>天満橋パークビル 5F</p>
           </td>
         </tr>
         <tr class="leading-7 align-top">
@@ -47,11 +50,11 @@
             電車でアクセス
           </th>
           <td class="block w-full lg:pt-3 pl-2 lg:table-cell lg:w-auto">
-            <p>JR 南森町駅X番北出口から徒歩5分</p>
-            <p>JR 大阪天満宮駅X番北出口から徒歩5分</p>
-            <p>谷町線 天満橋駅X番北出口から徒歩5分</p>
+            <p>JR 南森町駅から徒歩5分</p>
+            <p>JR 大阪天満宮駅から徒歩5分</p>
+            <p>谷町線 天満橋駅から徒歩5分</p>
             <p class="pt-3">
-              ※ビルの1階にCoCo壱があります
+              ※1階のCoCo壱が目印の建物です。
             </p>
           </td>
         </tr>
