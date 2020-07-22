@@ -40,7 +40,7 @@
     </div>
     <div class="text-black text-center lg:mt-12">
       <UiLargeButton
-        url=""
+        url="https://works.chatbox-inc.com/"
         image="/image/talking/talking_btn.jpg"
         text="技術顧問について"
       />

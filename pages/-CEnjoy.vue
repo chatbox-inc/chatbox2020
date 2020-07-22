@@ -43,7 +43,7 @@
     </div>
     <div class="c-enjoy__btn text-center lg:mt-12">
       <UiLargeButton
-        url=""
+        url="https://works.chatbox-inc.com/"
         image="/image/enjoy/enjoy_btn.jpg"
         text="イベント・スクールについて"
         class="text-left"

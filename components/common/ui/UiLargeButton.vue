@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a href="#" class="lg:hidden btn-large-sp mx-auto inline-block">
+    <a :href="url" class="lg:hidden btn-large-sp mx-auto inline-block">
       <div class="flex items-center bg-white">
         <img
           :src="image"
@@ -13,7 +13,7 @@
       </div>
     </a>
     <a
-      href="#"
+      :href="url"
       class="hidden c-button lg:block mx-auto btn-large-pc lg:hover:btn-large-pressed inline-block"
     >
       <div class="flex items-center bg-white">

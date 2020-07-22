@@ -19,7 +19,7 @@
     </div>
     <div class="text-center lg:mt-12">
       <UiLargeButton
-        url=""
+        url="https://members.chatbox-inc.com/"
         image="/image/member/member_btn.jpg"
         text="メンバーについて"
       />

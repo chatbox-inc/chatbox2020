@@ -17,7 +17,10 @@
         <br />※wantedlyへ飛びます
       </p>
       <div class="c-recruit__btn">
-        <UiButton text="採用情報へ" :url="''" />
+        <UiButton
+          text="採用情報へ"
+          url="https://www.wantedly.com/companies/chatbox-inc"
+        />
       </div>
     </div>
   </section>
