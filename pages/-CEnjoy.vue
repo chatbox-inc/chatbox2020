@@ -27,13 +27,15 @@
           <img
             src="@/assets/image/enjoy/enjoy_photo02.jpg"
             alt=""
-            class="h-200px w-3/5 lg:h-500px lg:w-full object-cover mb-3"
+            class="h-200px w-3/5 lg:h-500px lg:w-full object-cover mb-3 lg:mb-10"
           />
-          <ul class="text-primary text-xs ml-2 mt-3 lg:ml-3 lg:m-0 lg:text-sm">
+          <ul
+            class="text-primary text-xs ml-2 mt-3 lg:ml-3 lg:m-0 text-2xl hidden lg:block"
+          >
             <li
               v-for="(item, index) in enjoy.keywords"
               :key="index"
-              class="mb-6"
+              class="mb-10"
             >
               {{ item.extra }}
             </li>

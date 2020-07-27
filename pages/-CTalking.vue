@@ -22,15 +22,17 @@
         </div>
         <div class="flex lg:block lg:w-1/2 mt-2 lg:mt-0">
           <img
-            class="h-200px w-2/3 lg:h-500px lg:w-full object-cover mb-3"
+            class="h-200px w-2/3 lg:h-500px lg:w-full object-cover mb-3 lg:mb-10"
             src="@/assets/image/talking/talking_photo02.jpg"
             alt=""
           />
-          <ul class="text-primary text-xs ml-2 mt-3 lg:ml-3 lg:m-0 lg:text-sm">
+          <ul
+            class="text-primary text-xs ml-2 mt-3 lg:ml-3 lg:m-0 text-2xl hidden lg:block"
+          >
             <li
               v-for="(item, index) in talking.keywords"
               :key="index"
-              class="mb-6"
+              class="mb-10"
             >
               {{ item.extra }}
             </li>
