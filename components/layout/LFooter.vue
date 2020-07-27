@@ -43,7 +43,7 @@
       <div class="container px-5 mx-auto text-primary text-xs lg:text-15px">
         <nav class="pt-8 pb-5 border-b">
           <ul class="flex flex-wrap text-center">
-            <li class="mb-4 lg:mb-0 w-4/12 lg:w-auto lg:border-r">
+            <li class="mb-4 lg:mb-0 w-1/2 lg:w-auto lg:border-r">
               <a
                 href="https://works.chatbox-inc.com/"
                 class="w-full lg:pr-4 hover:opacity-75"
@@ -51,14 +51,16 @@
                 事業紹介
               </a>
             </li>
+            <!--            <li-->
+            <!--              class="mb-4 lg:mb-0 w-4/12 lg:w-auto border-l border-r lg:border-l-0"-->
+            <!--            >-->
+            <!--              <nuxt-link to="/" class="lg:px-4 hover:opacity-75">-->
+            <!--                実績紹介-->
+            <!--              </nuxt-link>-->
+            <!--            </li>-->
             <li
-              class="mb-4 lg:mb-0 w-4/12 lg:w-auto border-l border-r lg:border-l-0"
+              class="mb-4 lg:mb-0 w-1/2 lg:w-auto border-l lg:border-l-0 lg:border-r"
             >
-              <nuxt-link to="/" class="lg:px-4 hover:opacity-75">
-                実績紹介
-              </nuxt-link>
-            </li>
-            <li class="mb-4 lg:mb-0 w-4/12 lg:w-auto lg:border-r">
               <nuxt-link class="lg:px-4 hover:opacity-75" to="/company">
                 会社情報
               </nuxt-link>
@@ -71,7 +73,7 @@
                 メンバー紹介
               </a>
             </li>
-            <li class="w-4/12 lg:w-auto border-l border-r lg:border-l-0">
+            <li class="w-4/12 lg:w-auto border-l lg:border-l-0">
               <a
                 class="lg:px-4 hover:opacity-75"
                 href="https://www.wantedly.com/companies/chatbox-inc/"
@@ -79,7 +81,7 @@
                 採用情報
               </a>
             </li>
-            <li class="w-4/12 lg:w-auto">
+            <li class="w-4/12 lg:w-auto border-l">
               <a class="lg:pl-4 hover:opacity-75" href="/contact">
                 お問い合わせ
               </a>

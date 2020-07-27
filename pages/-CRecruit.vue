@@ -20,6 +20,7 @@
         <UiButton
           text="採用情報へ"
           url="https://www.wantedly.com/companies/chatbox-inc"
+          target="_blank"
         />
       </div>
     </div>
