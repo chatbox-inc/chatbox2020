@@ -52,4 +52,11 @@ export default {
     );
   }
 }
+@media screen and (max-width: 980px) {
+  .c-intro {
+    &__box {
+      background-color: #fff;
+    }
+  }
+}
 </style>
