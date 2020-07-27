@@ -7,6 +7,7 @@
       :target-year="targetYear"
       @updateNewsList="updateNewsList"
     />
+    <UiBanner v-if="newsData" :news="newsData" />
   </div>
 </template>
 
@@ -14,6 +15,7 @@
 import LHero from '@/components/layout/LHero'
 import CNewsList from '@/pages/news/-CNewsList'
 import { fetchNewsByYear } from '../../service/firebase'
+import { fetchNews } from '@/service/firebase'
 export default {
   components: {
     LHero,
@@ -24,12 +26,15 @@ export default {
       newsList: null,
       targetYear: null,
       years: ['2020', '2021', '2022'],
+      newsData: null,
     }
   },
-  mounted() {
+  async mounted() {
     const date = new Date()
     this.targetYear = date.getFullYear()
     this.updateNewsList(this.targetYear)
+    const newsList = await fetchNews()
+    this.newsData = newsList[0]
   },
   methods: {
     async updateNewsList(targetYear) {
