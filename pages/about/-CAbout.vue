@@ -5,7 +5,7 @@
         chatboxについて
       </h3>
       <img
-        src="@/assets/image/company/スクリーンショット 2020-06-19 18.41.54.svg"
+        src="@/assets/image/company/about_image.png"
         alt=""
         class="my-12 lg:my-16 w-full h-auto"
       />
@@ -57,7 +57,7 @@
             従業員数
           </th>
           <td class="block w-full pl-2 pb-2 lg:pb-0 lg:table-cell lg:w-auto">
-            4名
+            30名(アルバイト含む)
           </td>
         </tr>
       </table>
