@@ -1,6 +1,6 @@
 <template>
   <div class="c-title__bg h-325px bg-cover bg-bottom">
-    <div class="container mx-auto h-325px px-5 sm:px-0">
+    <div class="container mx-auto h-325px px-5 sm:px-5">
       <h2 class="text-white text-2xl lg:text-35px pt-16 pb-8">
         会社概要
       </h2>
