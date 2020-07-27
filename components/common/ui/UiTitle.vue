@@ -14,9 +14,9 @@
     >
       {{ firstLetter }}
     </span>
-    <span class="lg:hidden relative c-title__textSp c-title__titleSp">{{
-      restLetter
-    }}</span>
+    <span class="lg:hidden c-title__textSp c-title__titleSp relative">
+      {{ restLetter }}
+    </span>
     <span class="c-title__text hidden lg:inline c-title__title relative">{{
       restLetter
     }}</span>
@@ -57,7 +57,11 @@ export default {
   }
 
   &__text {
-    left: -12px;
+    left: -23px;
+  }
+
+  &__textSp {
+    left: -5px;
   }
 }
 </style>
