@@ -46,13 +46,14 @@ export default {
   &__box {
     background: -webkit-gradient(
       linear,
-      right top,
       left top,
-      from(hsla(0, 0%, 99%, 0)),
-      color-stop(10%, hsla(0, 0%, 99%, 0.5)),
-      color-stop(20%, hsla(0, 0%, 100%, 0.8)),
-      color-stop(25%, hsla(0, 0%, 100%, 0.85)),
-      color-stop(61%, hsla(0, 0%, 100%, 0.9)),
+      left bottom,
+      from(hsla(99%, 0, 0, 0)),
+      color-stop(6%, hsla(0, 0%, 99%, 0.45)),
+      color-stop(12%, hsla(0, 0%, 99%, 0.7)),
+      color-stop(20%, hsla(0, 0%, 100%, 0.85)),
+      color-stop(25%, hsla(0, 0%, 100%, 0.9)),
+      color-stop(61%, hsla(0, 0%, 100%, 0.95)),
       color-stop(80%, #fff)
     );
   }
