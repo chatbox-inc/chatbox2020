@@ -22,7 +22,7 @@
 /* import CTop from '@/pages/contact/-CTop' */
 /* import CForm from '@/pages/contact/-CForm' */
 import { submitContact } from '@/service/firebase'
-import { fetchNews } from '@/service/firebase'
+/* import { fetchNews } from '@/service/firebase' */
 
 export default {
   components: {
@@ -42,10 +42,10 @@ export default {
       newsData: null,
     }
   },
-  async mounted() {
+  /*   async mounted() {
     const newsList = await fetchNews()
     this.newsData = newsList[0]
-  },
+  }, */
   methods: {
     openConfirmModal() {
       this.showConfirmModal = true

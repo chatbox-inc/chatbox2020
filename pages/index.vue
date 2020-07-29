@@ -1,7 +1,7 @@
 <template>
   <div>
     <CHero />
-    <CIntro v-if="intro" :intro="intro" />
+    <!--   <CIntro v-if="intro" :intro="intro" />
     <CCreation v-if="creation" :creation="creation" />
     <CTalking v-if="talking" :talking="talking" />
     <CEnjoy v-if="enjoy" :enjoy="enjoy" />
@@ -10,13 +10,13 @@
     <CNews />
     <CAbout v-if="about" :about="about" />
     <CContact v-if="contact" :contact="contact" />
-    <UiBanner v-if="newsData" :news="newsData" />
+    <UiBanner v-if="newsData" :news="newsData" /> -->
   </div>
 </template>
 
 <script>
 import CHero from '@/pages/-CHero'
-import CIntro from '@/pages/-CIntro'
+/* import CIntro from '@/pages/-CIntro'
 import CCreation from '@/pages/-CCreation'
 import CTalking from '@/pages/-CTalking'
 import CEnjoy from '@/pages/-CEnjoy'
@@ -34,12 +34,12 @@ import {
   recruit,
   about,
   contact,
-} from '@/static/api/top.json'
-import { fetchNews } from '@/service/firebase'
+} from '@/static/api/top.json' */
+/* import { fetchNews } from '@/service/firebase' */
 export default {
   components: {
     CHero,
-    CIntro,
+    /*     CIntro,
     CCreation,
     CTalking,
     CEnjoy,
@@ -47,7 +47,7 @@ export default {
     CRecruit,
     CNews,
     CAbout,
-    CContact,
+    CContact, */
   },
   data() {
     return {
@@ -62,7 +62,7 @@ export default {
       newsData: null,
     }
   },
-  async mounted() {
+  /*   async mounted() {
     this.intro = intro
     this.creation = creation
     this.talking = talking
@@ -73,6 +73,6 @@ export default {
     this.contact = contact
     const newsList = await fetchNews()
     this.newsData = newsList[0]
-  },
+  }, */
 }
 </script>
