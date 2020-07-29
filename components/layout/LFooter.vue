@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full pb-8 bg-ivory" :class="borderClass">
+  <footer class="w-full pb-12 lg:pb-8 bg-ivory" :class="borderClass">
     <div
       v-if="!isContact"
       class="flex mt-32 py-6 bg-white justify-center items-center"
@@ -18,7 +18,7 @@
         </p>
         <div class="lg:flex justify-center items-center px-5">
           <a
-            class="L-footer__btn inline-block relative cursor-pointer text-base bg-white p-6 rounded text-primary text-center w-64 lg:w-1/2 lg:text-lg lg:p-8 transition ease-out duration-700 hover:opacity-75"
+            class="L-footer__btn inline-block relative cursor-pointer text-base bg-white p-6 rounded text-primary text-center w-full lg:w-1/2 lg:text-lg lg:p-8 transition ease-out duration-700 hover:opacity-75"
             href=""
           >
             お問い合わせフォームへ
