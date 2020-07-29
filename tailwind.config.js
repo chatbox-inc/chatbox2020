@@ -49,6 +49,9 @@ module.exports = {
       width: {
         '700px': '700px',
       },
+      lineHeight: {
+        '84': '84px',
+      },
     },
   },
   corePlugins: {
