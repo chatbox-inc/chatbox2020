@@ -27,9 +27,7 @@
         :src="newsData.thumbnail"
         class="hidden mx-auto object-cover mt-8 hidden lg:block"
       />
-      <p class="mt-8">
-        {{ newsData.text }}
-      </p>
+      <div class="marked mt-8" v-html="compiledMarkdown"></div>
       <div
         class="border border-primary relative mt-12 text-primary font-bold rounded-md w-full lg:w-2/5 lg:mx-auto text-center"
       >
@@ -48,19 +46,23 @@
 
 <script>
 import { fetchNewsById } from '@/service/firebase'
+import marked from 'marked'
 export default {
+  async asyncData({ params }) {
+    const newsData = await fetchNewsById(params.id)
+    return {
+      newsData,
+    }
+  },
   data() {
     return {
       newsData: null,
     }
   },
   computed: {
-    getId() {
-      return this.$route.params.id
+    compiledMarkdown() {
+      return marked(this.newsData.text)
     },
-  },
-  async mounted() {
-    this.newsData = await fetchNewsById(this.getId)
   },
   methods: {
     createdDate(createdAt) {

@@ -21,6 +21,17 @@ export default {
     LHero,
     CNewsList,
   },
+  async asyncData() {
+    const date = new Date()
+    const targetYear = date.getFullYear()
+    const newsList = await fetchNews()
+    const newsData = newsList[0]
+    return {
+      targetYear,
+      newsList,
+      newsData,
+    }
+  },
   data() {
     return {
       newsList: null,
@@ -28,13 +39,6 @@ export default {
       years: ['2020', '2021', '2022'],
       newsData: null,
     }
-  },
-  async mounted() {
-    const date = new Date()
-    this.targetYear = date.getFullYear()
-    this.updateNewsList(this.targetYear)
-    const newsList = await fetchNews()
-    this.newsData = newsList[0]
   },
   methods: {
     async updateNewsList(targetYear) {

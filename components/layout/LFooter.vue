@@ -82,9 +82,9 @@
               </a>
             </li>
             <li class="w-4/12 lg:w-auto border-l">
-              <a class="lg:pl-4 hover:opacity-75" href="/contact">
+              <nuxt-link class="lg:pl-4 hover:opacity-75" to="/contact">
                 お問い合わせ
-              </a>
+              </nuxt-link>
             </li>
           </ul>
         </nav>

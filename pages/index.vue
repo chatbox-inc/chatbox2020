@@ -7,7 +7,7 @@
     <CEnjoy v-if="enjoy" :enjoy="enjoy" />
     <CMember v-if="member" :member="member" />
     <CRecruit v-if="recruit" :recruit="recruit" />
-    <CNews />
+    <CNews :news-list="newsList" />
     <CAbout v-if="about" :about="about" />
     <CContact v-if="contact" :contact="contact" />
     <UiBanner v-if="newsData" :news="newsData" />
@@ -49,6 +49,22 @@ export default {
     CAbout,
     CContact,
   },
+  async asyncData() {
+    const newsList = await fetchNews()
+    const newsData = newsList[0]
+    return {
+      newsList,
+      newsData,
+      intro,
+      creation,
+      talking,
+      enjoy,
+      member,
+      recruit,
+      about,
+      contact,
+    }
+  },
   data() {
     return {
       intro: null,
@@ -60,19 +76,8 @@ export default {
       about: null,
       contact: null,
       newsData: null,
+      newsList: null,
     }
-  },
-  async mounted() {
-    this.intro = intro
-    this.creation = creation
-    this.talking = talking
-    this.enjoy = enjoy
-    this.member = member
-    this.recruit = recruit
-    this.about = about
-    this.contact = contact
-    const newsList = await fetchNews()
-    this.newsData = newsList[0]
   },
 }
 </script>
