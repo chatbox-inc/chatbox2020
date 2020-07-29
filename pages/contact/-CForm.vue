@@ -139,7 +139,7 @@
         <UiFormButton @submitForm="submitContact" />
       </div>
     </form>
-    <slot :$v="$v" name="actions" />
+    <!--   <slot :$v="$v" name="actions" /> -->
   </section>
 </template>
 
