@@ -79,6 +79,7 @@
             <li class="w-4/12 lg:w-auto border-l lg:border-l-0">
               <a
                 class="lg:px-4 hover:opacity-75"
+                target="_blank"
                 href="https://www.wantedly.com/companies/chatbox-inc/"
               >
                 採用情報
@@ -100,6 +101,7 @@
           </div>
           <div class="flex justify-end w-1/3">
             <a
+              target="_blank"
               class="mr-2 hover:opacity-75"
               href="https://www.facebook.com/chatbox.inc/"
             >
@@ -108,7 +110,11 @@
                 src="@/assets/image/footer/facebook-square-brands.svg"
               />
             </a>
-            <a class="hover:opacity-75" href="https://twitter.com/chatbox_inc/">
+            <a
+              class="hover:opacity-75"
+              href="https://twitter.com/chatbox_inc/"
+              target="_blank"
+            >
               <img src="@/assets/image/footer/twitter-square-brands.svg" />
             </a>
           </div>
