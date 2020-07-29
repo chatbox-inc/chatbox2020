@@ -1,8 +1,7 @@
 <template>
   <div class="mx-auto overflow-hidden">
-    <h2>test</h2>
-    <!--  <CTop /> -->
-    <!--     <CForm
+    <CTop />
+    <CForm
       :form="form"
       @input="inputForm"
       @setSubject="setSubject"
@@ -14,20 +13,20 @@
       @cancel="closeConfirmModal"
     />
     <UiSentModal v-if="showSentModal" @cancel="closeSentModal" />
-    <UiBanner v-if="newsData" :news="newsData" /> -->
+    <UiBanner v-if="newsData" :news="newsData" />
   </div>
 </template>
 
 <script>
-/* import CTop from '@/pages/contact/-CTop' */
-/* import CForm from '@/pages/contact/-CForm' */
+import CTop from '@/pages/contact/-CTop'
+import CForm from '@/pages/contact/-CForm'
 import { submitContact } from '@/service/firebase'
-/* import { fetchNews } from '@/service/firebase' */
+import { fetchNews } from '@/service/firebase'
 
 export default {
   components: {
-    /*  CTop, */
-    /* CForm, */
+    CTop,
+    CForm,
   },
   data() {
     return {
@@ -42,10 +41,10 @@ export default {
       newsData: null,
     }
   },
-  /*   async mounted() {
+  async mounted() {
     const newsList = await fetchNews()
     this.newsData = newsList[0]
-  }, */
+  },
   methods: {
     openConfirmModal() {
       this.showConfirmModal = true
