@@ -2,17 +2,17 @@
   <div class="overflow-hidden">
     <l-header />
     <Nuxt />
-    <!--     <l-footer /> -->
+    <l-footer />
   </div>
 </template>
 
 <script>
 import LHeader from '@/components/layout/LHeader'
-/* import LFooter from '@/components/layout/LFooter' */
+import LFooter from '@/components/layout/LFooter'
 export default {
   components: {
     LHeader,
-    /*   LFooter, */
+    LFooter,
   },
 }
 </script>

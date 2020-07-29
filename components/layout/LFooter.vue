@@ -1,7 +1,7 @@
 <template>
   <footer class="w-full pb-12 lg:pb-8 bg-ivory" :class="borderClass">
     <div
-      v-if="!isContact"
+      v-show="!isContact"
       class="flex mt-32 py-6 bg-white justify-center items-center"
     >
       <img class="mx-2" src="@/assets/image/footer/icon_mail.svg" />
@@ -9,7 +9,7 @@
         お問い合わせはこちら
       </p>
     </div>
-    <div v-if="!isContact" class="bg-primary h-500px text-center text-white">
+    <div v-show="!isContact" class="bg-primary h-500px text-center text-white">
       <div class="container px-5 lg:px-0 mx-auto">
         <div class="L-footer__triangle w-10 mx-auto"></div>
         <p class="pt-24 pb-16 lg:text-3xl tracking-widest">
@@ -54,13 +54,6 @@
                 事業紹介
               </a>
             </li>
-            <!--            <li-->
-            <!--              class="mb-4 lg:mb-0 w-4/12 lg:w-auto border-l border-r lg:border-l-0"-->
-            <!--            >-->
-            <!--              <nuxt-link to="/" class="lg:px-4 hover:opacity-75">-->
-            <!--                実績紹介-->
-            <!--              </nuxt-link>-->
-            <!--            </li>-->
             <li
               class="mb-4 lg:mb-0 w-1/2 lg:w-auto border-l lg:border-l-0 lg:border-r"
             >
