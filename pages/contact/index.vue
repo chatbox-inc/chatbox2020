@@ -1,6 +1,7 @@
 <template>
   <div class="mx-auto overflow-hidden">
-    <CTop />
+    <h2>test</h2>
+    <!--  <CTop /> -->
     <!--     <CForm
       :form="form"
       @input="inputForm"
@@ -18,14 +19,14 @@
 </template>
 
 <script>
-import CTop from '@/pages/contact/-CTop'
+/* import CTop from '@/pages/contact/-CTop' */
 /* import CForm from '@/pages/contact/-CForm' */
 import { submitContact } from '@/service/firebase'
 import { fetchNews } from '@/service/firebase'
 
 export default {
   components: {
-    CTop,
+    /*  CTop, */
     /* CForm, */
   },
   data() {
