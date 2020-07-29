@@ -4,15 +4,15 @@
       class="bg-primary c-hero__catch rounded absolute w-9/12 lg:h-40 mt-3 sm:w-1/2 sm:mt-0 lg:w-2/5 lg:h-auto lg:mt-0"
     >
       <div
-        class="c-hero__title pt-6 sm:pt-10 pr-2 pb-6 pl-6 lg:pt-20 lg:pb-20 lg:pl-28 text-white lg:font-bold text-15px lg:text-3xl"
+        class="c-hero__title pt-6 sm:pt-10 pr-2 pb-6 pl-6 lg:pt-10 lg:pb-10 lg:pr- lg:pl-12vw text-white lg:font-bold text-15px lg:text-3xl"
       >
         <p
-          class="fadein text1 mb-3 w-full text-xsm sm:w-auto lg:mb-10 lg:text-3xl lg:ml-4 lg:ml-10"
+          class="fadein text1 mb-3 w-full text-xsm sm:w-auto lg:mb-10 lg:text-3xl lg:ml-4 lg:ml-10 lg:leading-84"
         >
           Webのこれからを語り合う
         </p>
         <p
-          class="mb-3 w-full text-xsm sm:w-auto lg:mb-10 lg:w-auto lg:text-3xl lg:ml-4 lg:ml-10"
+          class="mb-3 w-full text-xsm sm:w-auto lg:mb-10 lg:w-auto lg:text-3xl lg:ml-4 lg:ml-10 lg:leading-84"
         >
           <span class="fadein text2 inline-block">｢作る｣</span>
           <span class="fadein text3 inline-block">｢伝える｣</span>
@@ -32,6 +32,7 @@ export default {}
 
 <style lang="scss" scoped>
 .c-hero {
+  font-family: YuGothic, serif;
   &:after {
     position: absolute;
     display: inline-block;
@@ -61,11 +62,11 @@ export default {}
   }
   @keyframes animation {
     70% {
-      top: 39%;
+      top: 38%;
       left: -1050px;
     }
     100% {
-      top: 39%;
+      top: 38%;
       left: -5px;
     }
   }
@@ -102,11 +103,13 @@ export default {}
       }
       @keyframes animation {
         70% {
-          top: 43%;
-          left: -500px;
+          top: initial;
+          bottom: 0;
+          left: 75px;
         }
         100% {
-          top: 43%;
+          top: initial;
+          bottom: 75px;
           left: -5px;
         }
       }
