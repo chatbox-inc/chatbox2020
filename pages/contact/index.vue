@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto overflow-hidden">
     <CTop />
-    <CForm
+    <!--     <CForm
       :form="form"
       @input="inputForm"
       @setSubject="setSubject"
@@ -13,20 +13,20 @@
       @cancel="closeConfirmModal"
     />
     <UiSentModal v-if="showSentModal" @cancel="closeSentModal" />
-    <UiBanner v-if="newsData" :news="newsData" />
+    <UiBanner v-if="newsData" :news="newsData" /> -->
   </div>
 </template>
 
 <script>
 import CTop from '@/pages/contact/-CTop'
-import CForm from '@/pages/contact/-CForm'
+/* import CForm from '@/pages/contact/-CForm' */
 import { submitContact } from '@/service/firebase'
 import { fetchNews } from '@/service/firebase'
 
 export default {
   components: {
     CTop,
-    CForm,
+    /* CForm, */
   },
   data() {
     return {
