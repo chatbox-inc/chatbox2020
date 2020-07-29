@@ -1,7 +1,7 @@
 <template>
   <footer class="w-full pb-12 lg:pb-8 bg-ivory" :class="borderClass">
     <div
-      v-if="!isContact"
+      v-show="!isContact"
       class="flex mt-32 py-6 bg-white justify-center items-center"
     >
       <img class="mx-2" src="@/assets/image/footer/icon_mail.svg" />
@@ -9,7 +9,7 @@
         お問い合わせはこちら
       </p>
     </div>
-    <div v-if="!isContact" class="bg-primary h-500px text-center text-white">
+    <div v-show="!isContact" class="bg-primary h-500px text-center text-white">
       <div class="container px-5 lg:px-0 mx-auto">
         <div class="L-footer__triangle w-10 mx-auto"></div>
         <p class="pt-24 pb-16 lg:text-3xl tracking-widest">
@@ -17,9 +17,9 @@
           ご相談はお気軽にchatboxまで。
         </p>
         <div class="lg:flex justify-center items-center px-5">
-          <a
+          <nuxt-link
             class="L-footer__btn inline-block relative cursor-pointer text-base bg-white p-6 rounded text-primary text-center w-full lg:w-1/2 lg:text-lg lg:p-8 transition ease-out duration-700 hover:opacity-75"
-            href=""
+            to="/contact"
           >
             お問い合わせフォームへ
             <img
@@ -27,14 +27,17 @@
               src="@/assets/image/footer/keyboard_arrow_right-24px.svg"
               alt="arrow"
             />
-          </a>
+          </nuxt-link>
           <div class="w-full lg:w-1/2 py-16 lg:py-0 lg:px-16 lg:text-left">
             <p class="lg:text-xl tracking-widest">
               電話でのお問い合わせ
             </p>
-            <p class="text-2xl lg:text-3xl tracking-widest">
+            <a
+              class="text-2xl lg:text-3xl tracking-widest"
+              href="tel:05035551212"
+            >
               050-3555-1212
-            </p>
+            </a>
           </div>
         </div>
       </div>
@@ -51,17 +54,10 @@
                 事業紹介
               </a>
             </li>
-            <!--            <li-->
-            <!--              class="mb-4 lg:mb-0 w-4/12 lg:w-auto border-l border-r lg:border-l-0"-->
-            <!--            >-->
-            <!--              <nuxt-link to="/" class="lg:px-4 hover:opacity-75">-->
-            <!--                実績紹介-->
-            <!--              </nuxt-link>-->
-            <!--            </li>-->
             <li
               class="mb-4 lg:mb-0 w-1/2 lg:w-auto border-l lg:border-l-0 lg:border-r"
             >
-              <nuxt-link class="lg:px-4 hover:opacity-75" to="/company">
+              <nuxt-link class="lg:px-4 hover:opacity-75" to="/about">
                 会社情報
               </nuxt-link>
             </li>
@@ -76,6 +72,7 @@
             <li class="w-4/12 lg:w-auto border-l lg:border-l-0">
               <a
                 class="lg:px-4 hover:opacity-75"
+                target="_blank"
                 href="https://www.wantedly.com/companies/chatbox-inc/"
               >
                 採用情報
@@ -97,6 +94,7 @@
           </div>
           <div class="flex justify-end w-1/3">
             <a
+              target="_blank"
               class="mr-2 hover:opacity-75"
               href="https://www.facebook.com/chatbox.inc/"
             >
@@ -105,7 +103,11 @@
                 src="@/assets/image/footer/facebook-square-brands.svg"
               />
             </a>
-            <a class="hover:opacity-75" href="https://twitter.com/chatbox_inc/">
+            <a
+              class="hover:opacity-75"
+              href="https://twitter.com/chatbox_inc/"
+              target="_blank"
+            >
               <img src="@/assets/image/footer/twitter-square-brands.svg" />
             </a>
           </div>
