@@ -17,9 +17,9 @@
           ご相談はお気軽にchatboxまで。
         </p>
         <div class="lg:flex justify-center items-center px-5">
-          <a
+          <nuxt-link
             class="L-footer__btn inline-block relative cursor-pointer text-base bg-white p-6 rounded text-primary text-center w-full lg:w-1/2 lg:text-lg lg:p-8 transition ease-out duration-700 hover:opacity-75"
-            href=""
+            to="/contact"
           >
             お問い合わせフォームへ
             <img
@@ -27,14 +27,17 @@
               src="@/assets/image/footer/keyboard_arrow_right-24px.svg"
               alt="arrow"
             />
-          </a>
+          </nuxt-link>
           <div class="w-full lg:w-1/2 py-16 lg:py-0 lg:px-16 lg:text-left">
             <p class="lg:text-xl tracking-widest">
               電話でのお問い合わせ
             </p>
-            <p class="text-2xl lg:text-3xl tracking-widest">
+            <a
+              class="text-2xl lg:text-3xl tracking-widest"
+              href="tel:05035551212"
+            >
               050-3555-1212
-            </p>
+            </a>
           </div>
         </div>
       </div>
@@ -61,7 +64,7 @@
             <li
               class="mb-4 lg:mb-0 w-1/2 lg:w-auto border-l lg:border-l-0 lg:border-r"
             >
-              <nuxt-link class="lg:px-4 hover:opacity-75" to="/company">
+              <nuxt-link class="lg:px-4 hover:opacity-75" to="/about">
                 会社情報
               </nuxt-link>
             </li>

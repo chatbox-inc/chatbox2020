@@ -32,7 +32,7 @@
           </li>
         </ol>
         <div class="mt-10 lg:mt-20 text-center">
-          <UiButton :text="'お知らせ一覧へ'" :url="'#'" />
+          <UiButton :text="'お知らせ一覧へ'" url="/news" />
         </div>
       </div>
     </div>

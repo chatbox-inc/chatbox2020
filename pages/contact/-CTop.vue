@@ -51,7 +51,9 @@
               <p class="mb-5 text-sm lg:text-xsm tracking-wider">
                 お電話でのお問い合わせ
               </p>
-              <a href="#" class="text-3.5xl text-primary">050-3555-1212</a>
+              <a href="tel:05035551212" class="text-3.5xl text-primary">
+                050-3555-1212
+              </a>
               <p class="text-sm lg:text-base mt-5">
                 24時間対応:メッセージ預かり
               </p>
