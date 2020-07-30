@@ -113,7 +113,7 @@ export default {
   width: 45px;
   height: 2px;
   bottom: -5px;
-  left: -8%;
+  left: -20px;
   background-color: #c3504f;
   transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.56);
 }

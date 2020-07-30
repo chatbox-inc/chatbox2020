@@ -40,15 +40,12 @@
 </template>
 
 <script>
-import { fetchNews } from '@/service/firebase'
 export default {
-  data() {
-    return {
-      newsList: [],
-    }
-  },
-  async mounted() {
-    this.newsList = await fetchNews()
+  props: {
+    newsList: {
+      type: Array,
+      required: true,
+    },
   },
   methods: {
     createdDate(createdAt) {
