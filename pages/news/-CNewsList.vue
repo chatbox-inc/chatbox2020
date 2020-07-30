@@ -34,7 +34,7 @@
             <p
               class="inline-block text-xl font-medium text-primary lg:text-black lg:text-black"
             >
-              {{ createdDate(news.createdAt) }}
+              <!--    {{ createdDate(news.createdAt) }} -->
             </p>
             <p
               class="bg-primary text-center py-1 text-xs lg:text-sm w-24 block text-white"

@@ -4,7 +4,7 @@
     <div class="container mx-auto px-5 pt-12 lg:pt-32">
       <div class="flex flex-row space-x-3 lg:space-x-4 items-center">
         <p class="inline-block font-medium text-xs lg:text-base">
-          {{ createdDate(newsData.createdAt) }}
+          <!--   {{ createdDate(newsData.createdAt) }} -->
         </p>
         <p
           class="bg-primary text-center py-1 text-xs lg:text-sm w-24 block text-white"
