@@ -90,8 +90,7 @@ export default {
 .marked {
   line-height: 1.7;
 
-  > a {
-    display: inline-block;
+  p > a {
     word-break: break-all;
   }
 }

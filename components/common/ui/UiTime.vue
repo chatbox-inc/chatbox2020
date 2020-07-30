@@ -19,7 +19,7 @@ export default {
       if (!this.createdAt) {
         return null
       }
-      if (!(this.createdAt instanceof Object)) {
+      if (!(this.createdAt instanceof Date)) {
         return null
       }
       return this.$dayjs(this.createdAt).format('YYYY/MM/DD')
