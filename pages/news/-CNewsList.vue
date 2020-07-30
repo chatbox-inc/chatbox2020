@@ -31,11 +31,7 @@
           <div
             class="flex flex-row space-x-3 lg:space-x-10 items-center lg:justify-around"
           >
-            <p
-              class="inline-block text-xl font-medium text-primary lg:text-black lg:text-black"
-            >
-              <!--    {{ createdDate(news.createdAt) }} -->
-            </p>
+            <UiTime :created-at="news.createdAt" />
             <p
               class="bg-primary text-center py-1 text-xs lg:text-sm w-24 block text-white"
             >

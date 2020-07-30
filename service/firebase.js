@@ -1,4 +1,5 @@
-import firebase from 'firebase'
+import firebase from 'firebase/app'
+import 'firebase/firestore'
 
 const fierbaseConfig = {
   apiKey: 'AIzaSyCIfQPTBbAWN0V64gMP-3fivC5JUPPahWM',
@@ -34,7 +35,11 @@ export async function fetchNews() {
   const newsList = []
   const snapShot = await newsRef.orderBy('createdAt', 'desc').limit(limit).get()
   snapShot.forEach((doc) => {
-    newsList.push({ ...doc.data(), id: doc.id })
+    newsList.push({
+      ...doc.data(),
+      id: doc.id,
+      createdAt: doc.data().createdAt.toDate(),
+    })
   })
   return newsList
 }
@@ -43,6 +48,7 @@ export async function fetchNewsById(id) {
   const targetNewsRef = newsRef.doc(id)
   let doc = await targetNewsRef.get()
   let newsData = doc.data()
+  newsData.createdAt = newsData.createdAt.toDate()
   return newsData
 }
 
@@ -56,7 +62,11 @@ export async function fetchNewsByYear(year) {
     .where('createdAt', '<=', endDate)
     .get()
   snapShot.forEach((doc) => {
-    newsList.push({ ...doc.data(), id: doc.id })
+    newsList.push({
+      ...doc.data(),
+      id: doc.id,
+      createdAt: doc.data().createdAt.toDate(),
+    })
   })
   return newsList
 }

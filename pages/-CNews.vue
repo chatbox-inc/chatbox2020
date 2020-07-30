@@ -12,16 +12,13 @@
               <div
                 class="flex flex-row space-x-3 lg:space-x-10 items-center lg:justify-around"
               >
-                <p
-                  class="inline-block font-medium text-xl text-primary lg:text-black lg:text-xl lg:text-black"
-                >
-                  <!--        {{ createdDate(news.createdAt) }} -->
-                </p>
-                <p
-                  class="bg-primary text-center py-1 text-xs lg:text-sm w-24 block text-white"
-                >
-                  {{ news.category }}
-                </p>
+                <UiTime :created-at="news.createdAt">
+                  <p
+                    class="bg-primary text-center py-1 text-xs lg:text-sm w-24 block text-white"
+                  >
+                    {{ news.category }}
+                  </p>
+                </UiTime>
               </div>
               <div class="mt-4 lg:mt-0 lg:ml-8">
                 <p class="text-left text-sm lg:text-xl font-medium" href="#">
@@ -45,11 +42,6 @@ export default {
     newsList: {
       type: Array,
       required: true,
-    },
-  },
-  methods: {
-    createdDate(createdAt) {
-      return this.$dayjs(createdAt.toDate()).format('YYYY/MM/DD')
     },
   },
 }

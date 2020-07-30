@@ -12,7 +12,7 @@
         class="w-5 lg:w-6"
         alt="お知らせ"
       />
-      <!--  <time>{{ createdDate(news.createdAt) }}</time> -->
+      <time>{{ createdDate }}</time>
       <p>
         {{ news.category }}:
         {{ news.title }}
@@ -29,11 +29,22 @@ export default {
       required: true,
     },
   },
-  methods: {
+  computed: {
+    createdDate() {
+      if (!this.news) {
+        return null
+      }
+      if (!(this.news.createdAt instanceof Date)) {
+        return null
+      }
+      return this.$dayjs(this.news.createdAt).format('YYYY/MM/DD')
+    },
+  },
+  /*   methods: {
     createdDate(createdAt) {
       return this.$dayjs(createdAt.toDate()).format('YYYY/MM/DD')
     },
-  },
+  }, */
 }
 </script>
 
