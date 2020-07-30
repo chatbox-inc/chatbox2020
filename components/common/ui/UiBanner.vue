@@ -40,11 +40,6 @@ export default {
       return this.$dayjs(this.news.createdAt).format('YYYY/MM/DD')
     },
   },
-  /*   methods: {
-    createdDate(createdAt) {
-      return this.$dayjs(createdAt.toDate()).format('YYYY/MM/DD')
-    },
-  }, */
 }
 </script>
 
