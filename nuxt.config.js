@@ -16,14 +16,57 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title:
+      '株式会社 chatboxはWebのこれからを語り合う会社です。| 株式会社 chatbox(チャットボックス)' ||
+      '',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: 'description',
+        name: 'viewport',
+        content:
+          'width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no',
+      },
+      {
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content:
+          '株式会社chatboxは大阪堺筋本町の小さなWeb制作会社です。Web制作や技術顧問、イベント運営など、最新のWeb製作技術を活かした様々な活動を行っています。',
+      },
+      {
+        name: 'keyword',
+        content:
+          '大阪,Web制作,技術顧問,イベント,PHP,フロントエンド,株式会社chatbox,チャットボックス',
+      },
+      {
+        property: 'og:title',
+        content:
+          '株式会社 chatboxはWebのこれからを語り合う会社です。| 株式会社 chatbox(チャットボックス)',
+      },
+      {
+        property: 'og:image',
+        content: 'https://chatbox-inc.com/image/ogp.jpg',
+      },
+      { property: 'og:url', content: 'https://chatbox-inc.com/' },
+      {
+        property: 'og:description',
+        content:
+          '株式会社chatboxは大阪堺筋本町の小さなWeb制作会社です。Web制作や技術顧問、イベント運営など、最新のWeb製作技術を活かした様々な活動を行っています。',
+      },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@chatbox_inc' },
+      { name: 'twitter:creator', content: '@chatbox_inc' },
+      {
+        name: 'twitter:title',
+        content:
+          '株式会社chatboxは大阪堺筋本町の小さなWeb制作会社です。Web制作や技術顧問、イベント運営など、最新のWeb製作技術を活かした様々な活動を行っています。',
+      },
+      {
+        name: 'twitter:description',
+        content:
+          '株式会社chatboxは大阪堺筋本町の小さなWeb制作会社です。Web制作や技術顧問、イベント運営など、最新のWeb製作技術を活かした様々な活動を行っています。',
+      },
+      {
+        name: 'twitter:image',
+        content: 'https://chatbox-inc.com/image/ogp.jpg',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],

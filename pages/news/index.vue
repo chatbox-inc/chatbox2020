@@ -23,7 +23,7 @@ export default {
   },
   async asyncData() {
     const date = new Date()
-    const targetYear = date.getFullYear()
+    const targetYear = date.getFullYear().toString()
     const newsList = await fetchNews()
     const newsData = newsList[0]
     return {

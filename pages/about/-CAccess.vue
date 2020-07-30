@@ -33,31 +33,33 @@
       <table
         class="table-fixed my-10 lg:my-20 w-full text-left mx-auto text-sm lg:text-base"
       >
-        <tr class="leading-7 align-top">
-          <th
-            class="block w-full lg:py-2 pt-2 pl-2 lg:pl-20 lg:table-cell lg:w-1/3"
-          >
-            住所
-          </th>
-          <td class="block w-full lg:py-2 pb-2 pl-2 lg:table-cell lg:w-auto">
-            <p>〒530-0043</p>
-            <p>大阪府大阪市北区天満２丁目８−１７</p>
-            <p>天満橋パークビル 5F</p>
-          </td>
-        </tr>
-        <tr class="leading-7 align-top">
-          <th class="block w-full pt-3 pl-2 lg:pl-20 lg:table-cell lg:w-1/3">
-            電車でアクセス
-          </th>
-          <td class="block w-full lg:pt-3 pl-2 lg:table-cell lg:w-auto">
-            <p>JR 南森町駅から徒歩5分</p>
-            <p>JR 大阪天満宮駅から徒歩5分</p>
-            <p>谷町線 天満橋駅から徒歩5分</p>
-            <p class="pt-3">
-              ※1階のCoCo壱が目印の建物です。
-            </p>
-          </td>
-        </tr>
+        <tbody>
+          <tr class="leading-7 align-top">
+            <th
+              class="block w-full lg:py-2 pt-2 pl-2 lg:pl-20 lg:table-cell lg:w-1/3"
+            >
+              住所
+            </th>
+            <td class="block w-full lg:py-2 pb-2 pl-2 lg:table-cell lg:w-auto">
+              <p>〒530-0043</p>
+              <p>大阪府大阪市北区天満２丁目８−１７</p>
+              <p>天満橋パークビル 5F</p>
+            </td>
+          </tr>
+          <tr class="leading-7 align-top">
+            <th class="block w-full pt-3 pl-2 lg:pl-20 lg:table-cell lg:w-1/3">
+              電車でアクセス
+            </th>
+            <td class="block w-full lg:pt-3 pl-2 lg:table-cell lg:w-auto">
+              <p>JR 南森町駅から徒歩5分</p>
+              <p>JR 大阪天満宮駅から徒歩5分</p>
+              <p>谷町線 天満橋駅から徒歩5分</p>
+              <p class="pt-3">
+                ※1階のCoCo壱が目印の建物です。
+              </p>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </section>
