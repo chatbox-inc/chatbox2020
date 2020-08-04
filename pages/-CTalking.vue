@@ -1,7 +1,7 @@
 <template>
-  <section v-if="talking" class="pb-20 pt-6 lg:mb-20">
+  <section v-if="talking" class="pb-12 pt-12 lg:mb-20">
     <div class="container mx-auto text-black px-5">
-      <UiTitle class="lg:mb-5" :title="talking.title" />
+      <UiTitle class="lg:mb-5 mb-4" :title="talking.title" />
       <div class="lg:flex lg:space-x-12 lg:px-5">
         <div class="w-full lg:w-1/2">
           <h3 class="text-primary text-1xl lg:text-2xl tracking-widest">

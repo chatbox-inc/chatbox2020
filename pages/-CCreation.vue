@@ -2,7 +2,7 @@
   <section v-if="creation" class="lg:mb-32 bg-ivory">
     <div class="c-creation__head">
       <div class="container mx-auto px-5">
-        <UiTitle class="lg:mb-5" :title="creation.title" />
+        <UiTitle class="lg:mb-5 mb-4" :title="creation.title" />
       </div>
     </div>
     <div class="container mx-auto text-black px-5">
