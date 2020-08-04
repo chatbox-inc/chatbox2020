@@ -2,7 +2,16 @@
   <section v-if="intro" class="pt-16 pb-10">
     <div class="container mx-auto text-black px-5 lg:px-0">
       <div class="lg:px-5">
-        <UiTitle class="c-intro__title lg:mb-6" :title="intro.title" />
+        <div
+          class="c-title lg:mb-6 py-10 justify-center text-center lg:inline-block block"
+        >
+          <span class="text-xl lg:text-7xl text-primary -mr-2">
+            W
+          </span>
+          <span class="text-xl lg:text-5xl relative lg:inline">
+            e are thinking about Web
+          </span>
+        </div>
       </div>
       <div class="c-intro__bg bg-no-repeat bg-contain pt-24 lg:pt-64">
         <div
@@ -58,5 +67,9 @@ export default {
       background-color: #fff;
     }
   }
+}
+
+.c-title {
+  font-family: Yu Mincho Medium, YuMincho, serif;
 }
 </style>
