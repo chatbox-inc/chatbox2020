@@ -22,7 +22,7 @@
         </div>
         <div class="flex lg:block lg:w-1/2 mt-2 lg:mt-0">
           <img
-            class="h-200px w-2/3 lg:h-500px lg:w-full object-cover mb-3 lg:mb-10"
+            class="h-200px w-2/3 lg:h-500px lg:w-full object-cover mb-3 lg:mb-10 mb-20"
             src="@/assets/image/talking/talking_photo02.jpg"
             alt=""
           />

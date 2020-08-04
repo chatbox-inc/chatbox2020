@@ -33,7 +33,7 @@
             />
           </figure>
         </div>
-        <div class="flex lg:block lg:w-1/2 mt-2 lg:mt-0">
+        <div class="flex lg:block lg:w-1/2 mt-2 lg:mt-0 mb-20">
           <img
             class="h-200px w-3/5 lg:h-500px lg:w-full object-cover mb-3 lg:mb-10"
             src="@/assets/image/creation/creation__photo02.jpg"
