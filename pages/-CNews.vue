@@ -2,7 +2,7 @@
   <section class="pt-5 lg:pt-10 pb-16 lg:pb-8 lg:pb-20 px-5">
     <div class="container mx-auto">
       <div class="pr-5 pl-5 lg:p-0">
-        <UiTitle :title="'News'" />
+        <UiTitle class="pb-10 lg:pb-0" :title="'News'" />
         <ol class="lg:flex flex-col space-y-8 lg:space-y-10 -mt-2 lg:mt-8">
           <li v-for="(news, index) in newsList" :key="index" class="bg-white">
             <nuxt-link

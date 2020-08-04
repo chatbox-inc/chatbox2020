@@ -1,5 +1,5 @@
 <template>
-  <section v-if="contact" class="pt-6 pb-20 lg:pt-16 lg:pb-40">
+  <section v-if="contact" class="pt-6 lg:pt-16 lg:pb-30">
     <div class="container mx-auto px-5 text-center">
       <UiTitle :title="contact.title" />
       <p

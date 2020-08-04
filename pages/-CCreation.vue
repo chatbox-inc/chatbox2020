@@ -2,7 +2,7 @@
   <section v-if="creation" class="lg:mb-32 bg-ivory">
     <div class="c-creation__head">
       <div class="container mx-auto px-5">
-        <UiTitle class="lg:mb-5" :title="creation.title" />
+        <UiTitle class="lg:mb-5 mb-4" :title="creation.title" />
       </div>
     </div>
     <div class="container mx-auto text-black px-5">
@@ -33,7 +33,7 @@
             />
           </figure>
         </div>
-        <div class="flex lg:block lg:w-1/2 mt-2 lg:mt-0">
+        <div class="flex lg:block lg:w-1/2 mt-2 lg:mt-0 mb-20">
           <img
             class="h-200px w-3/5 lg:h-500px lg:w-full object-cover mb-3 lg:mb-10"
             src="@/assets/image/creation/creation__photo02.jpg"
