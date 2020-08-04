@@ -5,7 +5,7 @@
         <div
           class="c-title lg:mb-6 py-10 justify-center text-center lg:inline-block block"
         >
-          <span class="text-xl lg:text-7xl text-primary -mr-2">
+          <span class="text-xl lg:text-7xl text-primary -mr-2 lg:-mr-6">
             W
           </span>
           <span class="text-xl lg:text-5xl relative lg:inline">
