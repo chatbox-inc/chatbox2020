@@ -1,8 +1,7 @@
 const functions = require('firebase-functions')
 const admin = require('firebase-admin')
 const axios = require('axios')
-const slack_url =
-  'https://hooks.slack.com/services/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'
+const slack_url = `${functions.config().slack.url}`
 
 admin.initializeApp()
 
