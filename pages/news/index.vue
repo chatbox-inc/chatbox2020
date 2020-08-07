@@ -36,7 +36,7 @@ export default {
     return {
       newsList: null,
       targetYear: null,
-      years: ['2020', '2021', '2022'],
+      years: ['2020'],
       newsData: null,
     }
   },
