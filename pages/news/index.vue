@@ -23,9 +23,9 @@ export default {
   },
   data() {
     return {
-      newsList: null,
+      newsList: [],
       targetYear: null,
-      years: ['2020', '2021', '2022'],
+      years: ['2020'],
       newsData: null,
     }
   },
