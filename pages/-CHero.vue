@@ -42,64 +42,17 @@ export default {}
     width: 2px;
     height: 140px;
     background-color: #c3504f;
-    animation: line 0.5s ease forwards;
-    animation-delay: 6.7s;
-    transform: rotateX(90deg);
-    transform-origin: top;
   }
-  @keyframes line {
-    100% {
-      transform: rotateX(0);
-    }
-  }
-
   &__catch {
-    left: -1000px;
+    top: 39%;
+    left: -10px;
     max-width: 60vw;
     background-color: rgba(195, 80, 79, 0.9);
-    animation: animation 3s ease-out forwards;
-    animation-iteration-count: inherit;
-  }
-  @keyframes animation {
-    70% {
-      top: 38%;
-      left: -1050px;
-    }
-    100% {
-      top: 38%;
-      left: -5px;
-    }
-  }
-  &__title {
-    .fadein {
-      opacity: 0;
-      transform-origin: 50% 50% -10px;
-      transform: rotateX(90deg);
-      animation: fadein 0.2s ease-out forwards;
-    }
-    @keyframes fadein {
-      100% {
-        opacity: 1;
-        transform: rotateX(0);
-      }
-    }
-    .text1 {
-      animation-delay: 3.5s;
-    }
-    .text2 {
-      animation-delay: 4.3s;
-    }
-    .text3 {
-      animation-delay: 5.1s;
-    }
-    .text4 {
-      animation-delay: 5.9s;
-    }
   }
   @media (max-width: 980px) {
     .c-hero {
       &__catch {
-        top: 39%;
+        top: 48%;
       }
       @keyframes animation {
         70% {
