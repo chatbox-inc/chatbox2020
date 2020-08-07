@@ -16,6 +16,8 @@ https://github.com/chatbox-inc/chatbox2020/issues/38
 ## masterNetlify
 https://chatbox2020.netlify.app/
 
+## firebase hosting
+https://chatbox2020-26423.web.app/
 
 ## 各種資料
 
