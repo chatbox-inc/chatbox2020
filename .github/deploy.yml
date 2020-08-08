@@ -1,0 +1,41 @@
+name: Deploy Firebase Funtions & Hosting
+on: 
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Install Dependencies
+        run: npm Install
+      - name: build
+        run: npm run export
+      - name: Archive Production Artiface
+        uses: actions/upload-artiface@master
+        with:
+          name: dist
+          path: dist
+  deploy:
+    name: Deploy 
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Download Artiface
+        uses: actions/download-artifact@master
+        with:
+          name: dist
+          path: dist
+      - name: Deploy to firebase function
+        uses: w9jds/firebase-action@master   
+        width:
+          args: deploy
+        env:
+          FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
+
+  
