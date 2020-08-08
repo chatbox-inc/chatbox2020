@@ -1,22 +1,19 @@
 # chatbox2020
 
-## tailwindcssコーディング方法共通化 
+コーディングガイドラインはこちら
 
-基本的にはTailwindのクラスのみを使用する。    
-position指定など、tailwindで実現しづらい場合のみコンポーネント内にcssを記述しても良い。
+https://github.com/chatbox-inc/guideline/tree/master/nuxtjs
 
-各セクションで使用されるボタンのような要素はコンポーネント化する。  
-コンポーネントには役割に応じて先頭にprefixをつける。
-UI系 UiButton.vue, UiTitle.vue  
-Layout系 LHeader.vue, LFooter.vue
+## Environment
 
-/components配下にあるコンポーネントはimport文を使用せずに読み込む事が出来ます。  
-https://github.com/chatbox-inc/chatbox2020/issues/38
+### Production 
 
-## masterNetlify
+https://chatbox2020-26423.web.app/
+
+### Dev
+
 https://chatbox2020.netlify.app/
 
-## firebase hosting
 https://chatbox2020-26423.web.app/
 
 ## 各種資料
@@ -24,7 +21,8 @@ https://chatbox2020-26423.web.app/
 画面一覧表
 
 コーディング規約
-https://github.com/chatbox-inc/cobako_chatbox/blob/master/documents/%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E8%A6%8F%E7%B4%84.md
+
+https://github.com/chatbox-inc/guideline/tree/master/nuxtjs
 
 ページ一覧
 
