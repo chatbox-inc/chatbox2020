@@ -73,6 +73,7 @@
               <a
                 class="lg:px-4 hover:opacity-75"
                 target="_blank"
+                rel="noopener"
                 href="https://www.wantedly.com/companies/chatbox-inc/"
               >
                 採用情報
@@ -87,7 +88,11 @@
         </nav>
         <div class="flex pt-12 lg:py-3">
           <div class="flex items-center w-2/3">
-            <img class="mr-4" src="@/assets/image/footer/img_logo@2x.png" />
+            <img
+              class="mr-4"
+              src="@/assets/image/footer/img_logo@2x.png"
+              alt="chatboxアイコン"
+            />
             <div class="text-xs lg:text-sm">
               Copyright © chatbox.inc All Rights Reserved.
             </div>
@@ -95,20 +100,28 @@
           <div class="flex justify-end w-1/3">
             <a
               target="_blank"
+              rel="noopener"
               class="mr-2 hover:opacity-75"
+              aria-label="facebookへ"
               href="https://www.facebook.com/chatbox.inc/"
             >
               <img
                 class="hover:opacity-75"
                 src="@/assets/image/footer/facebook-square-brands.svg"
+                alt="facebookアイコン"
               />
             </a>
             <a
               class="hover:opacity-75"
               href="https://twitter.com/chatbox_inc/"
               target="_blank"
+              rel="noopener"
+              aria-label="Twitterへ"
             >
-              <img src="@/assets/image/footer/twitter-square-brands.svg" />
+              <img
+                src="@/assets/image/footer/twitter-square-brands.svg"
+                alt="Twitterアイコン"
+              />
             </a>
           </div>
         </div>

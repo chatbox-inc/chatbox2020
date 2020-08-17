@@ -16,6 +16,9 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
+    htmlAttrs: {
+      lang: 'ja',
+    },
     title:
       '株式会社 chatboxはWebのこれからを語り合う会社です。| 株式会社 chatbox(チャットボックス)' ||
       '',

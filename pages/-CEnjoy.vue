@@ -18,7 +18,7 @@
           <figure>
             <img
               src="@/assets/image/enjoy/enjoy_photo01.jpg"
-              alt=""
+              alt="スクールの様子"
               class="mt-6 lg:mt-12 object-cover object-top w-full h-200px lg:h-full"
             />
           </figure>
@@ -26,7 +26,7 @@
         <div class="flex lg:block lg:w-1/2 mt-2 lg:mt-0">
           <img
             src="@/assets/image/enjoy/enjoy_photo02.jpg"
-            alt=""
+            alt="イベントの様子"
             class="h-200px w-3/5 lg:h-500px lg:w-full object-cover mb-3 lg:mb-10 mb-20"
           />
           <ul

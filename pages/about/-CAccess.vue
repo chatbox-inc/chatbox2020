@@ -7,6 +7,7 @@
         アクセス
       </h3>
       <iframe
+        title="GoogleMap"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.424416216089!2d135.5152549152322!3d34.69447368043616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e723237eaaab%3A0x7d8bc4d8a57d77bc!2z5qCq5byP5Lya56S-Y2hhdGJveA!5e0!3m2!1sja!2sjp!4v1594885174644!5m2!1sja!2sjp"
         width="100%"
         height="400px"
@@ -21,6 +22,7 @@
           class="btn inline-block mt-8 relative cursor-pointer text-sm bg-primary px-6 py-4 rounded text-white text-center w-64 lg:text-lg transition ease-out duration-700 hover:opacity-75"
           href="https://www.google.com/maps/place/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEchatbox/@34.6944737,135.5152549,17z/data=!3m1!4b1!4m5!3m4!1s0x6000e723237eaaab:0x7d8bc4d8a57d77bc!8m2!3d34.6786564!4d135.5094156"
           target="_blank"
+          rel="noopener"
         >
           Google Mapで開く
           <img

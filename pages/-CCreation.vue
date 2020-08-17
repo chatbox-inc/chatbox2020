@@ -28,7 +28,7 @@
           <figure>
             <img
               src="@/assets/image/creation/creation__photo01.jpg"
-              alt="制作イメージ"
+              alt="制作イメージ1"
               class="mt-6 lg:mt-12 object-cover object-top w-full h-200px lg:h-full"
             />
           </figure>
@@ -37,7 +37,7 @@
           <img
             class="h-200px w-3/5 lg:h-500px lg:w-full object-cover mb-3 lg:mb-10"
             src="@/assets/image/creation/creation__photo02.jpg"
-            alt=""
+            alt="制作イメージ2"
           />
           <ul
             class="text-primary text-xs ml-2 mt-3 lg:ml-3 lg:m-0 text-2xl hidden lg:block"
