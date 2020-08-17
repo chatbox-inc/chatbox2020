@@ -53,6 +53,7 @@
                 v-model="$v.form.name.$model"
                 class="border bg-ivory text-xsm mt-2 lg:mt-0 lg:text-base w-3/5 px-3 border-gray h-8 outline-none w-full"
                 type="text"
+                aria-label="名前を入力"
                 @input="$emit('input', form)"
               />
               <p
@@ -76,6 +77,7 @@
                 v-model="$v.form.email.$model"
                 class="border bg-ivory text-xsm mt-2 lg:mt-0 lg:text-base w-3/5 px-3 border-gray h-8 outline-none w-full"
                 type="email"
+                aria-label="メールアドレスを入力"
                 @input="$emit('input', form)"
               />
               <p
@@ -101,6 +103,7 @@
                 v-model="$v.form.subject.$model"
                 class="border bg-ivory text-xsm lg:text-base w-3/5 px-3 border-gray h-8 outline-none w-full"
                 type="text"
+                aria-label="件名を入力"
                 @input="$emit('input', form)"
               />
               <p
@@ -123,6 +126,7 @@
               <textarea
                 v-model="$v.form.message.$model"
                 class="border bg-ivory text-xsm mt-2 lg:mt-0 lg:text-base w-3/5 px-3 py-4 border-gray h-48 resize-none outline-none w-full"
+                aria-label="お問い合わせ内容を入力"
                 @input="$emit('input', form)"
               />
               <p

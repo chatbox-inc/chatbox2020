@@ -6,7 +6,7 @@
       </h3>
       <img
         src="@/assets/image/company/about_image.png"
-        alt=""
+        alt="会社イメージ"
         class="my-12 lg:my-16 w-full h-auto"
       />
       <table class="table-fixed w-full text-left mx-auto text-sm lg:text-base">

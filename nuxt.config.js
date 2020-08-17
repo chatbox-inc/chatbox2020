@@ -16,6 +16,9 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
+    htmlAttrs: {
+      lang: 'ja',
+    },
     title:
       '株式会社 chatboxはWebのこれからを語り合う会社です。| 株式会社 chatbox(チャットボックス)' ||
       '',
@@ -23,8 +26,7 @@ export default {
       { charset: 'utf-8' },
       {
         name: 'viewport',
-        content:
-          'width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no',
+        content: 'width=device-width, minimum-scale=1, initial-scale=1',
       },
       {
         name: 'description',

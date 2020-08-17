@@ -16,7 +16,7 @@
             <img
               class="mt-12 object-cover object-top w-full h-200px lg:h-full"
               src="@/assets/image/talking/talking_photo01.jpg"
-              alt=""
+              alt="社員研修イメージ"
             />
           </figure>
         </div>
@@ -24,7 +24,7 @@
           <img
             class="h-200px w-2/3 lg:h-500px lg:w-full object-cover mb-3 lg:mb-10 mb-20"
             src="@/assets/image/talking/talking_photo02.jpg"
-            alt=""
+            alt="技術顧問イメージ"
           />
           <ul
             class="text-primary text-xs ml-2 mt-3 lg:ml-3 lg:m-0 text-2xl hidden lg:block"

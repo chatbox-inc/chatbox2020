@@ -2,7 +2,7 @@
   <header class="l-header relative py-5 lg:py-10">
     <div class="flex justify-center">
       <h1>
-        <nuxt-link to="/">
+        <nuxt-link to="/" aria-label="TOPページへ">
           <img
             src="@/assets/image/header/header__logo.svg"
             alt="株式会社 chatbox"
@@ -13,10 +13,12 @@
       <nuxt-link
         to="/"
         class="l-header__triangle hidden lg:inline-block fixed hover:opacity-75"
+        aria-label="TOPページへ"
       ></nuxt-link>
       <nuxt-link
         to="/"
         class="l-header__triangleSp lg:hidden inline-blok fixed"
+        aria-label="TOPページへ"
       ></nuxt-link>
     </div>
   </header>
