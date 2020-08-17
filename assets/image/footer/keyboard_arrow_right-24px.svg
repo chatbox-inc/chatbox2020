@@ -1,4 +1,1 @@
-<svg id="keyboard_arrow_right-24px" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
-  <path id="パス_43" data-name="パス 43" d="M8.59,25l8.216-8.233L8.59,8.529,11.119,6,21.882,16.763,11.119,27.525Z" transform="translate(6.792 4.737)" fill="#c3504f"/>
-  <path id="パス_44" data-name="パス 44" d="M0,0H43V43H0Z" fill="none"/>
-</svg>
+<svg height="43" viewBox="0 0 43 43" width="43" xmlns="http://www.w3.org/2000/svg"><path d="m8.59 25 8.216-8.233-8.216-8.238 2.529-2.529 10.763 10.763-10.763 10.762z" fill="#c3504f" transform="translate(6.792 4.737)"/><path d="m0 0h43v43h-43z" fill="none"/></svg>

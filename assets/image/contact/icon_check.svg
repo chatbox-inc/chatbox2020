@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="26px" height="22px" viewBox="0 0 26 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-    <title>icon_check</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="contact_sp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-87.000000, -1658.000000)">
-        <g id="sec_contact" transform="translate(59.000000, 373.000000)" fill="#4B4B4B" fill-rule="nonzero">
-            <g transform="translate(0.000000, 990.000000)" id="select">
-                <g transform="translate(0.000000, 263.000000)">
-                    <g id="btn.is-active" transform="translate(1.000000, 0.000000)">
-                        <path d="M50.5625,32 C41.8958333,42.8333333 37.5625,48.25 37.5625,48.25 C37.5625,48.25 34.8541667,45.2708333 29.4375,39.3125 L27,41.75 L35.9375,53.125 L39.1875,53.125 C48.3958333,40.6666667 53,34.4375 53,34.4375 L50.5625,32 Z" id="icon_check"></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg height="22" viewBox="0 0 26 22" width="26" xmlns="http://www.w3.org/2000/svg"><path d="m50.5625 32c-8.6666667 10.8333333-13 16.25-13 16.25s-2.7083333-2.9791667-8.125-8.9375l-2.4375 2.4375 8.9375 11.375h3.25c9.2083333-12.4583333 13.8125-18.6875 13.8125-18.6875z" fill="#4b4b4b" transform="translate(-27 -32)"/></svg>
