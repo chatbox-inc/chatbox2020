@@ -4,7 +4,7 @@
       v-show="!isContact"
       class="flex mt-32 py-6 bg-white justify-center items-center"
     >
-      <img class="mx-2" src="@/assets/image/footer/icon_mail.svg" />
+      <img class="mx-2" src="@/assets/image/footer/icon_mail.svg" alt="Mail" />
       <p class="text-primary">
         お問い合わせはこちら
       </p>
@@ -91,7 +91,7 @@
             <img
               class="mr-4"
               src="@/assets/image/footer/img_logo@2x.png"
-              alt="chatboxアイコン"
+              alt="chatboxロゴ"
             />
             <div class="text-xs lg:text-sm">
               Copyright © chatbox.inc All Rights Reserved.
@@ -108,7 +108,7 @@
               <img
                 class="hover:opacity-75"
                 src="@/assets/image/footer/facebook-square-brands.svg"
-                alt="facebookアイコン"
+                alt="facebook"
               />
             </a>
             <a
@@ -120,7 +120,7 @@
             >
               <img
                 src="@/assets/image/footer/twitter-square-brands.svg"
-                alt="Twitterアイコン"
+                alt="Twitter"
               />
             </a>
           </div>
