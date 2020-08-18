@@ -3,7 +3,7 @@
     <LHero title="お知らせ" text="株式会社chatboxの新着情報をお届けします" />
     <div class="container mx-auto px-5 pt-12 lg:pt-32">
       <div class="flex flex-row space-x-3 lg:space-x-4 items-center">
-        <UiTime v-if="isCreatedAt" :created-at="newsData.createdAt" />
+        <!--     <UiTime v-if="isCreatedAt" :created-at="newsData.createdAt" /> -->
         <p
           class="bg-primary text-center py-1 text-xs lg:text-sm w-24 block text-white"
         >
@@ -49,7 +49,7 @@ export default {
   async asyncData({ params }) {
     let newsData = await fetchNewsById(params.id)
     const date = newsData.createdAt.toDate()
-    if (newsData?.createdAt) {
+    if (this.isCreatedAt()) {
       newsData.createdAt = date
     }
     return {
