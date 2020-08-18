@@ -1,11 +1,9 @@
 <template>
-  <no-ssr>
-    <time
-      class="inline-block font-medium text-xl text-primary lg:text-black lg:text-xl lg:text-black"
-    >
-      {{ createdDate }}
-    </time>
-  </no-ssr>
+  <time
+    class="inline-block font-medium text-xl text-primary lg:text-black lg:text-xl lg:text-black"
+  >
+    {{ createdDate }}
+  </time>
 </template>
 
 <script>
