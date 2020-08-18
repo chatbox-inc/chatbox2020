@@ -1,3 +1,3 @@
 User-Agent:*
 Disallow:
-Sitemap:https://chatbox-inc.com//sitemap
+Sitemap:https://chatbox-inc.com/sitemap
