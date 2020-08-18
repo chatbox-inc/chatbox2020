@@ -62,7 +62,6 @@ export async function fetchNewsById(id) {
   const userRef = await db.collection('news').doc(id)
   const doc = await userRef.get()
   let news = doc.data()
-  console.log(news, 'check this on log')
   return news
 }
 
