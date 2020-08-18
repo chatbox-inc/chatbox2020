@@ -48,10 +48,8 @@ import marked from 'marked'
 export default {
   async asyncData({ params }) {
     let newsData = await fetchNewsById(params.id)
-    console.log(newsData, 'news data')
     const date = newsData.createdAt.toDate()
     newsData.createdAt = date
-    console.log(newsData)
     return {
       newsData,
     }

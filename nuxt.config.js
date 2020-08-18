@@ -116,11 +116,4 @@ export default {
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.scss',
   },
-  generate: {
-    async routes() {
-      const pathList = []
-      pathList.push(`news/48OCIBaXWvyHS0t0Nqsd`)
-      return pathList
-    },
-  },
 }
