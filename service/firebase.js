@@ -58,11 +58,12 @@ export async function fetchAllNews() {
 }
 
 export async function fetchNewsById(id) {
-  const targetNewsRef = newsRef.doc(id)
-  let doc = await targetNewsRef.get()
-  let newsData = doc.data()
-  newsData.createdAt = newsData.createdAt.toDate()
-  return newsData
+  const db = firebase.firestore()
+  const userRef = db.collection('news').doc(id)
+  const doc = await userRef.get()
+  let news = doc.data()
+
+  return { ...news, id, createdAt: doc.data().createdAt.toDate() }
 }
 
 export async function fetchNewsByYear(year) {

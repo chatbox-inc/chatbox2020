@@ -62,11 +62,6 @@ export default {
       return marked(this.newsData.text.replace(/\s\s/g, '<br/>'))
     },
   },
-  methods: {
-    createdDate(createdAt) {
-      return this.$dayjs(createdAt.toDate()).format('YYYY.MM.DD')
-    },
-  },
 }
 </script>
 
