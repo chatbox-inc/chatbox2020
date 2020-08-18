@@ -1,9 +1,11 @@
 <template>
-  <time
-    class="inline-block font-medium text-xl text-primary lg:text-black lg:text-xl lg:text-black"
-  >
-    {{ createdDate }}
-  </time>
+  <no-ssr>
+    <time
+      class="inline-block font-medium text-xl text-primary lg:text-black lg:text-xl lg:text-black"
+    >
+      {{ createdDate }}
+    </time>
+  </no-ssr>
 </template>
 
 <script>
@@ -17,10 +19,10 @@ export default {
   computed: {
     createdDate() {
       if (!this.createdAt) {
-        return null
+        return ''
       }
       if (!(this.createdAt instanceof Date)) {
-        return null
+        return ''
       }
       return this.$dayjs(this.createdAt).format('YYYY/MM/DD')
     },
