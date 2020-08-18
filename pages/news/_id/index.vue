@@ -49,7 +49,7 @@ export default {
   async asyncData({ params }) {
     let newsData = await fetchNewsById(params.id)
     const date = newsData.createdAt.toDate()
-    if (this.isCreatedAt()) {
+    if (newsData?.createdAt) {
       newsData.createdAt = date
     }
     return {
