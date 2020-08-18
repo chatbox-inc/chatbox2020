@@ -1,3 +1,4 @@
+import { fetchAllNews } from '@/service/firebase'
 export default {
   /*
    ** Nuxt rendering mode
@@ -115,5 +116,15 @@ export default {
   build: {},
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.scss',
+  },
+  generate: {
+    async routes() {
+      const pathList = []
+      const newsList = await fetchAllNews()
+      for (const news of newsList) {
+        pathList.push(`news/${news.id}`)
+      }
+      return pathList
+    },
   },
 }

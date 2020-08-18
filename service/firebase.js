@@ -44,6 +44,19 @@ export async function fetchNews() {
   return newsList
 }
 
+export async function fetchAllNews() {
+  const newsList = []
+  const snapShot = await newsRef.orderBy('createdAt', 'desc').get()
+  snapShot.forEach((doc) => {
+    newsList.push({
+      ...doc.data(),
+      id: doc.id,
+      createdAt: doc.data().createdAt.toDate(),
+    })
+  })
+  return newsList
+}
+
 export async function fetchNewsById(id) {
   const targetNewsRef = newsRef.doc(id)
   let doc = await targetNewsRef.get()
