@@ -46,21 +46,18 @@
 import { fetchNewsById } from '@/service/firebase'
 import marked from 'marked'
 export default {
-  data() {
+  async asyncData({ params }) {
+    let newsData = await fetchNewsById(params.id)
+    const date = newsData.createdAt.toDate()
+    newsData.createdAt = date
     return {
-      newsData: null,
+      newsData,
     }
   },
   computed: {
     compiledMarkdown() {
       return marked(this.newsData.text.replace(/\s\s/g, '<br/>'))
     },
-  },
-  async created() {
-    let news = await fetchNewsById(this.$route.params.id)
-    const date = news.createdAt.toDate()
-    news.createdAt = date
-    this.newsData = news
   },
 }
 </script>
