@@ -98,7 +98,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/dotenv', '@nuxtjs/dayjs'],
+  modules: ['@nuxtjs/dotenv', '@nuxtjs/dayjs', '@nuxtjs/sitemap'],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
@@ -107,7 +107,11 @@ export default {
     locals: ['ja'],
     defaulocale: 'ja',
   },
-
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://chatbox-inc.com/',
+    exclude: [],
+  },
   build: {},
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.scss',
