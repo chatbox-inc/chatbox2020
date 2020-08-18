@@ -47,7 +47,10 @@ import { fetchNewsById } from '@/service/firebase'
 import marked from 'marked'
 export default {
   async asyncData({ params }) {
-    const newsData = await fetchNewsById(params.id)
+    let newsData = await fetchNewsById(params.id)
+    console.log(newsData, 'news data')
+    const date = newsData.createdAt.toDate()
+    newsData.createdAt = date
     console.log(newsData)
     return {
       newsData,
