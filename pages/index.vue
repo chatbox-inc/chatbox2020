@@ -10,7 +10,7 @@
     <CNews :news-list="newsList" />
     <CAbout v-if="about" :about="about" />
     <CContact v-if="contact" :contact="contact" />
-    <UiBanner v-if="newsData" :news="newsData" />
+    <!--    <UiBanner v-if="newsData" :news="newsData" /> -->
   </div>
 </template>
 
