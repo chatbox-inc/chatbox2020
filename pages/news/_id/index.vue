@@ -48,13 +48,9 @@ import marked from 'marked'
 export default {
   async asyncData({ params }) {
     const newsData = await fetchNewsById(params.id)
+    console.log(newsData)
     return {
       newsData,
-    }
-  },
-  data() {
-    return {
-      newsData: null,
     }
   },
   computed: {
