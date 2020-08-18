@@ -1,4 +1,4 @@
-import { fetchAllNews } from '@/service/firebase'
+import { fetchAllNews } from './service/firebase'
 export default {
   /*
    ** Nuxt rendering mode
