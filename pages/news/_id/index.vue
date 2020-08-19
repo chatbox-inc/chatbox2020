@@ -53,7 +53,7 @@ import marked from 'marked'
 export default {
   async asyncData({ params }) {
     const newsData = await fetchNewsById(params.id)
-    if (newsData.createdAt) {
+    if (newsData) {
       const date = newsData.createdAt.toDate()
       delete newsData['createdAt']
       newsData.createdAt = date
