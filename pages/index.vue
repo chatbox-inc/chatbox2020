@@ -10,7 +10,7 @@
     <CNews :news-list="newsList" />
     <CAbout v-if="about" :about="about" />
     <CContact v-if="contact" :contact="contact" />
-    <UiBanner v-if="newsData" :news="newsData" />
+    <UiBanner v-if="newsData.createdAt" :news="newsData" />
   </div>
 </template>
 
@@ -52,6 +52,7 @@ export default {
   async asyncData() {
     const newsList = await fetchNews()
     const newsData = newsList[0]
+    console.log(newsData)
     return {
       newsList,
       newsData,

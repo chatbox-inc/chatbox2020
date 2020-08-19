@@ -52,19 +52,17 @@ export default {
       newsData,
     }
   },
-  data() {
-    return {
-      newsData: null,
-    }
-  },
+
   computed: {
     compiledMarkdown() {
       return marked(this.newsData.text.replace(/\s\s/g, '<br/>'))
     },
-  },
-  methods: {
-    createdDate(createdAt) {
-      return this.$dayjs(createdAt.toDate()).format('YYYY.MM.DD')
+    createdDate() {
+      console.log(this.newsData.createdAt)
+      if (this.newsData.createdAt) {
+        this.newsData.createdAt.toDate()
+      }
+      return ''
     },
   },
 }
