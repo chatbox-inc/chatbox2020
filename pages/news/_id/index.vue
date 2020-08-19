@@ -7,7 +7,7 @@
           v-if="newsData.createdAt"
           class="inline-block font-medium text-xl text-primary lg:text-black lg:text-xl lg:text-black"
         >
-          {{ $dayjs(newsData.createdAt.toDateString()).format('YYYY/MM/DD') }}
+          {{ newsData.createdAt }}
         </time>
         <p
           class="bg-primary text-center py-1 text-xs lg:text-sm w-24 block text-white"
