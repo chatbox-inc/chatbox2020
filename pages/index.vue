@@ -52,7 +52,6 @@ export default {
   async asyncData() {
     const newsList = await fetchNews()
     const newsData = newsList[0]
-    console.log(newsData)
     return {
       newsList,
       newsData,
