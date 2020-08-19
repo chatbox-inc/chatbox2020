@@ -48,6 +48,9 @@ export async function fetchNewsById(id) {
   const targetNewsRef = newsRef.doc(id)
   let doc = await targetNewsRef.get()
   let newsData = doc.data()
+  if (newsData) {
+    newsData.createdAt = newsData.createdAt.toDate()
+  }
   return newsData
 }
 
