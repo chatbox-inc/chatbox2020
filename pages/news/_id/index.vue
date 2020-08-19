@@ -53,6 +53,11 @@ import marked from 'marked'
 export default {
   async asyncData({ params }) {
     const newsData = await fetchNewsById(params.id)
+    if (newsData.createdAt) {
+      const date = newsData.createdAt.toDate()
+      delete newsData['createdAt']
+      newsData.createdAt = date
+    }
     return {
       newsData,
     }
@@ -61,6 +66,13 @@ export default {
   computed: {
     compiledMarkdown() {
       return marked(this.newsData.text.replace(/\s\s/g, '<br/>'))
+    },
+    createdDate() {
+      console.log(this.newsData.createdAt)
+      if (this.newsData.createdAt) {
+        this.newsData.createdAt.toDate()
+      }
+      return ''
     },
   },
 }
