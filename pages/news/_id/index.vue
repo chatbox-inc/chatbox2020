@@ -4,7 +4,7 @@
     <div class="container mx-auto px-5 pt-12 lg:pt-32">
       <div class="flex flex-row space-x-3 lg:space-x-4 items-center">
         <time
-          v-if="newsData"
+          v-if="newsData.createdAt"
           class="inline-block font-medium text-xl text-primary lg:text-black lg:text-xl lg:text-black"
         >
           {{ newsData.createdAt }}
@@ -57,6 +57,7 @@ export default {
       const date = newsData.createdAt.toDate()
       delete newsData['createdAt']
       newsData.createdAt = date
+      console.log(newsData)
     }
     return {
       newsData,
