@@ -3,7 +3,12 @@
     <LHero title="お知らせ" text="株式会社chatboxの新着情報をお届けします" />
     <div class="container mx-auto px-5 pt-12 lg:pt-32">
       <div class="flex flex-row space-x-3 lg:space-x-4 items-center">
-        <UiTime :created-at="newsData.createdAt" />
+        <time
+          v-if="newsData.createdAt"
+          class="inline-block font-medium text-xl text-primary lg:text-black lg:text-xl lg:text-black"
+        >
+          {{ $dayjs(newsData.createdAt.toDateString()).format('YYYY/MM/DD') }}
+        </time>
         <p
           class="bg-primary text-center py-1 text-xs lg:text-sm w-24 block text-white"
         >
@@ -52,19 +57,10 @@ export default {
       newsData,
     }
   },
-  data() {
-    return {
-      newsData: null,
-    }
-  },
+
   computed: {
     compiledMarkdown() {
       return marked(this.newsData.text.replace(/\s\s/g, '<br/>'))
-    },
-  },
-  methods: {
-    createdDate(createdAt) {
-      return this.$dayjs(createdAt.toDate()).format('YYYY.MM.DD')
     },
   },
 }
