@@ -16,13 +16,19 @@ export default {
   },
   computed: {
     createdDate() {
+      console.log(typeof this.createdAt)
+      console.log('working')
       if (!this.createdAt) {
         return ''
+      }
+      if (this.createdAt instanceof Object) {
+        console.log('should works')
+        return this.$dayjs(this.createdAt.toDate()).format('YYYY/MM/DD')
       }
       if (!(this.createdAt instanceof Date)) {
         return ''
       }
-      return this.$dayjs(this.createdAt).format('YYYY/MM/DD')
+      return ''
     },
   },
 }
