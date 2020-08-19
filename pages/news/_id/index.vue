@@ -58,7 +58,6 @@ export default {
       return marked(this.newsData.text.replace(/\s\s/g, '<br/>'))
     },
     createdDate() {
-      console.log(this.newsData.createdAt)
       if (this.newsData.createdAt) {
         this.newsData.createdAt.toDate()
       }
