@@ -1,0 +1,36 @@
+name: Deploy Firebase Funtions & Hosting
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install Dependencies
+        run: npm ci
+      - name: build
+        run: |
+          npm run doc
+          nuxt build
+          nuxt export
+      - name: Deploy to firebase function
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting -m hogehoge
+        env:
+          FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}

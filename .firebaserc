@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "chatbox2020-26423"
+  },
+  "targets": {
+    "chatbox2020-26423": {
+      "hosting": {
+        "chatbox": [
+          "chatbox2020-26423"
+        ]
+      }
+    }
   }
 }
