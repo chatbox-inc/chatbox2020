@@ -6,7 +6,7 @@
       フォームでのお問い合わせ
     </h3>
     <p class="mt-6 text-sm lg:text-base leading-8">
-      Wevからお問い合わせ出来ます。<br />
+      Webからお問い合わせ出来ます。<br />
       以下の中からお問い合わせ内容を選択し、フォームを入力してください。
     </p>
     <form action="#" class="mt-8">
