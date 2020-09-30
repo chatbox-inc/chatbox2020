@@ -20,23 +20,17 @@
       >
         トップページへ戻る
       </nuxt-link>
-      <UiBanner v-if="newsData" :news="newsData" />
     </div>
   </section>
 </template>
 
 <script>
-import { fetchNews } from '@/service/firebase'
 export default {
   components: {},
   data() {
     return {
       newsData: null,
     }
-  },
-  async mounted() {
-    const newsList = await fetchNews()
-    this.newsData = newsList[0]
   },
 }
 </script>
