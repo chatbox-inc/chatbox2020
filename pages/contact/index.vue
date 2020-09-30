@@ -2,6 +2,7 @@
   <div class="mx-auto overflow-hidden">
     <CTop />
     <CForm
+      ref="form"
       :form="form"
       @input="inputForm"
       @setSubject="setSubject"
@@ -40,7 +41,6 @@ export default {
       newsData: null,
     }
   },
-  
   methods: {
     openConfirmModal() {
       this.showConfirmModal = true
@@ -60,6 +60,13 @@ export default {
       submitContact(this.form)
       this.closeConfirmModal()
       this.openSentModal()
+      this.form = {
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      }
+      this.$refs.form.$v.$reset()
     },
     inputForm(form) {
       this.form = { ...form }

@@ -46,8 +46,6 @@ export default {
   },
   async asyncData() {
     return {
-      newsList,
-      newsData,
       intro,
       creation,
       talking,
@@ -68,8 +66,6 @@ export default {
       recruit: null,
       about: null,
       contact: null,
-      newsData: null,
-      newsList: null,
     }
   },
 }
