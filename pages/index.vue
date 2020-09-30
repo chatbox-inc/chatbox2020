@@ -7,10 +7,8 @@
     <CEnjoy v-if="enjoy" :enjoy="enjoy" />
     <CMember v-if="member" :member="member" />
     <CRecruit v-if="recruit" :recruit="recruit" />
-    <CNews :news-list="newsList" />
     <CAbout v-if="about" :about="about" />
     <CContact v-if="contact" :contact="contact" />
-    <UiBanner v-if="newsData.createdAt" :news="newsData" />
   </div>
 </template>
 
@@ -22,7 +20,6 @@ import CTalking from '@/pages/-CTalking'
 import CEnjoy from '@/pages/-CEnjoy'
 import CMember from '@/pages/-CMember'
 import CRecruit from '@/pages/-CRecruit'
-import CNews from '@/pages/-CNews'
 import CAbout from '@/pages/-CAbout'
 import CContact from '@/pages/-CContact'
 import {
@@ -35,7 +32,6 @@ import {
   about,
   contact,
 } from '@/static/api/top.json'
-import { fetchNews } from '@/service/firebase'
 export default {
   components: {
     CHero,
@@ -45,16 +41,11 @@ export default {
     CEnjoy,
     CMember,
     CRecruit,
-    CNews,
     CAbout,
     CContact,
   },
   async asyncData() {
-    const newsList = await fetchNews()
-    const newsData = newsList[0]
     return {
-      newsList,
-      newsData,
       intro,
       creation,
       talking,
@@ -75,8 +66,6 @@ export default {
       recruit: null,
       about: null,
       contact: null,
-      newsData: null,
-      newsList: null,
     }
   },
 }

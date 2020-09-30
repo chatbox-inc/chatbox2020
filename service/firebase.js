@@ -15,64 +15,6 @@ if (!firebase.apps.length) {
   firebase.initializeApp(fierbaseConfig)
 }
 
-//database variables
-const db = firebase.firestore()
-const newsRef = db.collection('news')
-const contactRef = db.collection('contact')
-const limit = 5
-
-export function addNewsData() {
-  newsRef.add({
-    category: 'テスト昔のデータ',
-    text: 'テストデータです！！',
-    title: 'テストタイトルを入力',
-    thumbnail: 'https://chatbox-inc.com/images/brand_top.jpg',
-    createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-  })
-}
-
-export async function fetchNews() {
-  const newsList = []
-  const snapShot = await newsRef.orderBy('createdAt', 'desc').limit(limit).get()
-  snapShot.forEach((doc) => {
-    newsList.push({
-      ...doc.data(),
-      id: doc.id,
-      createdAt: doc.data().createdAt.toDate(),
-    })
-  })
-  return newsList
-}
-
-export async function fetchNewsById(id) {
-  const targetNewsRef = newsRef.doc(id)
-  let doc = await targetNewsRef.get()
-  let newsData = doc.data()
-  if (newsData) {
-    newsData.createdAt = newsData.createdAt.toDate()
-  }
-  return newsData
-}
-
-export async function fetchNewsByYear(year) {
-  const startDate = new Date(`January 1, ${year} 12:00 AM`)
-  const endDate = new Date(`December 31, ${year} 11:59 PM`)
-  const newsList = []
-  const snapShot = await newsRef
-    .orderBy('createdAt', 'desc')
-    .where('createdAt', '>=', startDate)
-    .where('createdAt', '<=', endDate)
-    .get()
-  snapShot.forEach((doc) => {
-    newsList.push({
-      ...doc.data(),
-      id: doc.id,
-      createdAt: doc.data().createdAt.toDate(),
-    })
-  })
-  return newsList
-}
-
 export async function submitContact(form) {
   const { name, email, subject, message } = form
   contactRef.add({
@@ -80,6 +22,6 @@ export async function submitContact(form) {
     email,
     subject,
     message,
-    createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+    createdAt: new Date.now(),
   })
 }

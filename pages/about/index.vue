@@ -11,8 +11,6 @@
 import CHero from './-C Hero.vue'
 import CAbout from './-CAbout.vue'
 import CAccess from './-CAccess.vue'
-import {} from '@/static/api/top.json'
-import { fetchNews } from '@/service/firebase'
 export default {
   components: {
     CHero,
@@ -23,10 +21,6 @@ export default {
     return {
       newsData: null,
     }
-  },
-  async mounted() {
-    const newsList = await fetchNews()
-    this.newsData = newsList[0]
   },
 }
 </script>
