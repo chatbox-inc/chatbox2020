@@ -7,7 +7,7 @@ admin.initializeApp()
 
 exports.handleContact = functions.firestore
   .document('contact/{docId}')
-  .onCreate((snap) => {
+  .onCreate(async (snap) => {
     const data = snap.data()
     const { name, subject, message, email } = data
     const info = `${name}様から${subject}のお問い合わせが届きました。\n\n${message}\n\nメールアドレス: ${email}`
@@ -16,7 +16,7 @@ exports.handleContact = functions.firestore
       text: '```' + info + '```',
     }
     try {
-      axios.post(slack_url, JSON.stringify(jsonData))
+      await axios.post(slack_url, JSON.stringify(jsonData))
       return true
     } catch (error) {
       functions.logger.log('エラー', error)
