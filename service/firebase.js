@@ -19,7 +19,6 @@ const contactRef = firebase.firestore().collection('contact')
 
 export async function submitContact(form) {
   const { name, email, subject, message } = form
-  console.log('message in firebase.js', message)
   contactRef.add({
     name,
     email,
