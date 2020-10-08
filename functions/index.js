@@ -10,14 +10,10 @@ exports.handleContact = functions.firestore
   .onCreate((snap) => {
     const data = snap.data()
     const { name, subject, message, email } = data
-    functions.logger.log(
-      `${name}様から${subject}のお問い合わせが届きました。メッセージ内容:${message}。メールアドレス:${email}`
-    )
+    const info = `${name}様から${subject}のお問い合わせが届きました。\n\n${message}\n\nメールアドレス: ${email}`
+    functions.logger.log(info)
     const jsonData = {
-      text:
-        '```' +
-        `${name}様から${subject}のお問い合わせが届きました。\n\n${message}\n\nメールアドレス: ${email}` +
-        '```',
+      text: '```' + info + '```',
     }
     try {
       axios.post(slack_url, JSON.stringify(jsonData))
