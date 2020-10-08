@@ -15,6 +15,8 @@ if (!firebase.apps.length) {
   firebase.initializeApp(fierbaseConfig)
 }
 
+const contactRef = firebase.firestore().collection('contact')
+
 export async function submitContact(form) {
   const { name, email, subject, message } = form
   contactRef.add({
@@ -22,6 +24,6 @@ export async function submitContact(form) {
     email,
     subject,
     message,
-    createdAt: new Date.now(),
+    createdAt: Date.now(),
   })
 }
