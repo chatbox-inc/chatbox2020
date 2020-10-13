@@ -1,5 +1,5 @@
 <template>
-  <section v-if="recruit" class="pb-20 bg-ivory">
+  <section v-if="recruit" class="pb-20">
     <div class="c-recruit__head">
       <div class="container mx-auto text-left mt-8 relative px-5">
         <UiTitle :title="recruit.title" class="lg:mb-5" />
@@ -14,7 +14,7 @@
       />
       <p class="mx-auto text-black mb-10 text-left w-full lg:w-3/5">
         {{ recruit.text }}
-        <br />※wantedlyへ飛びます
+        <br />
       </p>
       <div class="c-recruit__btn">
         <UiButton
@@ -38,11 +38,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.c-recruit {
-  &__head {
-    background: linear-gradient(#fff 50%, #faf7f7 0);
-  }
-}
-</style>

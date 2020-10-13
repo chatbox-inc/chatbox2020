@@ -3,7 +3,6 @@
     <CHero />
     <CAbout />
     <CAccess />
-    <UiBanner v-if="newsData" :news="newsData" />
   </div>
 </template>
 

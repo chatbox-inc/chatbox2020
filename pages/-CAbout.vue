@@ -1,5 +1,5 @@
 <template>
-  <section v-if="about" class="lg:py-20 pt-14 pb-20 bg-ivory">
+  <section v-if="about" class="lg:py-20 pt-14 pb-20">
     <div class="container mx-auto text-center px-5">
       <UiTitle class="pt-6" :title="about.title" />
       <p
