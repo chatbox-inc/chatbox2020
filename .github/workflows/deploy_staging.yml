@@ -31,6 +31,6 @@ jobs:
       - name: Deploy to firebase hosting
         uses: w9jds/firebase-action@master
         with:
-          args: deploy --only hosting --project staging -m hogehoge
+          args: deploy --only hosting:staging -m hogehoge
         env:
           FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
