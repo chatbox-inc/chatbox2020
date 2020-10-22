@@ -1,4 +1,4 @@
-name: Deploy Firebase Hosting
+name: Deploy Firebase Hosting Staging
 on:
   push:
     branches:
