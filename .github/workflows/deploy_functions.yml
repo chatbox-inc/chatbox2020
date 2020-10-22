@@ -1,0 +1,27 @@
+name: Deploy Firebase Hosting
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Npm install, build
+        working-directory: ./functions
+        run: |
+          npm install
+          npm run build
+      - name: Deploy to Cloud Functions
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only functions -m hogehoge
+        env:
+          FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
