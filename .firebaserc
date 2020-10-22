@@ -1,6 +1,7 @@
 {
   "projects": {
-    "default": "chatbox2020-26423"
+    "default": "chatbox2020-master"
+    "staging": "chatbox2020-staging 
   },
   "targets": {
     "chatbox2020-26423": {
