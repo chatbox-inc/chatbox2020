@@ -2,7 +2,7 @@ name: Deploy Firebase Hosting Master
 on:
   push:
     branches:
-      - master
+      - release
 jobs:
   build:
     name: build
