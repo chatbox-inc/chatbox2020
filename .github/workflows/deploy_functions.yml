@@ -14,12 +14,16 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - name: Npm install, build
-        working-directory: ./functions
-        run: |
-          npm install
-          npm run build
-      - name: Deploy to Cloud Functions
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install Dependencies
+        run: npm ci
+      - name: Deploy to firebase hosting
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only functions -m hogehoge
