@@ -8,6 +8,9 @@
         "staging": [
           "chatbox2020-staging"
         ],
+        "release": [
+          "chatbox2020-26423"
+        ],
         "chatbox": [
           "chatbox2020-26423"
         ]

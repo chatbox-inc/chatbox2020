@@ -9,6 +9,11 @@
       "target": "staging",
       "public": "dist",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    },
+    {
+      "target": "release",
+      "public": "dist",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
     }
   ]
 }
