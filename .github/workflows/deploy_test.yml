@@ -1,11 +1,11 @@
-name: Deploy Firebase Funtions & Hosting
+name: Deploy Staging
 on:
   push:
     branches:
       - master
 jobs:
   build:
-    name: build
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -23,14 +23,13 @@ jobs:
             ${{ runner.os }}-node-
       - name: Install Dependencies
         run: npm ci
-      - name: build
+      - name: Generate
         run: |
           npm run doc
-          npm run build
-          npm run export
-      - name: Deploy to firebase function
+          npm run generate
+      - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
-          args: deploy --only hosting -m hogehoge
+          args: deploy --only hosting --project chatbox2020
         env:
-          FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
