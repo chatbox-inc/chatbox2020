@@ -1,4 +1,4 @@
-name: Deploy Firebase Funtions & Hosting
+name: Deploy Firebase Hosting
 on:
   push:
     branches:
