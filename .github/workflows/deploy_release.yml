@@ -1,4 +1,4 @@
-name: Deploy Firebase Hosting Master
+name: Deploy Firebase Hosting Release
 on:
   push:
     branches:
