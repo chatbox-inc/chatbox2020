@@ -26,8 +26,8 @@ jobs:
       - name: build
         run: |
           npm run doc
-          nuxt build
-          nuxt export
+          npm run build
+          npm run export
       - name: Deploy to firebase function
         uses: w9jds/firebase-action@master
         with:
