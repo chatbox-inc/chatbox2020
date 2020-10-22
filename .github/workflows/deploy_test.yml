@@ -26,7 +26,8 @@ jobs:
       - name: Generate
         run: |
           npm run doc
-          npm run generate
+          npm run build
+          npm run export
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
