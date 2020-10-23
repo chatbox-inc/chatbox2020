@@ -27,6 +27,6 @@ jobs:
       - name: Deploy to firebase functions
         uses: w9jds/firebase-action@master
         with:
-          args: deploy --only functions -m hogehoge
+          args: deploy --only functions --project chatbox2020-26423 -m hogehoge
         env:
           FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
