@@ -61,15 +61,7 @@
                 会社情報
               </nuxt-link>
             </li>
-            <li class="w-4/12 lg:w-auto lg:border-r">
-              <a
-                class="lg:pr-4 lg:px-4 hover:opacity-75"
-                href="https://members.chatbox-inc.com/"
-              >
-                メンバー紹介
-              </a>
-            </li>
-            <li class="w-4/12 lg:w-auto border-l lg:border-l-0">
+            <li class="mb-4 lg:mb-0 w-1/2 lg:w-auto">
               <a
                 class="lg:px-4 hover:opacity-75"
                 target="_blank"
@@ -79,7 +71,7 @@
                 採用情報
               </a>
             </li>
-            <li class="w-4/12 lg:w-auto border-l">
+            <li class="mb-4 lg:mb-0 w-1/2 lg:w-auto border-l">
               <nuxt-link class="lg:pl-4 hover:opacity-75" to="/contact">
                 お問い合わせ
               </nuxt-link>
