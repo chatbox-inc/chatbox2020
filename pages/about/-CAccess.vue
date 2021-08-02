@@ -54,8 +54,6 @@
             </th>
             <td class="block w-full lg:pt-3 pl-2 lg:table-cell lg:w-auto">
               <p>JR 大阪駅または福島駅から徒歩9分</p>
-              <p>阪急 大阪梅田駅から徒歩12分</p>
-              <p>四つ橋線 西梅田駅から徒歩14分</p>
             </td>
           </tr>
         </tbody>
