@@ -8,7 +8,7 @@
       </h3>
       <iframe
         title="GoogleMap"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.424416216089!2d135.5152549152322!3d34.69447368043616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e723237eaaab%3A0x7d8bc4d8a57d77bc!2z5qCq5byP5Lya56S-Y2hhdGJveA!5e0!3m2!1sja!2sjp!4v1594885174644!5m2!1sja!2sjp"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.139593377072!2d135.4896543087972!3d34.70165889810624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6898259708d%3A0x8990ab312217181f!2z44CSNTUzLTAwMDMg5aSn6Ziq5bqc5aSn6Ziq5biC56aP5bO25Yy656aP5bO277yW5LiB55uu77yR77yY4oiS77yR77yY!5e0!3m2!1sja!2sjp!4v1627885902611!5m2!1sja!2sjp"
         width="100%"
         height="400px"
         frameborder="0"
@@ -43,9 +43,9 @@
               住所
             </th>
             <td class="block w-full lg:py-2 pb-2 pl-2 lg:table-cell lg:w-auto">
-              <p>〒530-0043</p>
-              <p>大阪府大阪市北区天満２丁目８−１７</p>
-              <p>天満橋パークビル 5F</p>
+              <p>〒553-0003</p>
+              <p>大阪府大阪市福島区福島 6-18-18</p>
+              <p>WOB NISHIUMEDA #401</p>
             </td>
           </tr>
           <tr class="leading-7 align-top">
@@ -53,12 +53,7 @@
               電車でアクセス
             </th>
             <td class="block w-full lg:pt-3 pl-2 lg:table-cell lg:w-auto">
-              <p>JR 南森町駅から徒歩5分</p>
-              <p>JR 大阪天満宮駅から徒歩5分</p>
-              <p>谷町線 天満橋駅から徒歩5分</p>
-              <p class="pt-3">
-                ※1階のCoCo壱が目印の建物です。
-              </p>
+              <p>JR 大阪駅または福島駅から徒歩9分</p>
             </td>
           </tr>
         </tbody>
